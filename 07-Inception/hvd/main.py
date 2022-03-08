@@ -1,5 +1,13 @@
 import os
 import tensorflow as tf
+import horovod.tensorflow as hvd
+hvd_broadcast_done = False
+hvd.init()
+gpus = tf.config.experimental.list_physical_devices("GPU", )
+for gpu in gpus:
+  tf.config.experimental.set_memory_growth(gpu, True, )
+if gpus:
+  tf.config.experimental.set_visible_devices(gpus[hvd.local_rank()], "GPU", )
 import numpy as np
 from tensorflow import keras
 tf.random.set_seed(22, )
@@ -11,8 +19,10 @@ assert tf.__version__.startswith("2.", )
 (x_train, x_test) = (np.expand_dims(x_train, axis=3, ), np.expand_dims(x_test, axis=3, ))
 db_train = tf.data.Dataset.from_tensor_slices((x_train, y_train), ).batch(256, )
 db_test = tf.data.Dataset.from_tensor_slices((x_test, y_test), ).batch(256, )
-print(x_train.shape, y_train.shape, )
-print(x_test.shape, y_test.shape, )
+if hvd.rank() == 0:
+  print(x_train.shape, y_train.shape, )
+if hvd.rank() == 0:
+  print(x_test.shape, y_test.shape, )
 class ConvBNRelu(keras.Model, ):
   def __init__(self, ch, kernelsz=3, strides=1, padding="same", ):
     super(ConvBNRelu, self, ).__init__()
@@ -69,8 +79,9 @@ batch_size = 32
 epochs = 100
 model = Inception(2, 10, )
 model.build(input_shape=(None, 28, 28, 1), )
-model.summary()
-optimizer = keras.optimizers.Adam(learning_rate=0.001, )
+if hvd.rank() == 0:
+  model.summary()
+optimizer = keras.optimizers.Adam(learning_rate=0.001 * hvd.size(), )
 criteon = keras.losses.CategoricalCrossentropy(from_logits=True, )
 acc_meter = keras.metrics.Accuracy()
 for epoch in range(100, ):
@@ -78,13 +89,22 @@ for epoch in range(100, ):
     with tf.GradientTape() as tape:
       logits = model(x, )
       loss = criteon(tf.one_hot(y, depth=10, ), logits, )
+    tape = hvd.DistributedGradientTape(tape, )
     grads = tape.gradient(loss, model.trainable_variables, )
-    optimizer.apply_gradients(zip(grads, model.trainable_variables, ), )
+    id_new = zip(grads, model.trainable_variables, )
+    optimizer.apply_gradients(id_new, )
+    global hvd_broadcast_done
+    if not hvd_broadcast_done:
+      hvd.broadcast_variables([x[1] for x in id_new], root_rank=0, )
+      hvd.broadcast_variables(optimizer.variables(), root_rank=0, )
+      hvd_broadcast_done = True
     if step % 10 == 0:
-      print(epoch, step, "loss:", loss.numpy(), )
+      if hvd.rank() == 0:
+        print(epoch, step, "loss:", loss.numpy(), )
   acc_meter.reset_states()
   for (x, y) in db_test:
     logits = model(x, training=False, )
     pred = tf.argmax(logits, axis=1, )
     acc_meter.update_state(y, pred, )
-  print(epoch, "evaluation acc:", acc_meter.result().numpy(), )
+  if hvd.rank() == 0:
+    print(epoch, "evaluation acc:", acc_meter.result().numpy(), )

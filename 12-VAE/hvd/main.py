@@ -1,5 +1,13 @@
 import os
 import tensorflow as tf
+import horovod.tensorflow as hvd
+hvd_broadcast_done = False
+hvd.init()
+gpus = tf.config.experimental.list_physical_devices("GPU", )
+for gpu in gpus:
+  tf.config.experimental.set_memory_growth(gpu, True, )
+if gpus:
+  tf.config.experimental.set_visible_devices(gpus[hvd.local_rank()], "GPU", )
 import numpy as np
 from tensorflow import keras
 from PIL import Image
@@ -10,8 +18,10 @@ os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
 assert tf.__version__.startswith("2.", )
 ((x_train, y_train), (x_test, y_test)) = keras.datasets.fashion_mnist.load_data()
 (x_train, x_test) = (x_train.astype(np.float32, ) / 255.0, x_test.astype(np.float32, ) / 255.0)
-print(x_train.shape, y_train.shape, )
-print(x_test.shape, y_test.shape, )
+if hvd.rank() == 0:
+  print(x_train.shape, y_train.shape, )
+if hvd.rank() == 0:
+  print(x_test.shape, y_test.shape, )
 new_im = Image.new("L", (280, 280), )
 image_size = 28 * 28
 h_dim = 512
@@ -48,8 +58,9 @@ class VAE(tf.keras.Model, ):
     return (x_reconstructed_logits, mu, log_var)
 model = VAE()
 model.build(input_shape=(4, image_size), )
-model.summary()
-optimizer = keras.optimizers.Adam(learning_rate, )
+if hvd.rank() == 0:
+  model.summary()
+optimizer = keras.optimizers.Adam(learning_rate * hvd.size(), )
 dataset = tf.data.Dataset.from_tensor_slices(x_train, )
 dataset = dataset.shuffle(batch_size * 5, ).batch(batch_size, )
 num_batches = x_train.shape[0] // batch_size
@@ -63,12 +74,20 @@ for epoch in range(num_epochs, ):
       kl_div = -0.5 * tf.reduce_sum(1.0 + log_var - tf.square(mu, ) - tf.exp(log_var, ), axis=-1, )
       kl_div = tf.reduce_mean(kl_div, )
       loss = tf.reduce_mean(reconstruction_loss, ) + kl_div
+    tape = hvd.DistributedGradientTape(tape, )
     gradients = tape.gradient(loss, model.trainable_variables, )
     for g in gradients:
       tf.clip_by_norm(g, 15, )
-    optimizer.apply_gradients(zip(gradients, model.trainable_variables, ), )
+    id_new = zip(gradients, model.trainable_variables, )
+    optimizer.apply_gradients(id_new, )
+    global hvd_broadcast_done
+    if not hvd_broadcast_done:
+      hvd.broadcast_variables([x[1] for x in id_new], root_rank=0, )
+      hvd.broadcast_variables(optimizer.variables(), root_rank=0, )
+      hvd_broadcast_done = True
     if (step + 1) % 50 == 0:
-      print("Epoch[{}/{}], Step [{}/{}], Reconst Loss: {:.4f}, KL Div: {:.4f}".format(epoch + 1, num_epochs, step + 1, num_batches, float(reconstruction_loss, ), float(kl_div, ), ), )
+      if hvd.rank() == 0:
+        print("Epoch[{}/{}], Step [{}/{}], Reconst Loss: {:.4f}, KL Div: {:.4f}".format(epoch + 1, num_epochs, step + 1, num_batches, float(reconstruction_loss, ), float(kl_div, ), ), )
   z = tf.random.normal((batch_size, z_dim), )
   out = model.decode(z, )
   out = tf.reshape(out, [-1, 28, 28], ).numpy() * 255
@@ -80,7 +99,8 @@ for epoch in range(num_epochs, ):
       im = Image.fromarray(im, mode="L", )
       new_im.paste(im, (i, j), )
       index += 1
-  new_im.save("images/vae_sampled_epoch_%d.png" % (epoch + 1), )
+  if hvd.rank() == 0:
+    new_im.save("images/vae_sampled_epoch_%d.png" % (epoch + 1), )
   plt.imshow(np.asarray(new_im, ), )
   plt.show()
   (out_logits, _, _) = model(x[:batch_size // 2], )
@@ -96,7 +116,9 @@ for epoch in range(num_epochs, ):
       im = Image.fromarray(im, mode="L", )
       new_im.paste(im, (i, j), )
       index += 1
-  new_im.save("images/vae_reconstructed_epoch_%d.png" % (epoch + 1), )
+  if hvd.rank() == 0:
+    new_im.save("images/vae_reconstructed_epoch_%d.png" % (epoch + 1), )
   plt.imshow(np.asarray(new_im, ), )
   plt.show()
-  print("New images saved !", )
+  if hvd.rank() == 0:
+    print("New images saved !", )

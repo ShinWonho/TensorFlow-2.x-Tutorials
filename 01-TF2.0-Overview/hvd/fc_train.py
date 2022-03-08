@@ -1,5 +1,13 @@
 import os
 import tensorflow as tf
+import horovod.tensorflow as hvd
+hvd_broadcast_done = False
+hvd.init()
+gpus = tf.config.experimental.list_physical_devices("GPU", )
+for gpu in gpus:
+  tf.config.experimental.set_memory_growth(gpu, True, )
+if gpus:
+  tf.config.experimental.set_visible_devices(gpus[hvd.local_rank()], "GPU", )
 from tensorflow import keras
 from tensorflow.keras import layers, optimizers, datasets
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
@@ -28,8 +36,15 @@ def train_one_step(model, optimizer, x, y, ):
   with tf.GradientTape() as tape:
     logits = model(x, )
     loss = compute_loss(logits, y, )
+  tape = hvd.DistributedGradientTape(tape, )
   grads = tape.gradient(loss, model.trainable_variables, )
-  optimizer.apply_gradients(zip(grads, model.trainable_variables, ), )
+  id_new = zip(grads, model.trainable_variables, )
+  optimizer.apply_gradients(id_new, )
+  global hvd_broadcast_done
+  if not hvd_broadcast_done:
+    hvd.broadcast_variables([x[1] for x in id_new], root_rank=0, )
+    hvd.broadcast_variables(optimizer.variables(), root_rank=0, )
+    hvd_broadcast_done = True
   accuracy = compute_accuracy(logits, y, )
   return (loss, accuracy)
 def train(epoch, model, optimizer, ):
@@ -39,8 +54,10 @@ def train(epoch, model, optimizer, ):
   for (step, (x, y)) in enumerate(train_ds, ):
     (loss, accuracy) = train_one_step(model, optimizer, x, y, )
     if step % 500 == 0:
-      print("epoch", epoch, ": loss", loss.numpy(), "; accuracy", accuracy.numpy(), )
+      if hvd.rank() == 0:
+        print("epoch", epoch, ": loss", loss.numpy(), "; accuracy", accuracy.numpy(), )
   return (loss, accuracy)
 for epoch in range(20, ):
   (loss, accuracy) = train(epoch, model, optimizer, )
-print("Final epoch", epoch, ": loss", loss.numpy(), "; accuracy", accuracy.numpy(), )
+if hvd.rank() == 0:
+  print("Final epoch", epoch, ": loss", loss.numpy(), "; accuracy", accuracy.numpy(), )
