@@ -12,6 +12,17 @@ from tensorflow import keras
 from tensorflow.keras import datasets, layers, optimizers
 import argparse
 import numpy as np
+
+
+# tensorboard
+import datetime
+current_time = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+train_log_dir = 'logs/hvd-trans-board-epoch/' + current_time + '/train'
+train_summary_writer = tf.summary.create_file_writer(train_log_dir)
+
+
+
+
 from network import VGG16
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
 argparser = argparse.ArgumentParser()
@@ -66,9 +77,13 @@ def main():
       grads = [tf.clip_by_norm(g, 15, ) for g in grads]
       id_new = zip(grads, model.trainable_variables, )
       optimizer.apply_gradients(id_new, )
+
+  
+
       global hvd_broadcast_done
       if not hvd_broadcast_done:
-        hvd.broadcast_variables([x[1] for x in id_new], root_rank=0, )
+        # manual : trainable_variables -> model.variables
+        hvd.broadcast_variables(model.variables, root_rank=0, )
         hvd.broadcast_variables(optimizer.variables(), root_rank=0, )
         hvd_broadcast_done = True
       if step % 40 == 0:
@@ -85,5 +100,12 @@ def main():
       if hvd.rank() == 0:
         print("test acc:", metric.result().numpy(), )
       metric.reset_states()
+
+    # tensorboard
+    if hvd.rank() == 0:
+       with train_summary_writer.as_default():
+          tf.summary.scalar('loss', loss, step=epoch)
+
+
 if __name__ == "__main__":
   main()

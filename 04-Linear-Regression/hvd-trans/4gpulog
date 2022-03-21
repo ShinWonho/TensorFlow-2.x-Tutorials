@@ -1,0 +1,392 @@
+2022-03-08 20:16:43.967517: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2022-03-08 20:16:44.008381: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2022-03-08 20:16:44.028591: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2022-03-08 20:16:44.028591: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   dl019
+  Local device: mlx4_0
+--------------------------------------------------------------------------
+2022-03-08 20:16:45.140132: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcuda.so.1
+2022-03-08 20:16:45.140140: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcuda.so.1
+2022-03-08 20:16:45.140750: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcuda.so.1
+2022-03-08 20:16:45.140750: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcuda.so.1
+2022-03-08 20:16:46.720123: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:02:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-08 20:16:46.721860: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 1 with properties: 
+pciBusID: 0000:04:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-08 20:16:46.723866: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 2 with properties: 
+pciBusID: 0000:83:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-08 20:16:46.725298: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:02:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-08 20:16:46.726750: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 3 with properties: 
+pciBusID: 0000:84:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-08 20:16:46.726784: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2022-03-08 20:16:46.728126: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 1 with properties: 
+pciBusID: 0000:04:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-08 20:16:46.729872: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 2 with properties: 
+pciBusID: 0000:83:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-08 20:16:46.731839: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:02:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-08 20:16:46.732727: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2022-03-08 20:16:46.732784: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2022-03-08 20:16:46.734414: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 3 with properties: 
+pciBusID: 0000:84:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-08 20:16:46.734444: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2022-03-08 20:16:46.734515: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:02:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-08 20:16:46.735548: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcufft.so.10
+2022-03-08 20:16:46.735575: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 1 with properties: 
+pciBusID: 0000:04:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-08 20:16:46.735864: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcurand.so.10
+2022-03-08 20:16:46.736593: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusolver.so.11
+2022-03-08 20:16:46.737348: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 1 with properties: 
+pciBusID: 0000:04:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-08 20:16:46.737799: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusparse.so.11
+2022-03-08 20:16:46.737956: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8
+2022-03-08 20:16:46.738622: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 2 with properties: 
+pciBusID: 0000:83:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-08 20:16:46.740663: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2022-03-08 20:16:46.740725: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2022-03-08 20:16:46.741066: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 2 with properties: 
+pciBusID: 0000:83:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-08 20:16:46.742296: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 3 with properties: 
+pciBusID: 0000:84:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-08 20:16:46.742333: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2022-03-08 20:16:46.743509: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 3 with properties: 
+pciBusID: 0000:84:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-08 20:16:46.743533: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2022-03-08 20:16:46.743853: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcufft.so.10
+2022-03-08 20:16:46.744224: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcurand.so.10
+2022-03-08 20:16:46.745028: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusolver.so.11
+2022-03-08 20:16:46.746273: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusparse.so.11
+2022-03-08 20:16:46.746410: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8
+2022-03-08 20:16:46.747921: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2022-03-08 20:16:46.747968: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2022-03-08 20:16:46.748739: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2022-03-08 20:16:46.748811: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2022-03-08 20:16:46.749637: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0, 1, 2, 3
+2022-03-08 20:16:46.750140: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcufft.so.10
+2022-03-08 20:16:46.750393: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcurand.so.10
+2022-03-08 20:16:46.750456: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-03-08 20:16:46.750942: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusolver.so.11
+2022-03-08 20:16:46.751935: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusparse.so.11
+2022-03-08 20:16:46.752070: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8
+2022-03-08 20:16:46.752173: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcufft.so.10
+2022-03-08 20:16:46.752570: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcurand.so.10
+2022-03-08 20:16:46.753422: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusolver.so.11
+2022-03-08 20:16:46.754267: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:02:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-08 20:16:46.754447: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusparse.so.11
+2022-03-08 20:16:46.754581: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8
+2022-03-08 20:16:46.759173: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0, 1, 2, 3
+2022-03-08 20:16:46.760228: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-03-08 20:16:46.760283: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2022-03-08 20:16:46.760323: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2022-03-08 20:16:46.764878: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:84:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-08 20:16:46.772523: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 3
+2022-03-08 20:16:46.772582: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2022-03-08 20:16:46.790784: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0, 1, 2, 3
+2022-03-08 20:16:46.792384: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-03-08 20:16:46.794698: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0, 1, 2, 3
+2022-03-08 20:16:46.796387: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-03-08 20:16:46.858190: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:83:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-08 20:16:46.943706: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:04:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-08 20:16:46.954985: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 2
+2022-03-08 20:16:46.955112: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2022-03-08 20:16:46.959228: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 1
+2022-03-08 20:16:46.959325: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2022-03-08 20:16:48.064317: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2022-03-08 20:16:48.064362: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      3 
+2022-03-08 20:16:48.064371: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 3:   N 
+2022-03-08 20:16:48.066028: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2022-03-08 20:16:48.066080: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2022-03-08 20:16:48.066089: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2022-03-08 20:16:48.067280: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11396 MB memory) -> physical GPU (device: 3, name: NVIDIA TITAN Xp, pci bus id: 0000:84:00.0, compute capability: 6.1)
+2022-03-08 20:16:48.069413: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11396 MB memory) -> physical GPU (device: 0, name: NVIDIA TITAN Xp, pci bus id: 0000:02:00.0, compute capability: 6.1)
+(404, 13) (404,) (102, 13) (102,)
+2022-03-08 20:16:48.092495: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+(13, 1) (1,)
+<class 'tensorflow.python.ops.resource_variable_ops.ResourceVariable'> True meanless-name:0
+<class 'tensorflow.python.ops.resource_variable_ops.ResourceVariable'> True meanless-name:0
+2022-03-08 20:16:48.095865: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2022-03-08 20:16:48.095898: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      2 
+2022-03-08 20:16:48.095906: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 2:   N 
+2022-03-08 20:16:48.096634: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2022-03-08 20:16:48.096668: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      1 
+2022-03-08 20:16:48.096678: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 1:   N 
+2022-03-08 20:16:48.099541: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2022-03-08 20:16:48.100868: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11396 MB memory) -> physical GPU (device: 2, name: NVIDIA TITAN Xp, pci bus id: 0000:83:00.0, compute capability: 6.1)
+2022-03-08 20:16:48.102435: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11396 MB memory) -> physical GPU (device: 1, name: NVIDIA TITAN Xp, pci bus id: 0000:04:00.0, compute capability: 6.1)
+2022-03-08 20:16:48.124510: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2022-03-08 20:16:48.127059: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2022-03-08 20:16:48.424238: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2022-03-08 20:16:48.429429: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2022-03-08 20:16:48.456346: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2022-03-08 20:16:48.458615: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2022-03-08 20:16:49.659532: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:176] None of the MLIR Optimization Passes are enabled (registered 2)
+2022-03-08 20:16:49.668186: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:176] None of the MLIR Optimization Passes are enabled (registered 2)
+2022-03-08 20:16:49.669656: I tensorflow/core/platform/profile_utils/cpu_utils.cc:114] CPU Frequency: 2597015000 Hz
+2022-03-08 20:16:49.674349: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:176] None of the MLIR Optimization Passes are enabled (registered 2)
+2022-03-08 20:16:49.676158: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:176] None of the MLIR Optimization Passes are enabled (registered 2)
+2022-03-08 20:16:49.677068: I tensorflow/core/platform/profile_utils/cpu_utils.cc:114] CPU Frequency: 2597015000 Hz
+2022-03-08 20:16:49.677639: I tensorflow/core/platform/profile_utils/cpu_utils.cc:114] CPU Frequency: 2597015000 Hz
+2022-03-08 20:16:49.681683: I tensorflow/core/platform/profile_utils/cpu_utils.cc:114] CPU Frequency: 2597015000 Hz
+0 loss: 1725.6472
+0 val loss: 221.81027
+[dl019:309823] 3 more processes have sent help message help-mpi-btl-openib.txt / error in device init
+[dl019:309823] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+1 loss: 7884.904
+2 loss: 1566.7025
+3 loss: 1181.0486
+4 loss: 724.33954
+5 loss: 225.36092
+6 loss: 210.49593
+7 loss: 96.48525
+8 loss: 69.60615
+9 loss: 55.34848
+10 loss: 35.046795
+10 val loss: 110.07824
+11 loss: 41.579758
+12 loss: 31.358316
+13 loss: 31.180853
+14 loss: 30.336292
+15 loss: 28.550592
+16 loss: 27.479055
+17 loss: 26.821615
+18 loss: 25.91239
+19 loss: 25.024797
+20 loss: 24.432266
+20 val loss: 88.97732
+21 loss: 23.734623
+22 loss: 23.08461
+23 loss: 22.573011
+24 loss: 22.03646
+25 loss: 21.563976
+26 loss: 21.155483
+27 loss: 20.761494
+28 loss: 20.422222
+29 loss: 20.118282
+30 loss: 19.843533
+30 val loss: 75.56013
+31 loss: 19.607555
+32 loss: 19.39799
+33 loss: 19.217365
+34 loss: 19.063347
+35 loss: 18.931877
+36 loss: 18.823193
+37 loss: 18.733973
+38 loss: 18.663044
+39 loss: 18.608732
+40 loss: 18.569237
+40 val loss: 67.27451
+41 loss: 18.543404
+42 loss: 18.52968
+43 loss: 18.526943
+44 loss: 18.534016
+45 loss: 18.549856
+46 loss: 18.573538
+47 loss: 18.60415
+48 loss: 18.640934
+49 loss: 18.68317
+50 loss: 18.730198
+50 val loss: 61.807228
+51 loss: 18.781439
+52 loss: 18.836369
+53 loss: 18.8945
+54 loss: 18.95541
+55 loss: 19.018715
+56 loss: 19.084064
+57 loss: 19.151144
+58 loss: 19.219685
+59 loss: 19.289425
+60 loss: 19.360134
+60 val loss: 57.803898
+61 loss: 19.431608
+62 loss: 19.50367
+63 loss: 19.576141
+64 loss: 19.648872
+65 loss: 19.721722
+66 loss: 19.794567
+67 loss: 19.86729
+68 loss: 19.939785
+69 loss: 20.011944
+70 loss: 20.083689
+70 val loss: 54.67214
+71 loss: 20.154936
+72 loss: 20.225597
+73 loss: 20.295609
+74 loss: 20.364893
+75 loss: 20.433401
+76 loss: 20.501072
+77 loss: 20.567844
+78 loss: 20.633684
+79 loss: 20.69853
+80 loss: 20.762339
+80 val loss: 52.13154
+81 loss: 20.825089
+82 loss: 20.886723
+83 loss: 20.947208
+84 loss: 21.006544
+85 loss: 21.064667
+86 loss: 21.12157
+87 loss: 21.177235
+88 loss: 21.231627
+89 loss: 21.284756
+90 loss: 21.336582
+90 val loss: 50.01596
+91 loss: 21.3871
+92 loss: 21.436308
+93 loss: 21.484203
+94 loss: 21.530758
+95 loss: 21.575993
+96 loss: 21.6199
+97 loss: 21.662472
+98 loss: 21.703735
+99 loss: 21.743673
+100 loss: 21.782309
+100 val loss: 48.213436
+101 loss: 21.819654
+102 loss: 21.855696
+103 loss: 21.890474
+104 loss: 21.923985
+105 loss: 21.956245
+106 loss: 21.987276
+107 loss: 22.017094
+108 loss: 22.04572
+109 loss: 22.073164
+110 loss: 22.099459
+110 val loss: 46.646
+111 loss: 22.124628
+112 loss: 22.148685
+113 loss: 22.17165
+114 loss: 22.193546
+115 loss: 22.214418
+116 loss: 22.23426
+117 loss: 22.253113
+118 loss: 22.271015
+119 loss: 22.287973
+120 loss: 22.304005
+120 val loss: 45.258766
+121 loss: 22.319166
+122 loss: 22.333477
+123 loss: 22.346937
+124 loss: 22.359592
+125 loss: 22.371466
+126 loss: 22.38259
+127 loss: 22.392971
+128 loss: 22.402666
+129 loss: 22.411665
+130 loss: 22.420023
+130 val loss: 44.01244
+131 loss: 22.42775
+132 loss: 22.434868
+133 loss: 22.441425
+134 loss: 22.447412
+135 loss: 22.45287
+136 loss: 22.457823
+137 loss: 22.462286
+138 loss: 22.4663
+139 loss: 22.46986
+140 loss: 22.473001
+140 val loss: 42.878304
+141 loss: 22.47575
+142 loss: 22.47813
+143 loss: 22.48015
+144 loss: 22.481836
+145 loss: 22.483202
+146 loss: 22.484264
+147 loss: 22.485058
+148 loss: 22.485598
+149 loss: 22.48589
+150 loss: 22.485956
+150 val loss: 41.834827
+151 loss: 22.48582
+152 loss: 22.485485
+153 loss: 22.484976
+154 loss: 22.484303
+155 loss: 22.483496
+156 loss: 22.482555
+157 loss: 22.4815
+158 loss: 22.480341
+159 loss: 22.479084
+160 loss: 22.477772
+160 val loss: 40.865585
+161 loss: 22.476397
+162 loss: 22.474957
+163 loss: 22.473486
+164 loss: 22.471985
+165 loss: 22.470467
+166 loss: 22.46896
+167 loss: 22.467459
+168 loss: 22.465971
+169 loss: 22.464518
+170 loss: 22.463104
+170 val loss: 39.957897
+171 loss: 22.461742
+172 loss: 22.460434
+173 loss: 22.459208
+174 loss: 22.458044
+175 loss: 22.456974
+176 loss: 22.456005
+177 loss: 22.45514
+178 loss: 22.454393
+179 loss: 22.453762
+180 loss: 22.453259
+180 val loss: 39.101997
+181 loss: 22.452906
+182 loss: 22.452702
+183 loss: 22.452635
+184 loss: 22.45274
+185 loss: 22.453035
+186 loss: 22.45349
+187 loss: 22.454138
+188 loss: 22.454975
+189 loss: 22.456018
+190 loss: 22.457272
+190 val loss: 38.2904
+191 loss: 22.458735
+192 loss: 22.460438
+193 loss: 22.462345
+194 loss: 22.464518
+195 loss: 22.46693
+196 loss: 22.4696
+197 loss: 22.472519
+198 loss: 22.475721
+199 loss: 22.479195
+/data/plrg/ve/lib/python3.8/site-packages/tensorflow/python/keras/engine/base_layer.py:2191: UserWarning: `layer.add_variable` is deprecated and will be removed in a future version. Please use `layer.add_weight` method instead.
+  warnings.warn('`layer.add_variable` is deprecated and '
+/data/plrg/ve/lib/python3.8/site-packages/tensorflow/python/keras/engine/base_layer.py:2191: UserWarning: `layer.add_variable` is deprecated and will be removed in a future version. Please use `layer.add_weight` method instead.
+  warnings.warn('`layer.add_variable` is deprecated and '
+/data/plrg/ve/lib/python3.8/site-packages/tensorflow/python/keras/engine/base_layer.py:2191: UserWarning: `layer.add_variable` is deprecated and will be removed in a future version. Please use `layer.add_weight` method instead.
+  warnings.warn('`layer.add_variable` is deprecated and '
+/data/plrg/ve/lib/python3.8/site-packages/tensorflow/python/keras/engine/base_layer.py:2191: UserWarning: `layer.add_variable` is deprecated and will be removed in a future version. Please use `layer.add_weight` method instead.
+  warnings.warn('`layer.add_variable` is deprecated and '

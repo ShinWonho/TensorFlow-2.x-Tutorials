@@ -3,6 +3,8 @@ import  tensorflow as tf
 import  numpy as np
 from    tensorflow import keras
 import  urllib
+from tensorflow.compat.v1 import string_split
+
 
 
 def parse(line):
@@ -13,7 +15,7 @@ def parse(line):
     # Each line of the dataset is comma-separated and formatted as
     #    color_name, r, g, b
     # so `items` is a list [color_name, r, g, b].
-    items = tf.string_split([line], ",").values
+    items = string_split([line], ",").values
     rgb = tf.strings.to_number(items[1:], out_type=tf.float32) / 255.
     # Represent the color name as a one-hot encoded character sequence.
     color_name = items[0]

@@ -1,0 +1,81 @@
+2022-03-10 17:13:52.728889: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2022-03-10 17:13:54.079835: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcuda.so.1
+2022-03-10 17:13:55.724301: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:04:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-10 17:13:55.724356: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2022-03-10 17:13:55.730586: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2022-03-10 17:13:55.730647: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2022-03-10 17:13:55.733794: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcufft.so.10
+2022-03-10 17:13:55.734112: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcurand.so.10
+2022-03-10 17:13:55.734856: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusolver.so.11
+2022-03-10 17:13:55.736226: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusparse.so.11
+2022-03-10 17:13:55.736397: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8
+2022-03-10 17:13:55.737942: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2022-03-10 17:13:55.738390: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-03-10 17:13:55.739281: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:04:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-10 17:13:55.740681: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2022-03-10 17:13:55.740736: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2022-03-10 17:13:56.498322: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2022-03-10 17:13:56.498386: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2022-03-10 17:13:56.498398: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2022-03-10 17:13:56.500847: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11426 MB memory) -> physical GPU (device: 0, name: NVIDIA TITAN Xp, pci bus id: 0000:04:00.0, compute capability: 6.1)
+2022-03-10 17:13:56.932541: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:176] None of the MLIR Optimization Passes are enabled (registered 2)
+2022-03-10 17:13:56.953735: I tensorflow/core/platform/profile_utils/cpu_utils.cc:114] CPU Frequency: 2597015000 Hz
+2022-03-10 17:13:57.127973: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2022-03-10 17:13:57.551294: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+0 0 loss: 0.3263562023639679
+eval/loss: 0.093814
+1 0 loss: 0.1136978268623352
+2 0 loss: 0.10050217062234879
+3 0 loss: 0.08393041789531708
+4 0 loss: 0.06116560474038124
+5 0 loss: 0.061490289866924286
+6 0 loss: 0.07659663259983063
+7 0 loss: 0.05991765111684799
+8 0 loss: 0.057810768485069275
+9 0 loss: 0.04831317439675331
+10 0 loss: 0.045343708246946335
+eval/loss: 0.061844
+11 0 loss: 0.051595188677310944
+12 0 loss: 0.05902852118015289
+13 0 loss: 0.05130774527788162
+14 0 loss: 0.0506737045943737
+15 0 loss: 0.038656361401081085
+16 0 loss: 0.05594681203365326
+17 0 loss: 0.04194272309541702
+18 0 loss: 0.03867558389902115
+19 0 loss: 0.04326911270618439
+20 0 loss: 0.04241839796304703
+eval/loss: 0.061351
+21 0 loss: 0.028287049382925034
+22 0 loss: 0.031986817717552185
+23 0 loss: 0.02945392206311226
+24 0 loss: 0.025673329830169678
+25 0 loss: 0.02227269858121872
+26 0 loss: 0.0337182879447937
+27 0 loss: 0.026792097836732864
+28 0 loss: 0.021915150806307793
+29 0 loss: 0.020888717845082283
+30 0 loss: 0.023505086079239845
+eval/loss: 0.060913
+31 0 loss: 0.018747035413980484
+32 0 loss: 0.02017994038760662
+33 0 loss: 0.018959686160087585
+34 0 loss: 0.016697775572538376
+35 0 loss: 0.014845763333141804
+36 0 loss: 0.011605627834796906
+37 0 loss: 0.017410267144441605
+38 0 loss: 0.018538054078817368
+39 0 loss: 0.013400522992014885
+Colorbot is ready to generate colors!
+Give me a color name (or press enter to exit): rgb: (199, 21, 8)
+Give me a color name (or press enter to exit): rgb: (199, 21, 8)
+Give me a color name (or press enter to exit): rgb: (82, 71, 180)
+Give me a color name (or press enter to exit): rgb: (0, 36, 201)
+Give me a color name (or press enter to exit): rgb: (241, 45, 123)
+Give me a color name (or press enter to exit): rgb: (234, 113, 12)
+Give me a color name (or press enter to exit): 

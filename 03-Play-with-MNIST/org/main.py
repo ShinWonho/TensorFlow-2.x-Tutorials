@@ -1,7 +1,11 @@
 import  tensorflow as tf
 from    tensorflow.keras import datasets, layers, optimizers, Sequential, metrics
 
-
+# tensorboard
+import datetime
+current_time = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+train_log_dir = 'logs/org-board/' + current_time + '/train'
+train_summary_writer = tf.summary.create_file_writer(train_log_dir)
 
 
 (xs, ys),_ = datasets.mnist.load_data()
@@ -20,7 +24,8 @@ network = Sequential([layers.Dense(256, activation='relu'),
 network.build(input_shape=(None, 28*28))
 network.summary()
 
-optimizer = optimizers.SGD(lr=0.01)
+# manual : lr -> learning_rate
+optimizer = optimizers.SGD(learning_rate=0.01)
 acc_meter = metrics.Accuracy()
 
 for step, (x,y) in enumerate(db):
@@ -36,6 +41,11 @@ for step, (x,y) in enumerate(db):
         loss = tf.square(out-y_onehot)
         # [b]
         loss = tf.reduce_sum(loss) / 32
+
+    # tensorboard
+    with train_summary_writer.as_default():
+        tf.summary.scalar('loss', loss, step=step)
+
 
 
     acc_meter.update_state(tf.argmax(out, axis=1), y)

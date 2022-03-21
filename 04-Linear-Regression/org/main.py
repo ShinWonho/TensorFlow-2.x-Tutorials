@@ -3,6 +3,13 @@ import  numpy as np
 from    tensorflow import keras
 import  os
 
+# tensorboard
+import datetime
+current_time = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+train_log_dir = 'logs/org-board/' + current_time + '/train'
+train_summary_writer = tf.summary.create_file_writer(train_log_dir)
+
+
 
 class Regressor(keras.layers.Layer):
 
@@ -66,7 +73,14 @@ def main():
             grads = tape.gradient(loss, model.trainable_variables)
             optimizer.apply_gradients(zip(grads, model.trainable_variables))
 
+            # tensorboard
+            with train_summary_writer.as_default():
+                tf.summary.scalar('loss', loss, step=200*epoch+step)
+
         print(epoch, 'loss:', loss.numpy())
+
+
+
 
 
         if epoch % 10 == 0:

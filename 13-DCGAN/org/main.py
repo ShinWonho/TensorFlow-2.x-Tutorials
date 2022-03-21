@@ -2,9 +2,15 @@ import  os
 import  numpy as np
 import  tensorflow as tf
 from    tensorflow import keras
-from    scipy.misc import toimage
+# from    scipy.misc import toimage
 
 from    gan import Generator, Discriminator
+
+# tensorboard
+import datetime
+current_time = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+train_log_dir = 'logs/org-board/' + current_time + '/train'
+train_summary_writer = tf.summary.create_file_writer(train_log_dir)
 
 
 
@@ -35,7 +41,7 @@ def save_result(val_out, val_block_size, image_fn, color_mode):
 
     if final_image.shape[2] == 1:
         final_image = np.squeeze(final_image, axis=2)
-    toimage(final_image, mode=color_mode).save(image_fn)
+    # toimage(final_image, mode=color_mode).save(image_fn)
 
 
 # shorten sigmoid cross entropy loss calculation
@@ -82,7 +88,7 @@ def main():
 
     # hyper parameters
     z_dim = 100
-    epochs = 3000000
+    epochs = 300000
     batch_size = 128
     learning_rate = 0.0002
     is_training = True
@@ -135,10 +141,22 @@ def main():
         grads = tape.gradient(d_loss, discriminator.trainable_variables)
         d_optimizer.apply_gradients(zip(grads, discriminator.trainable_variables))
 
+        # tensorboard
+        with train_summary_writer.as_default():
+            tf.summary.scalar('d_loss', d_loss, step=epoch)
+
+
+
         with tf.GradientTape() as tape:
             g_loss = g_loss_fn(generator, discriminator, batch_z, is_training)
         grads = tape.gradient(g_loss, generator.trainable_variables)
         g_optimizer.apply_gradients(zip(grads, generator.trainable_variables))
+
+
+        # tensorboard
+        # with train_summary_writer.as_default():
+        #     tf.summary.scalar('g_loss', g_loss, step=epoch)
+
 
 
 
@@ -146,12 +164,14 @@ def main():
 
             print(epoch, 'd loss:', float(d_loss), 'g loss:', float(g_loss))
 
+            # manual : ocmment out saving
+            '''
             # validation results at every epoch
             val_z = np.random.uniform(-1, 1, size=(val_size, z_dim))
             fake_image = generator(val_z, training=False)
             image_fn = os.path.join('images', 'gan-val-{:03d}.png'.format(epoch + 1))
             save_result(fake_image.numpy(), val_block_size, image_fn, color_mode='L')
-
+            '''
 
 
 

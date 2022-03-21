@@ -1,13 +1,20 @@
 import  os
 import  time
 import  numpy as np
-import  matplotlib.pyplot as plt
+# import  matplotlib.pyplot as plt
 import  tensorflow as tf
 import  numpy as np
 from    tensorflow import keras
 
 
 from    model import Generator, Discriminator, cycle_consistency_loss, generator_loss, discriminator_loss
+
+# tensorboard
+import datetime
+current_time = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+train_log_dir = 'logs/org-board/' + current_time + '/train'
+train_summary_writer = tf.summary.create_file_writer(train_log_dir)
+
 
 
 
@@ -93,7 +100,7 @@ def generate_images(A, B, B2A, A2B, epoch):
     :param epoch:
     :return:
     """
-    plt.figure(figsize=(15, 15))
+    #plt.figure(figsize=(15, 15))
     A = tf.reshape(A, [256, 256, 3]).numpy()
     B = tf.reshape(B, [256, 256, 3]).numpy()
     B2A = tf.reshape(B2A, [256, 256, 3]).numpy()
@@ -101,6 +108,7 @@ def generate_images(A, B, B2A, A2B, epoch):
     display_list = [A, B, A2B, B2A]
 
     title = ['A', 'B', 'A2B', 'B2A']
+    '''
     for i in range(4):
         plt.subplot(2, 2, i + 1)
         plt.title(title[i])
@@ -109,7 +117,7 @@ def generate_images(A, B, B2A, A2B, epoch):
         plt.axis('off')
     plt.savefig('images/generated_%d.png'%epoch)
     plt.close()
-
+    '''
 
 def train(train_datasetA, train_datasetB, epochs, lsgan=True, cyc_lambda=10):
 
@@ -165,6 +173,12 @@ def train(train_datasetA, train_datasetB, epochs, lsgan=True, cyc_lambda=10):
         discA_optimizer.apply_gradients(zip(discA_gradients, discA.trainable_variables))
         discB_optimizer.apply_gradients(zip(discB_gradients, discB.trainable_variables))
 
+        # tensorboard
+        with train_summary_writer.as_default():
+            tf.summary.scalar('genA2B_loss', genA2B_loss, step=epoch)
+            tf.summary.scalar('genB2A_loss', genB2A_loss, step=epoch)
+            tf.summary.scalar('discA_loss', discA_loss, step=epoch)
+            tf.summary.scalar('discB_loss', discB_loss, step=epoch)
 
         if epoch % 40 == 0:
             generate_images(trainA, trainB, genB2A_output, genA2B_output, epoch)

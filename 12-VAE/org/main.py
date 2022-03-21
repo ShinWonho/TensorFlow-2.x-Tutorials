@@ -2,8 +2,15 @@ import  os
 import  tensorflow as tf
 import  numpy as np
 from    tensorflow import keras
-from    PIL import Image
-from    matplotlib import pyplot as plt
+# from    PIL import Image
+# from    matplotlib import pyplot as plt
+
+# tensorboard
+import datetime
+current_time = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+train_log_dir = 'logs/org-board/' + current_time + '/train'
+train_summary_writer = tf.summary.create_file_writer(train_log_dir)
+
 
 
 tf.random.set_seed(22)
@@ -27,7 +34,7 @@ print(x_test.shape, y_test.shape)
 
 
 # image grid
-new_im = Image.new('L', (280, 280))
+# new_im = Image.new('L', (280, 280))
 
 image_size = 28*28
 h_dim = 512
@@ -128,6 +135,12 @@ for epoch in range(num_epochs):
             tf.clip_by_norm(g, 15)
         optimizer.apply_gradients(zip(gradients, model.trainable_variables))
 
+        # tensorboard
+        with train_summary_writer.as_default():
+            tf.summary.scalar('loss', loss, step=num_epochs*epoch+step)
+
+
+
         if (step + 1) % 50 == 0:
             print("Epoch[{}/{}], Step [{}/{}], Reconst Loss: {:.4f}, KL Div: {:.4f}"
                   .format(epoch + 1, num_epochs, step + 1, num_batches, float(reconstruction_loss), float(kl_div)))
@@ -143,6 +156,7 @@ for epoch in range(num_epochs):
 
     # since we can not find image_grid function from vesion 2.0
     # we do it by hand.
+    '''
     index = 0
     for i in range(0, 280, 28):
         for j in range(0, 280, 28):
@@ -154,6 +168,7 @@ for epoch in range(num_epochs):
     new_im.save('images/vae_sampled_epoch_%d.png' % (epoch + 1))
     plt.imshow(np.asarray(new_im))
     plt.show()
+    '''
 
     # Save the reconstructed images of last batch
     out_logits, _, _ = model(x[:batch_size // 2])
@@ -165,6 +180,7 @@ for epoch in range(num_epochs):
     x_concat = tf.concat([x, out], axis=0).numpy() * 255.
     x_concat = x_concat.astype(np.uint8)
 
+    '''
     index = 0
     for i in range(0, 280, 28):
         for j in range(0, 280, 28):
@@ -176,6 +192,7 @@ for epoch in range(num_epochs):
     new_im.save('images/vae_reconstructed_epoch_%d.png' % (epoch + 1))
     plt.imshow(np.asarray(new_im))
     plt.show()
+    '''
     print('New images saved !')
 
 

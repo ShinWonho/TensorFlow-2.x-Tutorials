@@ -11,7 +11,7 @@ if gpus:
 import numpy as np
 from tensorflow import keras
 import time
-from matplotlib import pyplot as plt
+# from matplotlib import pyplot as plt
 from gd import Discriminator, Generator
 tf.random.set_seed(22, )
 np.random.seed(22, )
@@ -100,12 +100,14 @@ def generate_images(model, test_input, tar, epoch, ):
   plt.figure(figsize=(15, 15), )
   display_list = [test_input[0], tar[0], prediction[0]]
   title = ["Input Image", "Ground Truth", "Predicted Image"]
+  '''
   for i in range(3, ):
     plt.subplot(1, 3, i + 1, )
     plt.title(title[i], )
     plt.imshow(display_list[i] * 0.5 + 0.5, )
     plt.axis("off", )
   plt.savefig("images/epoch%d.png" % epoch, )
+  '''
   if hvd.rank() == 0:
     print("saved images.", )
 def main():

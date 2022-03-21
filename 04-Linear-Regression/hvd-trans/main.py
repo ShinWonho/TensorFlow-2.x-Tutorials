@@ -10,6 +10,14 @@ if gpus:
 import numpy as np
 from tensorflow import keras
 import os
+
+# tensorboard
+import datetime
+current_time = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+train_log_dir = 'logs/hvd-trans-board/' + current_time + '/train'
+train_summary_writer = tf.summary.create_file_writer(train_log_dir)
+
+
 class Regressor(keras.layers.Layer, ):
   def __init__(self, ):
     super(Regressor, self, ).__init__()
@@ -48,6 +56,12 @@ def main():
       grads = tape.gradient(loss, model.trainable_variables, )
       id_new = zip(grads, model.trainable_variables, )
       optimizer.apply_gradients(id_new, )
+
+      # tensorboard
+      with train_summary_writer.as_default():
+        tf.summary.scalar('loss', loss, step=epoch*200+step)
+
+
       global hvd_broadcast_done
       if not hvd_broadcast_done:
         hvd.broadcast_variables([x[1] for x in id_new], root_rank=0, )
@@ -55,6 +69,7 @@ def main():
         hvd_broadcast_done = True
     if hvd.rank() == 0:
       print(epoch, "loss:", loss.numpy(), )
+ 
     if epoch % 10 == 0:
       for (x, y) in db_val:
         logits = model(x, )

@@ -1,6 +1,23 @@
 from tensorflow import keras
 from bert import get_base_dict, get_model, gen_batch_inputs
 
+# manual : import hvd
+import tensorflow as tf
+import horovod.tensorflow.keras as hvd
+hvd.init()
+gpus = tf.config.experimental.list_physical_devices("GPU", )
+for gpu in gpus:
+  tf.config.experimental.set_memory_growth(gpu, True, )
+if gpus:
+  tf.config.experimental.set_visible_devices(gpus[hvd.local_rank()], "GPU", )
+
+# tensorboard
+import datetime
+current_time = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+log_dir = 'logs/hvd-trans-board-manual/' + current_time + '/train'
+tensorboard_callback = keras.callbacks.TensorBoard(log_dir=log_dir, histogram_freq=1)
+
+
 
 # A toy input example
 sentence_pairs = [
@@ -50,7 +67,8 @@ model.fit_generator(
     validation_data=_generator(),
     validation_steps=100,
     callbacks=[
-        keras.callbacks.EarlyStopping(monitor='val_loss', patience=5)
+        keras.callbacks.EarlyStopping(monitor='val_loss', patience=5),
+        tensorboard_callback
     ],
 )
 

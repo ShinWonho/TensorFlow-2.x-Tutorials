@@ -14,6 +14,13 @@ if gpus:
 import numpy as np
 from tensorflow import keras
 from model import Generator, Discriminator, cycle_consistency_loss, generator_loss, discriminator_loss
+# tensorboard
+import datetime
+current_time = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+train_log_dir = 'logs/hvd-trans-board/' + current_time + '/train'
+train_summary_writer = tf.summary.create_file_writer(train_log_dir)
+
+
 tf.random.set_seed(22, )
 np.random.seed(22, )
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
@@ -119,6 +126,15 @@ def train(train_datasetA, train_datasetB, epochs, lsgan=True, cyc_lambda=10, ):
       hvd_broadcast_done = True
     discA_optimizer.apply_gradients(zip(discA_gradients, discA.trainable_variables, ), )
     discB_optimizer.apply_gradients(zip(discB_gradients, discB.trainable_variables, ), )
+
+    # tensorboard
+    with train_summary_writer.as_default():
+        tf.summary.scalar('genA2B_loss', genA2B_loss, step=epoch)
+        tf.summary.scalar('genB2A_loss', genB2A_loss, step=epoch)
+        tf.summary.scalar('discA_loss', discA_loss, step=epoch)
+        tf.summary.scalar('discB_loss', discB_loss, step=epoch)
+
+
     if epoch % 40 == 0:
       generate_images(trainA, trainB, genB2A_output, genA2B_output, epoch, )
       if hvd.rank() == 0:

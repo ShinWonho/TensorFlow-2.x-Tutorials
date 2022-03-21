@@ -5,6 +5,13 @@ from    tensorflow.keras import datasets, layers, optimizers
 import  argparse
 import  numpy as np
 
+# tensorboard
+import datetime
+current_time = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+train_log_dir = 'logs/org-board-epoch/' + current_time + '/train'
+train_summary_writer = tf.summary.create_file_writer(train_log_dir)
+
+
 
 
 from    network import VGG16
@@ -103,6 +110,8 @@ def main():
             grads = [ tf.clip_by_norm(g, 15) for g in grads]
             optimizer.apply_gradients(zip(grads, model.trainable_variables))
 
+
+
             if step % 40 == 0:
                 # for g in grads:
                 #     print(tf.norm(g).numpy())
@@ -124,6 +133,10 @@ def main():
                 metric.update_state(y, logits)
             print('test acc:', metric.result().numpy())
             metric.reset_states()
+
+        # tensorboard
+        with train_summary_writer.as_default():
+            tf.summary.scalar('loss', loss, step=epoch)
 
 
 

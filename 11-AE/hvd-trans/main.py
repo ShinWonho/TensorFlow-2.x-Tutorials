@@ -10,8 +10,16 @@ if gpus:
   tf.config.experimental.set_visible_devices(gpus[hvd.local_rank()], "GPU", )
 import numpy as np
 from tensorflow import keras
-from PIL import Image
-from matplotlib import pyplot as plt
+# from PIL import Image
+# from matplotlib import pyplot as plt
+
+# tensorboard
+import datetime
+current_time = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+train_log_dir = 'logs/hvd-trans-board-var-epoch/' + current_time + '/train'
+train_summary_writer = tf.summary.create_file_writer(train_log_dir)
+
+
 tf.random.set_seed(22, )
 np.random.seed(22, )
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
@@ -22,7 +30,7 @@ if hvd.rank() == 0:
   print(x_train.shape, y_train.shape, )
 if hvd.rank() == 0:
   print(x_test.shape, y_test.shape, )
-new_im = Image.new("L", (280, 280), )
+# new_im = Image.new("L", (280, 280), )
 image_size = 28 * 28
 h_dim = 20
 num_epochs = 55
@@ -69,11 +77,19 @@ for epoch in range(num_epochs, ):
     (gradients, _) = tf.clip_by_global_norm(gradients, 15, )
     id_new = zip(gradients, model.trainable_variables, )
     optimizer.apply_gradients(id_new, )
-    global hvd_broadcast_done
+
+    # manual : global scope error
+    # global hvd_broadcast_done
     if not hvd_broadcast_done:
-      hvd.broadcast_variables([x[1] for x in id_new], root_rank=0, )
+      hvd.broadcast_variables(model.variables, root_rank=0, )
       hvd.broadcast_variables(optimizer.variables(), root_rank=0, )
       hvd_broadcast_done = True
+
+    # tensorboard
+    with train_summary_writer.as_default():
+        if hvd.rank() == 0:
+            tf.summary.scalar('loss', reconstruction_loss, step=epoch*num_epochs + step)
+
     if (step + 1) % 50 == 0:
       if hvd.rank() == 0:
         print("Epoch[{}/{}], Step [{}/{}], Reconst Loss: {:.4f}".format(epoch + 1, num_epochs, step + 1, num_batches, float(reconstruction_loss, ), ), )
@@ -83,6 +99,7 @@ for epoch in range(num_epochs, ):
   x = tf.reshape(x[:batch_size // 2], [-1, 28, 28], )
   x_concat = tf.concat([x, out], axis=0, ).numpy() * 255.0
   x_concat = x_concat.astype(np.uint8, )
+  '''
   index = 0
   for i in range(0, 280, 28, ):
     for j in range(0, 280, 28, ):
@@ -94,5 +111,6 @@ for epoch in range(num_epochs, ):
     new_im.save("images/vae_reconstructed_epoch_%d.png" % (epoch + 1), )
   plt.imshow(np.asarray(new_im, ), )
   plt.show()
+  '''
   if hvd.rank() == 0:
     print("New images saved !", )

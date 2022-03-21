@@ -1,0 +1,762 @@
+2022-03-17 15:47:14.755473: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2022-03-17 15:47:16.043696: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcuda.so.1
+2022-03-17 15:47:17.774909: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:04:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-17 15:47:17.774964: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2022-03-17 15:47:17.780977: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2022-03-17 15:47:17.781027: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2022-03-17 15:47:17.783995: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcufft.so.10
+2022-03-17 15:47:17.784334: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcurand.so.10
+2022-03-17 15:47:17.785054: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusolver.so.11
+2022-03-17 15:47:17.786373: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusparse.so.11
+2022-03-17 15:47:17.786525: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8
+2022-03-17 15:47:17.787966: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2022-03-17 15:47:17.788429: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-03-17 15:47:17.789440: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:04:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-17 15:47:17.790800: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2022-03-17 15:47:17.790842: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2022-03-17 15:47:18.550442: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2022-03-17 15:47:18.550507: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2022-03-17 15:47:18.550518: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2022-03-17 15:47:18.552989: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11426 MB memory) -> physical GPU (device: 0, name: NVIDIA TITAN Xp, pci bus id: 0000:04:00.0, compute capability: 6.1)
+(60000, 28, 28) (60000,)
+(10000, 28, 28) (10000,)
+Model: "vae"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+dense (Dense)                multiple                  401920    
+_________________________________________________________________
+dense_1 (Dense)              multiple                  10260     
+_________________________________________________________________
+dense_2 (Dense)              multiple                  10260     
+_________________________________________________________________
+dense_3 (Dense)              multiple                  10752     
+_________________________________________________________________
+dense_4 (Dense)              multiple                  402192    
+=================================================================
+Total params: 835,384
+Trainable params: 835,384
+Non-trainable params: 0
+_________________________________________________________________
+2022-03-17 15:47:19.786627: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2022-03-17 15:47:20.221592: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+Epoch[1/55], Step [50/600], Reconst Loss: 312.3513, KL Div: 12.6692
+Epoch[1/55], Step [100/600], Reconst Loss: 278.8702, KL Div: 15.0189
+Epoch[1/55], Step [150/600], Reconst Loss: 257.7613, KL Div: 15.5966
+Epoch[1/55], Step [200/600], Reconst Loss: 274.4601, KL Div: 13.9280
+Epoch[1/55], Step [250/600], Reconst Loss: 252.1322, KL Div: 15.0663
+Epoch[1/55], Step [300/600], Reconst Loss: 267.5947, KL Div: 15.6927
+Epoch[1/55], Step [350/600], Reconst Loss: 261.4445, KL Div: 14.5618
+Epoch[1/55], Step [400/600], Reconst Loss: 247.0854, KL Div: 15.3772
+Epoch[1/55], Step [450/600], Reconst Loss: 251.3275, KL Div: 15.8487
+Epoch[1/55], Step [500/600], Reconst Loss: 244.3685, KL Div: 15.5298
+Epoch[1/55], Step [550/600], Reconst Loss: 233.5874, KL Div: 15.1288
+Epoch[1/55], Step [600/600], Reconst Loss: 245.8827, KL Div: 15.6111
+New images saved !
+Epoch[2/55], Step [50/600], Reconst Loss: 245.1773, KL Div: 15.5512
+Epoch[2/55], Step [100/600], Reconst Loss: 240.1784, KL Div: 15.4491
+Epoch[2/55], Step [150/600], Reconst Loss: 244.6316, KL Div: 15.3430
+Epoch[2/55], Step [200/600], Reconst Loss: 227.6954, KL Div: 15.8731
+Epoch[2/55], Step [250/600], Reconst Loss: 246.3992, KL Div: 15.3147
+Epoch[2/55], Step [300/600], Reconst Loss: 235.2506, KL Div: 16.4516
+Epoch[2/55], Step [350/600], Reconst Loss: 249.0974, KL Div: 14.3252
+Epoch[2/55], Step [400/600], Reconst Loss: 231.2393, KL Div: 15.1157
+Epoch[2/55], Step [450/600], Reconst Loss: 252.7026, KL Div: 15.9329
+Epoch[2/55], Step [500/600], Reconst Loss: 244.4847, KL Div: 16.2624
+Epoch[2/55], Step [550/600], Reconst Loss: 233.7292, KL Div: 15.3735
+Epoch[2/55], Step [600/600], Reconst Loss: 227.6878, KL Div: 15.1895
+New images saved !
+Epoch[3/55], Step [50/600], Reconst Loss: 231.1449, KL Div: 15.5908
+Epoch[3/55], Step [100/600], Reconst Loss: 244.6978, KL Div: 15.5283
+Epoch[3/55], Step [150/600], Reconst Loss: 232.3901, KL Div: 15.2113
+Epoch[3/55], Step [200/600], Reconst Loss: 231.5613, KL Div: 15.8462
+Epoch[3/55], Step [250/600], Reconst Loss: 227.4411, KL Div: 15.2575
+Epoch[3/55], Step [300/600], Reconst Loss: 239.0692, KL Div: 16.1403
+Epoch[3/55], Step [350/600], Reconst Loss: 245.8112, KL Div: 15.9453
+Epoch[3/55], Step [400/600], Reconst Loss: 224.7430, KL Div: 16.6728
+Epoch[3/55], Step [450/600], Reconst Loss: 219.1885, KL Div: 15.3270
+Epoch[3/55], Step [500/600], Reconst Loss: 228.8666, KL Div: 15.8397
+Epoch[3/55], Step [550/600], Reconst Loss: 241.6504, KL Div: 14.9129
+Epoch[3/55], Step [600/600], Reconst Loss: 229.9187, KL Div: 15.5828
+New images saved !
+Epoch[4/55], Step [50/600], Reconst Loss: 237.7147, KL Div: 16.0880
+Epoch[4/55], Step [100/600], Reconst Loss: 228.5506, KL Div: 16.1642
+Epoch[4/55], Step [150/600], Reconst Loss: 232.8309, KL Div: 15.1663
+Epoch[4/55], Step [200/600], Reconst Loss: 241.2583, KL Div: 16.4522
+Epoch[4/55], Step [250/600], Reconst Loss: 238.8209, KL Div: 16.3840
+Epoch[4/55], Step [300/600], Reconst Loss: 231.2820, KL Div: 15.5765
+Epoch[4/55], Step [350/600], Reconst Loss: 245.9848, KL Div: 16.3728
+Epoch[4/55], Step [400/600], Reconst Loss: 231.8730, KL Div: 15.8093
+Epoch[4/55], Step [450/600], Reconst Loss: 222.5453, KL Div: 16.2647
+Epoch[4/55], Step [500/600], Reconst Loss: 233.7984, KL Div: 15.7505
+Epoch[4/55], Step [550/600], Reconst Loss: 232.3407, KL Div: 16.6438
+Epoch[4/55], Step [600/600], Reconst Loss: 228.5991, KL Div: 15.4831
+New images saved !
+Epoch[5/55], Step [50/600], Reconst Loss: 230.8945, KL Div: 16.2006
+Epoch[5/55], Step [100/600], Reconst Loss: 230.6643, KL Div: 17.0356
+Epoch[5/55], Step [150/600], Reconst Loss: 223.9025, KL Div: 15.3602
+Epoch[5/55], Step [200/600], Reconst Loss: 237.9742, KL Div: 15.6007
+Epoch[5/55], Step [250/600], Reconst Loss: 231.5587, KL Div: 15.9150
+Epoch[5/55], Step [300/600], Reconst Loss: 230.9499, KL Div: 15.3470
+Epoch[5/55], Step [350/600], Reconst Loss: 244.6609, KL Div: 16.4087
+Epoch[5/55], Step [400/600], Reconst Loss: 230.7663, KL Div: 16.1902
+Epoch[5/55], Step [450/600], Reconst Loss: 232.3626, KL Div: 16.8606
+Epoch[5/55], Step [500/600], Reconst Loss: 226.9099, KL Div: 16.0898
+Epoch[5/55], Step [550/600], Reconst Loss: 238.7872, KL Div: 15.9967
+Epoch[5/55], Step [600/600], Reconst Loss: 236.4197, KL Div: 16.3254
+New images saved !
+Epoch[6/55], Step [50/600], Reconst Loss: 239.6677, KL Div: 16.2300
+Epoch[6/55], Step [100/600], Reconst Loss: 220.8345, KL Div: 16.1720
+Epoch[6/55], Step [150/600], Reconst Loss: 226.3334, KL Div: 15.9146
+Epoch[6/55], Step [200/600], Reconst Loss: 225.8929, KL Div: 16.6521
+Epoch[6/55], Step [250/600], Reconst Loss: 243.2113, KL Div: 16.2338
+Epoch[6/55], Step [300/600], Reconst Loss: 224.3198, KL Div: 15.9440
+Epoch[6/55], Step [350/600], Reconst Loss: 224.0123, KL Div: 17.0463
+Epoch[6/55], Step [400/600], Reconst Loss: 220.3232, KL Div: 15.5491
+Epoch[6/55], Step [450/600], Reconst Loss: 233.7102, KL Div: 15.3168
+Epoch[6/55], Step [500/600], Reconst Loss: 226.5644, KL Div: 15.7111
+Epoch[6/55], Step [550/600], Reconst Loss: 235.8088, KL Div: 15.4604
+Epoch[6/55], Step [600/600], Reconst Loss: 224.0380, KL Div: 16.7296
+New images saved !
+Epoch[7/55], Step [50/600], Reconst Loss: 236.1796, KL Div: 15.4999
+Epoch[7/55], Step [100/600], Reconst Loss: 230.1475, KL Div: 16.8452
+Epoch[7/55], Step [150/600], Reconst Loss: 221.7334, KL Div: 16.0156
+Epoch[7/55], Step [200/600], Reconst Loss: 235.4509, KL Div: 16.1624
+Epoch[7/55], Step [250/600], Reconst Loss: 238.3722, KL Div: 14.9257
+Epoch[7/55], Step [300/600], Reconst Loss: 230.8620, KL Div: 16.1865
+Epoch[7/55], Step [350/600], Reconst Loss: 233.1159, KL Div: 15.4518
+Epoch[7/55], Step [400/600], Reconst Loss: 233.8325, KL Div: 16.2412
+Epoch[7/55], Step [450/600], Reconst Loss: 218.7174, KL Div: 15.5398
+Epoch[7/55], Step [500/600], Reconst Loss: 227.6130, KL Div: 16.5195
+Epoch[7/55], Step [550/600], Reconst Loss: 222.3893, KL Div: 15.5098
+Epoch[7/55], Step [600/600], Reconst Loss: 220.6437, KL Div: 16.0471
+New images saved !
+Epoch[8/55], Step [50/600], Reconst Loss: 233.5130, KL Div: 16.0753
+Epoch[8/55], Step [100/600], Reconst Loss: 227.8945, KL Div: 16.2222
+Epoch[8/55], Step [150/600], Reconst Loss: 238.5428, KL Div: 16.2982
+Epoch[8/55], Step [200/600], Reconst Loss: 244.6798, KL Div: 15.8427
+Epoch[8/55], Step [250/600], Reconst Loss: 217.3321, KL Div: 16.4467
+Epoch[8/55], Step [300/600], Reconst Loss: 214.9146, KL Div: 16.6778
+Epoch[8/55], Step [350/600], Reconst Loss: 233.6986, KL Div: 15.8548
+Epoch[8/55], Step [400/600], Reconst Loss: 216.8231, KL Div: 16.1139
+Epoch[8/55], Step [450/600], Reconst Loss: 224.5611, KL Div: 16.1906
+Epoch[8/55], Step [500/600], Reconst Loss: 213.7150, KL Div: 15.2268
+Epoch[8/55], Step [550/600], Reconst Loss: 223.8077, KL Div: 17.1815
+Epoch[8/55], Step [600/600], Reconst Loss: 230.9950, KL Div: 15.9543
+New images saved !
+Epoch[9/55], Step [50/600], Reconst Loss: 219.0934, KL Div: 16.5385
+Epoch[9/55], Step [100/600], Reconst Loss: 235.4839, KL Div: 15.8731
+Epoch[9/55], Step [150/600], Reconst Loss: 225.1650, KL Div: 17.5106
+Epoch[9/55], Step [200/600], Reconst Loss: 236.7622, KL Div: 16.4116
+Epoch[9/55], Step [250/600], Reconst Loss: 229.0596, KL Div: 16.6743
+Epoch[9/55], Step [300/600], Reconst Loss: 226.6263, KL Div: 15.9962
+Epoch[9/55], Step [350/600], Reconst Loss: 231.8672, KL Div: 16.1880
+Epoch[9/55], Step [400/600], Reconst Loss: 225.5889, KL Div: 14.7386
+Epoch[9/55], Step [450/600], Reconst Loss: 233.0384, KL Div: 16.7254
+Epoch[9/55], Step [500/600], Reconst Loss: 238.2783, KL Div: 16.2839
+Epoch[9/55], Step [550/600], Reconst Loss: 219.4581, KL Div: 16.3708
+Epoch[9/55], Step [600/600], Reconst Loss: 228.9429, KL Div: 16.2308
+New images saved !
+Epoch[10/55], Step [50/600], Reconst Loss: 227.6250, KL Div: 16.3601
+Epoch[10/55], Step [100/600], Reconst Loss: 229.5255, KL Div: 15.9024
+Epoch[10/55], Step [150/600], Reconst Loss: 218.4092, KL Div: 16.0369
+Epoch[10/55], Step [200/600], Reconst Loss: 226.6364, KL Div: 15.8333
+Epoch[10/55], Step [250/600], Reconst Loss: 230.0063, KL Div: 15.8778
+Epoch[10/55], Step [300/600], Reconst Loss: 223.1898, KL Div: 15.6759
+Epoch[10/55], Step [350/600], Reconst Loss: 234.3347, KL Div: 15.7551
+Epoch[10/55], Step [400/600], Reconst Loss: 225.8009, KL Div: 15.8238
+Epoch[10/55], Step [450/600], Reconst Loss: 230.7420, KL Div: 16.0883
+Epoch[10/55], Step [500/600], Reconst Loss: 217.5943, KL Div: 15.0455
+Epoch[10/55], Step [550/600], Reconst Loss: 226.6252, KL Div: 16.5184
+Epoch[10/55], Step [600/600], Reconst Loss: 222.9938, KL Div: 16.4474
+New images saved !
+Epoch[11/55], Step [50/600], Reconst Loss: 225.4417, KL Div: 15.4603
+Epoch[11/55], Step [100/600], Reconst Loss: 228.1878, KL Div: 15.8973
+Epoch[11/55], Step [150/600], Reconst Loss: 226.9892, KL Div: 15.8647
+Epoch[11/55], Step [200/600], Reconst Loss: 229.3662, KL Div: 15.4350
+Epoch[11/55], Step [250/600], Reconst Loss: 230.8027, KL Div: 15.8089
+Epoch[11/55], Step [300/600], Reconst Loss: 227.7607, KL Div: 16.2554
+Epoch[11/55], Step [350/600], Reconst Loss: 221.5211, KL Div: 16.4919
+Epoch[11/55], Step [400/600], Reconst Loss: 221.5642, KL Div: 16.0271
+Epoch[11/55], Step [450/600], Reconst Loss: 217.0475, KL Div: 16.3352
+Epoch[11/55], Step [500/600], Reconst Loss: 228.1914, KL Div: 16.9139
+Epoch[11/55], Step [550/600], Reconst Loss: 226.4583, KL Div: 16.4978
+Epoch[11/55], Step [600/600], Reconst Loss: 233.0598, KL Div: 17.6450
+New images saved !
+Epoch[12/55], Step [50/600], Reconst Loss: 230.1216, KL Div: 16.3968
+Epoch[12/55], Step [100/600], Reconst Loss: 221.2996, KL Div: 16.7090
+Epoch[12/55], Step [150/600], Reconst Loss: 220.9001, KL Div: 15.7132
+Epoch[12/55], Step [200/600], Reconst Loss: 235.9319, KL Div: 15.9636
+Epoch[12/55], Step [250/600], Reconst Loss: 227.7755, KL Div: 16.2793
+Epoch[12/55], Step [300/600], Reconst Loss: 228.9995, KL Div: 15.9606
+Epoch[12/55], Step [350/600], Reconst Loss: 229.7242, KL Div: 15.2906
+Epoch[12/55], Step [400/600], Reconst Loss: 231.9560, KL Div: 16.3691
+Epoch[12/55], Step [450/600], Reconst Loss: 226.8096, KL Div: 16.9621
+Epoch[12/55], Step [500/600], Reconst Loss: 236.5264, KL Div: 15.7596
+Epoch[12/55], Step [550/600], Reconst Loss: 226.8548, KL Div: 16.6372
+Epoch[12/55], Step [600/600], Reconst Loss: 228.9767, KL Div: 15.6699
+New images saved !
+Epoch[13/55], Step [50/600], Reconst Loss: 230.1626, KL Div: 15.9508
+Epoch[13/55], Step [100/600], Reconst Loss: 218.4832, KL Div: 15.7449
+Epoch[13/55], Step [150/600], Reconst Loss: 224.5762, KL Div: 16.1694
+Epoch[13/55], Step [200/600], Reconst Loss: 237.7484, KL Div: 15.2371
+Epoch[13/55], Step [250/600], Reconst Loss: 233.5151, KL Div: 16.0998
+Epoch[13/55], Step [300/600], Reconst Loss: 228.4986, KL Div: 16.1919
+Epoch[13/55], Step [350/600], Reconst Loss: 231.0703, KL Div: 17.0091
+Epoch[13/55], Step [400/600], Reconst Loss: 217.7340, KL Div: 17.0463
+Epoch[13/55], Step [450/600], Reconst Loss: 233.7169, KL Div: 16.0197
+Epoch[13/55], Step [500/600], Reconst Loss: 226.5328, KL Div: 15.7593
+Epoch[13/55], Step [550/600], Reconst Loss: 221.8753, KL Div: 16.5932
+Epoch[13/55], Step [600/600], Reconst Loss: 227.1078, KL Div: 16.8374
+New images saved !
+Epoch[14/55], Step [50/600], Reconst Loss: 222.2942, KL Div: 16.8360
+Epoch[14/55], Step [100/600], Reconst Loss: 242.2345, KL Div: 16.1024
+Epoch[14/55], Step [150/600], Reconst Loss: 222.6780, KL Div: 16.1971
+Epoch[14/55], Step [200/600], Reconst Loss: 224.5857, KL Div: 15.2605
+Epoch[14/55], Step [250/600], Reconst Loss: 239.1757, KL Div: 15.8763
+Epoch[14/55], Step [300/600], Reconst Loss: 231.7437, KL Div: 16.3500
+Epoch[14/55], Step [350/600], Reconst Loss: 226.9788, KL Div: 15.2405
+Epoch[14/55], Step [400/600], Reconst Loss: 223.4631, KL Div: 15.6385
+Epoch[14/55], Step [450/600], Reconst Loss: 227.1809, KL Div: 16.6889
+Epoch[14/55], Step [500/600], Reconst Loss: 222.3466, KL Div: 15.9186
+Epoch[14/55], Step [550/600], Reconst Loss: 226.3670, KL Div: 16.3516
+Epoch[14/55], Step [600/600], Reconst Loss: 226.1360, KL Div: 15.6563
+New images saved !
+Epoch[15/55], Step [50/600], Reconst Loss: 229.2816, KL Div: 16.6030
+Epoch[15/55], Step [100/600], Reconst Loss: 219.3877, KL Div: 15.9040
+Epoch[15/55], Step [150/600], Reconst Loss: 214.9722, KL Div: 15.6270
+Epoch[15/55], Step [200/600], Reconst Loss: 230.4828, KL Div: 16.3295
+Epoch[15/55], Step [250/600], Reconst Loss: 231.7780, KL Div: 16.0916
+Epoch[15/55], Step [300/600], Reconst Loss: 219.8205, KL Div: 15.6494
+Epoch[15/55], Step [350/600], Reconst Loss: 235.9198, KL Div: 16.5499
+Epoch[15/55], Step [400/600], Reconst Loss: 237.9918, KL Div: 17.2720
+Epoch[15/55], Step [450/600], Reconst Loss: 219.3646, KL Div: 16.0370
+Epoch[15/55], Step [500/600], Reconst Loss: 226.5617, KL Div: 15.9338
+Epoch[15/55], Step [550/600], Reconst Loss: 226.0377, KL Div: 16.4533
+Epoch[15/55], Step [600/600], Reconst Loss: 233.5074, KL Div: 17.2908
+New images saved !
+Epoch[16/55], Step [50/600], Reconst Loss: 235.1603, KL Div: 15.9388
+Epoch[16/55], Step [100/600], Reconst Loss: 227.4930, KL Div: 15.9482
+Epoch[16/55], Step [150/600], Reconst Loss: 228.6585, KL Div: 15.8230
+Epoch[16/55], Step [200/600], Reconst Loss: 234.0325, KL Div: 16.2777
+Epoch[16/55], Step [250/600], Reconst Loss: 218.0825, KL Div: 16.3425
+Epoch[16/55], Step [300/600], Reconst Loss: 236.0971, KL Div: 16.6816
+Epoch[16/55], Step [350/600], Reconst Loss: 213.7332, KL Div: 16.6796
+Epoch[16/55], Step [400/600], Reconst Loss: 221.1689, KL Div: 16.3215
+Epoch[16/55], Step [450/600], Reconst Loss: 216.3492, KL Div: 16.8071
+Epoch[16/55], Step [500/600], Reconst Loss: 235.5407, KL Div: 16.4083
+Epoch[16/55], Step [550/600], Reconst Loss: 231.8311, KL Div: 15.9633
+Epoch[16/55], Step [600/600], Reconst Loss: 225.2549, KL Div: 17.4389
+New images saved !
+Epoch[17/55], Step [50/600], Reconst Loss: 239.4374, KL Div: 17.0002
+Epoch[17/55], Step [100/600], Reconst Loss: 210.2924, KL Div: 16.8893
+Epoch[17/55], Step [150/600], Reconst Loss: 228.7866, KL Div: 16.0549
+Epoch[17/55], Step [200/600], Reconst Loss: 221.1987, KL Div: 16.8049
+Epoch[17/55], Step [250/600], Reconst Loss: 227.9315, KL Div: 17.0904
+Epoch[17/55], Step [300/600], Reconst Loss: 232.1749, KL Div: 16.9004
+Epoch[17/55], Step [350/600], Reconst Loss: 226.6761, KL Div: 16.4589
+Epoch[17/55], Step [400/600], Reconst Loss: 238.3484, KL Div: 16.6884
+Epoch[17/55], Step [450/600], Reconst Loss: 214.2388, KL Div: 16.5440
+Epoch[17/55], Step [500/600], Reconst Loss: 228.4376, KL Div: 16.1179
+Epoch[17/55], Step [550/600], Reconst Loss: 221.5067, KL Div: 16.2591
+Epoch[17/55], Step [600/600], Reconst Loss: 220.3073, KL Div: 15.9658
+New images saved !
+Epoch[18/55], Step [50/600], Reconst Loss: 222.5679, KL Div: 15.7720
+Epoch[18/55], Step [100/600], Reconst Loss: 226.9130, KL Div: 15.3424
+Epoch[18/55], Step [150/600], Reconst Loss: 220.4269, KL Div: 16.7562
+Epoch[18/55], Step [200/600], Reconst Loss: 232.4005, KL Div: 15.9426
+Epoch[18/55], Step [250/600], Reconst Loss: 231.2493, KL Div: 16.3766
+Epoch[18/55], Step [300/600], Reconst Loss: 218.9678, KL Div: 17.0860
+Epoch[18/55], Step [350/600], Reconst Loss: 215.8833, KL Div: 15.9542
+Epoch[18/55], Step [400/600], Reconst Loss: 223.2184, KL Div: 16.2790
+Epoch[18/55], Step [450/600], Reconst Loss: 222.7063, KL Div: 15.7749
+Epoch[18/55], Step [500/600], Reconst Loss: 218.9175, KL Div: 15.8362
+Epoch[18/55], Step [550/600], Reconst Loss: 226.5894, KL Div: 15.8204
+Epoch[18/55], Step [600/600], Reconst Loss: 217.4911, KL Div: 16.2380
+New images saved !
+Epoch[19/55], Step [50/600], Reconst Loss: 237.8753, KL Div: 16.7461
+Epoch[19/55], Step [100/600], Reconst Loss: 222.7848, KL Div: 15.9520
+Epoch[19/55], Step [150/600], Reconst Loss: 229.2829, KL Div: 15.5773
+Epoch[19/55], Step [200/600], Reconst Loss: 225.2682, KL Div: 15.8073
+Epoch[19/55], Step [250/600], Reconst Loss: 221.6111, KL Div: 16.2971
+Epoch[19/55], Step [300/600], Reconst Loss: 219.9670, KL Div: 16.6771
+Epoch[19/55], Step [350/600], Reconst Loss: 224.9693, KL Div: 16.0710
+Epoch[19/55], Step [400/600], Reconst Loss: 225.3726, KL Div: 16.3861
+Epoch[19/55], Step [450/600], Reconst Loss: 225.1328, KL Div: 16.6292
+Epoch[19/55], Step [500/600], Reconst Loss: 219.2555, KL Div: 15.5663
+Epoch[19/55], Step [550/600], Reconst Loss: 222.2095, KL Div: 16.8126
+Epoch[19/55], Step [600/600], Reconst Loss: 218.9648, KL Div: 15.9612
+New images saved !
+Epoch[20/55], Step [50/600], Reconst Loss: 213.7789, KL Div: 16.7690
+Epoch[20/55], Step [100/600], Reconst Loss: 232.1563, KL Div: 15.8543
+Epoch[20/55], Step [150/600], Reconst Loss: 229.4041, KL Div: 15.6233
+Epoch[20/55], Step [200/600], Reconst Loss: 218.5119, KL Div: 16.6287
+Epoch[20/55], Step [250/600], Reconst Loss: 219.4342, KL Div: 16.2742
+Epoch[20/55], Step [300/600], Reconst Loss: 229.2120, KL Div: 15.9895
+Epoch[20/55], Step [350/600], Reconst Loss: 226.3778, KL Div: 16.8146
+Epoch[20/55], Step [400/600], Reconst Loss: 215.5768, KL Div: 15.9287
+Epoch[20/55], Step [450/600], Reconst Loss: 218.9570, KL Div: 14.6427
+Epoch[20/55], Step [500/600], Reconst Loss: 225.6636, KL Div: 15.7218
+Epoch[20/55], Step [550/600], Reconst Loss: 232.6331, KL Div: 16.5773
+Epoch[20/55], Step [600/600], Reconst Loss: 230.4689, KL Div: 15.8983
+New images saved !
+Epoch[21/55], Step [50/600], Reconst Loss: 227.2540, KL Div: 17.5618
+Epoch[21/55], Step [100/600], Reconst Loss: 216.4421, KL Div: 16.6089
+Epoch[21/55], Step [150/600], Reconst Loss: 217.4124, KL Div: 15.9036
+Epoch[21/55], Step [200/600], Reconst Loss: 232.1322, KL Div: 16.0110
+Epoch[21/55], Step [250/600], Reconst Loss: 234.0737, KL Div: 16.5516
+Epoch[21/55], Step [300/600], Reconst Loss: 236.7049, KL Div: 17.1853
+Epoch[21/55], Step [350/600], Reconst Loss: 220.2936, KL Div: 15.7303
+Epoch[21/55], Step [400/600], Reconst Loss: 218.6298, KL Div: 16.1096
+Epoch[21/55], Step [450/600], Reconst Loss: 229.0783, KL Div: 15.5702
+Epoch[21/55], Step [500/600], Reconst Loss: 231.2414, KL Div: 16.8352
+Epoch[21/55], Step [550/600], Reconst Loss: 228.8147, KL Div: 15.9033
+Epoch[21/55], Step [600/600], Reconst Loss: 222.1991, KL Div: 16.1174
+New images saved !
+Epoch[22/55], Step [50/600], Reconst Loss: 224.5527, KL Div: 16.0551
+Epoch[22/55], Step [100/600], Reconst Loss: 212.9488, KL Div: 16.0765
+Epoch[22/55], Step [150/600], Reconst Loss: 223.6248, KL Div: 15.3720
+Epoch[22/55], Step [200/600], Reconst Loss: 231.4807, KL Div: 15.9665
+Epoch[22/55], Step [250/600], Reconst Loss: 219.5329, KL Div: 15.8660
+Epoch[22/55], Step [300/600], Reconst Loss: 227.5969, KL Div: 15.8540
+Epoch[22/55], Step [350/600], Reconst Loss: 232.8482, KL Div: 15.8109
+Epoch[22/55], Step [400/600], Reconst Loss: 241.1128, KL Div: 15.9568
+Epoch[22/55], Step [450/600], Reconst Loss: 217.6191, KL Div: 16.1810
+Epoch[22/55], Step [500/600], Reconst Loss: 222.4755, KL Div: 15.7830
+Epoch[22/55], Step [550/600], Reconst Loss: 224.5321, KL Div: 16.1204
+Epoch[22/55], Step [600/600], Reconst Loss: 219.4445, KL Div: 15.5947
+New images saved !
+Epoch[23/55], Step [50/600], Reconst Loss: 252.8073, KL Div: 15.8712
+Epoch[23/55], Step [100/600], Reconst Loss: 213.1135, KL Div: 15.8380
+Epoch[23/55], Step [150/600], Reconst Loss: 222.1894, KL Div: 16.8586
+Epoch[23/55], Step [200/600], Reconst Loss: 230.3123, KL Div: 16.0304
+Epoch[23/55], Step [250/600], Reconst Loss: 217.0524, KL Div: 15.9591
+Epoch[23/55], Step [300/600], Reconst Loss: 217.6602, KL Div: 16.6534
+Epoch[23/55], Step [350/600], Reconst Loss: 233.7895, KL Div: 16.6034
+Epoch[23/55], Step [400/600], Reconst Loss: 230.3709, KL Div: 15.8530
+Epoch[23/55], Step [450/600], Reconst Loss: 236.2577, KL Div: 16.4567
+Epoch[23/55], Step [500/600], Reconst Loss: 222.6210, KL Div: 17.0378
+Epoch[23/55], Step [550/600], Reconst Loss: 223.3486, KL Div: 16.0378
+Epoch[23/55], Step [600/600], Reconst Loss: 226.9790, KL Div: 16.8563
+New images saved !
+Epoch[24/55], Step [50/600], Reconst Loss: 236.2344, KL Div: 16.2976
+Epoch[24/55], Step [100/600], Reconst Loss: 211.6454, KL Div: 15.9320
+Epoch[24/55], Step [150/600], Reconst Loss: 224.0485, KL Div: 16.7582
+Epoch[24/55], Step [200/600], Reconst Loss: 224.2651, KL Div: 16.7743
+Epoch[24/55], Step [250/600], Reconst Loss: 223.1853, KL Div: 16.1156
+Epoch[24/55], Step [300/600], Reconst Loss: 226.8804, KL Div: 16.4315
+Epoch[24/55], Step [350/600], Reconst Loss: 233.1135, KL Div: 17.1732
+Epoch[24/55], Step [400/600], Reconst Loss: 220.2494, KL Div: 15.9355
+Epoch[24/55], Step [450/600], Reconst Loss: 230.7630, KL Div: 15.5986
+Epoch[24/55], Step [500/600], Reconst Loss: 226.0651, KL Div: 15.6924
+Epoch[24/55], Step [550/600], Reconst Loss: 235.2090, KL Div: 15.9182
+Epoch[24/55], Step [600/600], Reconst Loss: 216.6034, KL Div: 15.9704
+New images saved !
+Epoch[25/55], Step [50/600], Reconst Loss: 225.8177, KL Div: 15.8112
+Epoch[25/55], Step [100/600], Reconst Loss: 225.1267, KL Div: 16.1137
+Epoch[25/55], Step [150/600], Reconst Loss: 210.5961, KL Div: 16.6324
+Epoch[25/55], Step [200/600], Reconst Loss: 224.7882, KL Div: 16.5829
+Epoch[25/55], Step [250/600], Reconst Loss: 218.4482, KL Div: 16.5332
+Epoch[25/55], Step [300/600], Reconst Loss: 230.8078, KL Div: 16.4368
+Epoch[25/55], Step [350/600], Reconst Loss: 230.1084, KL Div: 16.5161
+Epoch[25/55], Step [400/600], Reconst Loss: 221.9455, KL Div: 16.5775
+Epoch[25/55], Step [450/600], Reconst Loss: 227.2724, KL Div: 16.0971
+Epoch[25/55], Step [500/600], Reconst Loss: 221.8392, KL Div: 15.3963
+Epoch[25/55], Step [550/600], Reconst Loss: 223.0114, KL Div: 16.1952
+Epoch[25/55], Step [600/600], Reconst Loss: 217.2933, KL Div: 16.2958
+New images saved !
+Epoch[26/55], Step [50/600], Reconst Loss: 226.0237, KL Div: 16.6198
+Epoch[26/55], Step [100/600], Reconst Loss: 223.1362, KL Div: 16.5392
+Epoch[26/55], Step [150/600], Reconst Loss: 228.0402, KL Div: 16.4493
+Epoch[26/55], Step [200/600], Reconst Loss: 233.3156, KL Div: 16.5617
+Epoch[26/55], Step [250/600], Reconst Loss: 224.4838, KL Div: 16.8326
+Epoch[26/55], Step [300/600], Reconst Loss: 218.3902, KL Div: 16.3939
+Epoch[26/55], Step [350/600], Reconst Loss: 220.3633, KL Div: 16.2768
+Epoch[26/55], Step [400/600], Reconst Loss: 233.6938, KL Div: 15.6787
+Epoch[26/55], Step [450/600], Reconst Loss: 222.7169, KL Div: 16.1312
+Epoch[26/55], Step [500/600], Reconst Loss: 223.7048, KL Div: 15.7223
+Epoch[26/55], Step [550/600], Reconst Loss: 236.1535, KL Div: 15.8735
+Epoch[26/55], Step [600/600], Reconst Loss: 231.4365, KL Div: 16.9825
+New images saved !
+Epoch[27/55], Step [50/600], Reconst Loss: 242.0478, KL Div: 17.8212
+Epoch[27/55], Step [100/600], Reconst Loss: 222.6877, KL Div: 16.3406
+Epoch[27/55], Step [150/600], Reconst Loss: 222.9299, KL Div: 16.5009
+Epoch[27/55], Step [200/600], Reconst Loss: 221.8121, KL Div: 15.9198
+Epoch[27/55], Step [250/600], Reconst Loss: 226.2716, KL Div: 16.5060
+Epoch[27/55], Step [300/600], Reconst Loss: 234.8629, KL Div: 16.5574
+Epoch[27/55], Step [350/600], Reconst Loss: 231.4747, KL Div: 16.6043
+Epoch[27/55], Step [400/600], Reconst Loss: 212.7021, KL Div: 15.5812
+Epoch[27/55], Step [450/600], Reconst Loss: 220.0675, KL Div: 16.0161
+Epoch[27/55], Step [500/600], Reconst Loss: 214.9519, KL Div: 15.4409
+Epoch[27/55], Step [550/600], Reconst Loss: 221.6123, KL Div: 15.9850
+Epoch[27/55], Step [600/600], Reconst Loss: 233.3577, KL Div: 15.1043
+New images saved !
+Epoch[28/55], Step [50/600], Reconst Loss: 225.8113, KL Div: 16.4316
+Epoch[28/55], Step [100/600], Reconst Loss: 225.1494, KL Div: 16.2169
+Epoch[28/55], Step [150/600], Reconst Loss: 230.6327, KL Div: 15.8989
+Epoch[28/55], Step [200/600], Reconst Loss: 234.6939, KL Div: 15.6656
+Epoch[28/55], Step [250/600], Reconst Loss: 215.9659, KL Div: 15.5271
+Epoch[28/55], Step [300/600], Reconst Loss: 221.9039, KL Div: 15.5463
+Epoch[28/55], Step [350/600], Reconst Loss: 224.0612, KL Div: 15.3025
+Epoch[28/55], Step [400/600], Reconst Loss: 219.4362, KL Div: 16.2290
+Epoch[28/55], Step [450/600], Reconst Loss: 218.4143, KL Div: 16.0984
+Epoch[28/55], Step [500/600], Reconst Loss: 217.2975, KL Div: 15.9836
+Epoch[28/55], Step [550/600], Reconst Loss: 228.3405, KL Div: 15.8671
+Epoch[28/55], Step [600/600], Reconst Loss: 226.7066, KL Div: 16.3469
+New images saved !
+Epoch[29/55], Step [50/600], Reconst Loss: 223.4869, KL Div: 15.7189
+Epoch[29/55], Step [100/600], Reconst Loss: 219.7590, KL Div: 17.2243
+Epoch[29/55], Step [150/600], Reconst Loss: 219.5115, KL Div: 16.2655
+Epoch[29/55], Step [200/600], Reconst Loss: 235.5158, KL Div: 15.9601
+Epoch[29/55], Step [250/600], Reconst Loss: 234.6199, KL Div: 15.2246
+Epoch[29/55], Step [300/600], Reconst Loss: 232.7370, KL Div: 16.6058
+Epoch[29/55], Step [350/600], Reconst Loss: 225.8417, KL Div: 16.0720
+Epoch[29/55], Step [400/600], Reconst Loss: 222.5695, KL Div: 14.9892
+Epoch[29/55], Step [450/600], Reconst Loss: 204.2094, KL Div: 15.6084
+Epoch[29/55], Step [500/600], Reconst Loss: 218.1680, KL Div: 15.6846
+Epoch[29/55], Step [550/600], Reconst Loss: 225.4189, KL Div: 15.9699
+Epoch[29/55], Step [600/600], Reconst Loss: 225.4843, KL Div: 15.9576
+New images saved !
+Epoch[30/55], Step [50/600], Reconst Loss: 226.8975, KL Div: 16.1230
+Epoch[30/55], Step [100/600], Reconst Loss: 210.8795, KL Div: 15.3260
+Epoch[30/55], Step [150/600], Reconst Loss: 225.0761, KL Div: 16.6793
+Epoch[30/55], Step [200/600], Reconst Loss: 232.9285, KL Div: 15.8888
+Epoch[30/55], Step [250/600], Reconst Loss: 228.4038, KL Div: 16.8135
+Epoch[30/55], Step [300/600], Reconst Loss: 213.7430, KL Div: 15.3676
+Epoch[30/55], Step [350/600], Reconst Loss: 224.3940, KL Div: 16.8164
+Epoch[30/55], Step [400/600], Reconst Loss: 219.4306, KL Div: 15.4084
+Epoch[30/55], Step [450/600], Reconst Loss: 205.4255, KL Div: 15.9457
+Epoch[30/55], Step [500/600], Reconst Loss: 218.0885, KL Div: 15.3248
+Epoch[30/55], Step [550/600], Reconst Loss: 230.3965, KL Div: 16.1737
+Epoch[30/55], Step [600/600], Reconst Loss: 210.5873, KL Div: 16.8199
+New images saved !
+Epoch[31/55], Step [50/600], Reconst Loss: 239.1821, KL Div: 16.1343
+Epoch[31/55], Step [100/600], Reconst Loss: 217.2230, KL Div: 15.7815
+Epoch[31/55], Step [150/600], Reconst Loss: 224.1171, KL Div: 16.5780
+Epoch[31/55], Step [200/600], Reconst Loss: 224.4888, KL Div: 16.9770
+Epoch[31/55], Step [250/600], Reconst Loss: 227.7088, KL Div: 16.2836
+Epoch[31/55], Step [300/600], Reconst Loss: 220.2884, KL Div: 15.8408
+Epoch[31/55], Step [350/600], Reconst Loss: 233.5632, KL Div: 17.4152
+Epoch[31/55], Step [400/600], Reconst Loss: 220.4807, KL Div: 16.0914
+Epoch[31/55], Step [450/600], Reconst Loss: 221.1635, KL Div: 15.6313
+Epoch[31/55], Step [500/600], Reconst Loss: 231.2194, KL Div: 16.7778
+Epoch[31/55], Step [550/600], Reconst Loss: 234.9167, KL Div: 15.6973
+Epoch[31/55], Step [600/600], Reconst Loss: 228.1808, KL Div: 16.5544
+New images saved !
+Epoch[32/55], Step [50/600], Reconst Loss: 220.3978, KL Div: 16.4055
+Epoch[32/55], Step [100/600], Reconst Loss: 221.5699, KL Div: 15.5827
+Epoch[32/55], Step [150/600], Reconst Loss: 228.0453, KL Div: 16.5118
+Epoch[32/55], Step [200/600], Reconst Loss: 223.7590, KL Div: 16.1085
+Epoch[32/55], Step [250/600], Reconst Loss: 220.0645, KL Div: 15.9581
+Epoch[32/55], Step [300/600], Reconst Loss: 221.0561, KL Div: 15.8941
+Epoch[32/55], Step [350/600], Reconst Loss: 233.0131, KL Div: 15.9029
+Epoch[32/55], Step [400/600], Reconst Loss: 215.7925, KL Div: 16.0123
+Epoch[32/55], Step [450/600], Reconst Loss: 214.8600, KL Div: 16.1449
+Epoch[32/55], Step [500/600], Reconst Loss: 220.9681, KL Div: 15.6766
+Epoch[32/55], Step [550/600], Reconst Loss: 221.0410, KL Div: 16.4219
+Epoch[32/55], Step [600/600], Reconst Loss: 229.1223, KL Div: 15.7371
+New images saved !
+Epoch[33/55], Step [50/600], Reconst Loss: 227.1105, KL Div: 15.8034
+Epoch[33/55], Step [100/600], Reconst Loss: 225.7611, KL Div: 16.9425
+Epoch[33/55], Step [150/600], Reconst Loss: 221.9126, KL Div: 15.6280
+Epoch[33/55], Step [200/600], Reconst Loss: 230.8523, KL Div: 15.6740
+Epoch[33/55], Step [250/600], Reconst Loss: 225.1954, KL Div: 16.6040
+Epoch[33/55], Step [300/600], Reconst Loss: 229.2413, KL Div: 17.2476
+Epoch[33/55], Step [350/600], Reconst Loss: 227.1634, KL Div: 16.2922
+Epoch[33/55], Step [400/600], Reconst Loss: 219.3239, KL Div: 15.3204
+Epoch[33/55], Step [450/600], Reconst Loss: 222.3950, KL Div: 17.5204
+Epoch[33/55], Step [500/600], Reconst Loss: 222.1650, KL Div: 16.1503
+Epoch[33/55], Step [550/600], Reconst Loss: 225.2927, KL Div: 15.9743
+Epoch[33/55], Step [600/600], Reconst Loss: 228.6428, KL Div: 16.3396
+New images saved !
+Epoch[34/55], Step [50/600], Reconst Loss: 228.9499, KL Div: 16.0030
+Epoch[34/55], Step [100/600], Reconst Loss: 222.0128, KL Div: 16.2699
+Epoch[34/55], Step [150/600], Reconst Loss: 219.2206, KL Div: 16.7638
+Epoch[34/55], Step [200/600], Reconst Loss: 233.6267, KL Div: 16.1721
+Epoch[34/55], Step [250/600], Reconst Loss: 224.7384, KL Div: 15.4451
+Epoch[34/55], Step [300/600], Reconst Loss: 221.4715, KL Div: 15.6839
+Epoch[34/55], Step [350/600], Reconst Loss: 220.4018, KL Div: 17.3306
+Epoch[34/55], Step [400/600], Reconst Loss: 217.7928, KL Div: 16.6820
+Epoch[34/55], Step [450/600], Reconst Loss: 221.3789, KL Div: 15.5209
+Epoch[34/55], Step [500/600], Reconst Loss: 227.9824, KL Div: 16.2970
+Epoch[34/55], Step [550/600], Reconst Loss: 229.5482, KL Div: 16.5943
+Epoch[34/55], Step [600/600], Reconst Loss: 224.3761, KL Div: 16.4531
+New images saved !
+Epoch[35/55], Step [50/600], Reconst Loss: 209.6067, KL Div: 15.8566
+Epoch[35/55], Step [100/600], Reconst Loss: 221.3234, KL Div: 16.1726
+Epoch[35/55], Step [150/600], Reconst Loss: 236.3585, KL Div: 15.8187
+Epoch[35/55], Step [200/600], Reconst Loss: 222.3339, KL Div: 15.6132
+Epoch[35/55], Step [250/600], Reconst Loss: 237.6503, KL Div: 16.0014
+Epoch[35/55], Step [300/600], Reconst Loss: 226.7507, KL Div: 15.8194
+Epoch[35/55], Step [350/600], Reconst Loss: 221.6815, KL Div: 15.7638
+Epoch[35/55], Step [400/600], Reconst Loss: 220.8492, KL Div: 16.0448
+Epoch[35/55], Step [450/600], Reconst Loss: 230.8255, KL Div: 16.0223
+Epoch[35/55], Step [500/600], Reconst Loss: 223.5493, KL Div: 16.2936
+Epoch[35/55], Step [550/600], Reconst Loss: 216.0443, KL Div: 16.9058
+Epoch[35/55], Step [600/600], Reconst Loss: 230.4575, KL Div: 16.2959
+New images saved !
+Epoch[36/55], Step [50/600], Reconst Loss: 236.8227, KL Div: 15.5963
+Epoch[36/55], Step [100/600], Reconst Loss: 217.2375, KL Div: 15.5852
+Epoch[36/55], Step [150/600], Reconst Loss: 220.8993, KL Div: 16.7767
+Epoch[36/55], Step [200/600], Reconst Loss: 221.8085, KL Div: 15.5991
+Epoch[36/55], Step [250/600], Reconst Loss: 215.8339, KL Div: 16.7230
+Epoch[36/55], Step [300/600], Reconst Loss: 213.6965, KL Div: 16.0663
+Epoch[36/55], Step [350/600], Reconst Loss: 230.0530, KL Div: 16.2880
+Epoch[36/55], Step [400/600], Reconst Loss: 224.6756, KL Div: 16.1002
+Epoch[36/55], Step [450/600], Reconst Loss: 227.4572, KL Div: 15.9593
+Epoch[36/55], Step [500/600], Reconst Loss: 225.6369, KL Div: 15.3920
+Epoch[36/55], Step [550/600], Reconst Loss: 224.2070, KL Div: 17.0171
+Epoch[36/55], Step [600/600], Reconst Loss: 222.2466, KL Div: 16.3565
+New images saved !
+Epoch[37/55], Step [50/600], Reconst Loss: 234.0605, KL Div: 16.1744
+Epoch[37/55], Step [100/600], Reconst Loss: 229.0068, KL Div: 16.5936
+Epoch[37/55], Step [150/600], Reconst Loss: 222.1687, KL Div: 16.2985
+Epoch[37/55], Step [200/600], Reconst Loss: 224.1647, KL Div: 16.1950
+Epoch[37/55], Step [250/600], Reconst Loss: 231.4648, KL Div: 16.2586
+Epoch[37/55], Step [300/600], Reconst Loss: 218.6987, KL Div: 15.7270
+Epoch[37/55], Step [350/600], Reconst Loss: 227.7447, KL Div: 15.0428
+Epoch[37/55], Step [400/600], Reconst Loss: 215.2046, KL Div: 15.8329
+Epoch[37/55], Step [450/600], Reconst Loss: 225.5630, KL Div: 16.0990
+Epoch[37/55], Step [500/600], Reconst Loss: 224.7388, KL Div: 16.8564
+Epoch[37/55], Step [550/600], Reconst Loss: 235.4974, KL Div: 16.3919
+Epoch[37/55], Step [600/600], Reconst Loss: 225.5625, KL Div: 15.6859
+New images saved !
+Epoch[38/55], Step [50/600], Reconst Loss: 232.2681, KL Div: 16.7040
+Epoch[38/55], Step [100/600], Reconst Loss: 213.0089, KL Div: 16.2163
+Epoch[38/55], Step [150/600], Reconst Loss: 225.4980, KL Div: 15.8033
+Epoch[38/55], Step [200/600], Reconst Loss: 220.2112, KL Div: 15.4332
+Epoch[38/55], Step [250/600], Reconst Loss: 220.9039, KL Div: 15.3864
+Epoch[38/55], Step [300/600], Reconst Loss: 220.1638, KL Div: 15.5557
+Epoch[38/55], Step [350/600], Reconst Loss: 227.9752, KL Div: 16.1204
+Epoch[38/55], Step [400/600], Reconst Loss: 217.6494, KL Div: 16.2732
+Epoch[38/55], Step [450/600], Reconst Loss: 217.3137, KL Div: 16.9509
+Epoch[38/55], Step [500/600], Reconst Loss: 223.5395, KL Div: 16.2625
+Epoch[38/55], Step [550/600], Reconst Loss: 219.4817, KL Div: 16.8032
+Epoch[38/55], Step [600/600], Reconst Loss: 223.4958, KL Div: 16.1168
+New images saved !
+Epoch[39/55], Step [50/600], Reconst Loss: 223.3825, KL Div: 16.4685
+Epoch[39/55], Step [100/600], Reconst Loss: 220.2522, KL Div: 15.2361
+Epoch[39/55], Step [150/600], Reconst Loss: 206.8394, KL Div: 15.9170
+Epoch[39/55], Step [200/600], Reconst Loss: 228.1661, KL Div: 15.8356
+Epoch[39/55], Step [250/600], Reconst Loss: 212.3247, KL Div: 16.5370
+Epoch[39/55], Step [300/600], Reconst Loss: 216.0557, KL Div: 15.9513
+Epoch[39/55], Step [350/600], Reconst Loss: 223.9461, KL Div: 16.9013
+Epoch[39/55], Step [400/600], Reconst Loss: 212.0757, KL Div: 16.0128
+Epoch[39/55], Step [450/600], Reconst Loss: 214.6276, KL Div: 15.4848
+Epoch[39/55], Step [500/600], Reconst Loss: 223.7563, KL Div: 16.1064
+Epoch[39/55], Step [550/600], Reconst Loss: 230.4906, KL Div: 16.6603
+Epoch[39/55], Step [600/600], Reconst Loss: 218.2864, KL Div: 15.5451
+New images saved !
+Epoch[40/55], Step [50/600], Reconst Loss: 227.0062, KL Div: 16.8496
+Epoch[40/55], Step [100/600], Reconst Loss: 217.3144, KL Div: 15.8563
+Epoch[40/55], Step [150/600], Reconst Loss: 223.9210, KL Div: 16.7235
+Epoch[40/55], Step [200/600], Reconst Loss: 223.2533, KL Div: 16.3266
+Epoch[40/55], Step [250/600], Reconst Loss: 233.1423, KL Div: 16.6800
+Epoch[40/55], Step [300/600], Reconst Loss: 225.3784, KL Div: 15.8864
+Epoch[40/55], Step [350/600], Reconst Loss: 223.3765, KL Div: 16.6088
+Epoch[40/55], Step [400/600], Reconst Loss: 219.7088, KL Div: 16.3743
+Epoch[40/55], Step [450/600], Reconst Loss: 211.7600, KL Div: 16.7316
+Epoch[40/55], Step [500/600], Reconst Loss: 231.5339, KL Div: 15.8832
+Epoch[40/55], Step [550/600], Reconst Loss: 220.4114, KL Div: 15.9574
+Epoch[40/55], Step [600/600], Reconst Loss: 226.9967, KL Div: 16.2198
+New images saved !
+Epoch[41/55], Step [50/600], Reconst Loss: 223.8570, KL Div: 16.1478
+Epoch[41/55], Step [100/600], Reconst Loss: 222.0681, KL Div: 15.7407
+Epoch[41/55], Step [150/600], Reconst Loss: 230.4729, KL Div: 16.5783
+Epoch[41/55], Step [200/600], Reconst Loss: 233.7065, KL Div: 16.4902
+Epoch[41/55], Step [250/600], Reconst Loss: 209.9027, KL Div: 16.5192
+Epoch[41/55], Step [300/600], Reconst Loss: 222.6064, KL Div: 15.6750
+Epoch[41/55], Step [350/600], Reconst Loss: 233.4627, KL Div: 15.7859
+Epoch[41/55], Step [400/600], Reconst Loss: 222.0541, KL Div: 16.8705
+Epoch[41/55], Step [450/600], Reconst Loss: 220.0963, KL Div: 16.5564
+Epoch[41/55], Step [500/600], Reconst Loss: 227.7236, KL Div: 16.1657
+Epoch[41/55], Step [550/600], Reconst Loss: 221.2116, KL Div: 15.9034
+Epoch[41/55], Step [600/600], Reconst Loss: 222.7728, KL Div: 15.7277
+New images saved !
+Epoch[42/55], Step [50/600], Reconst Loss: 221.1747, KL Div: 16.5418
+Epoch[42/55], Step [100/600], Reconst Loss: 215.3895, KL Div: 17.1706
+Epoch[42/55], Step [150/600], Reconst Loss: 222.6176, KL Div: 16.2614
+Epoch[42/55], Step [200/600], Reconst Loss: 232.5732, KL Div: 16.2592
+Epoch[42/55], Step [250/600], Reconst Loss: 225.7045, KL Div: 15.2063
+Epoch[42/55], Step [300/600], Reconst Loss: 228.9594, KL Div: 16.7553
+Epoch[42/55], Step [350/600], Reconst Loss: 232.8177, KL Div: 16.4257
+Epoch[42/55], Step [400/600], Reconst Loss: 225.8220, KL Div: 15.8261
+Epoch[42/55], Step [450/600], Reconst Loss: 224.6665, KL Div: 15.7475
+Epoch[42/55], Step [500/600], Reconst Loss: 229.5096, KL Div: 16.5295
+Epoch[42/55], Step [550/600], Reconst Loss: 230.9798, KL Div: 16.2876
+Epoch[42/55], Step [600/600], Reconst Loss: 230.1925, KL Div: 15.6908
+New images saved !
+Epoch[43/55], Step [50/600], Reconst Loss: 230.3826, KL Div: 16.1958
+Epoch[43/55], Step [100/600], Reconst Loss: 222.4234, KL Div: 16.4162
+Epoch[43/55], Step [150/600], Reconst Loss: 220.9264, KL Div: 15.1594
+Epoch[43/55], Step [200/600], Reconst Loss: 217.4538, KL Div: 15.2816
+Epoch[43/55], Step [250/600], Reconst Loss: 220.9897, KL Div: 15.5785
+Epoch[43/55], Step [300/600], Reconst Loss: 231.7437, KL Div: 16.5088
+Epoch[43/55], Step [350/600], Reconst Loss: 218.8932, KL Div: 15.4352
+Epoch[43/55], Step [400/600], Reconst Loss: 220.2445, KL Div: 16.5618
+Epoch[43/55], Step [450/600], Reconst Loss: 221.0392, KL Div: 17.0722
+Epoch[43/55], Step [500/600], Reconst Loss: 225.5748, KL Div: 15.8332
+Epoch[43/55], Step [550/600], Reconst Loss: 225.1615, KL Div: 16.6698
+Epoch[43/55], Step [600/600], Reconst Loss: 221.8050, KL Div: 16.1843
+New images saved !
+Epoch[44/55], Step [50/600], Reconst Loss: 219.8068, KL Div: 16.1767
+Epoch[44/55], Step [100/600], Reconst Loss: 231.1848, KL Div: 16.3179
+Epoch[44/55], Step [150/600], Reconst Loss: 221.2298, KL Div: 16.8421
+Epoch[44/55], Step [200/600], Reconst Loss: 227.3687, KL Div: 16.0232
+Epoch[44/55], Step [250/600], Reconst Loss: 220.1125, KL Div: 16.1483
+Epoch[44/55], Step [300/600], Reconst Loss: 228.6019, KL Div: 16.9638
+Epoch[44/55], Step [350/600], Reconst Loss: 234.3253, KL Div: 15.9012
+Epoch[44/55], Step [400/600], Reconst Loss: 236.2833, KL Div: 15.5550
+Epoch[44/55], Step [450/600], Reconst Loss: 224.0165, KL Div: 16.3724
+Epoch[44/55], Step [500/600], Reconst Loss: 227.8555, KL Div: 16.1060
+Epoch[44/55], Step [550/600], Reconst Loss: 215.3186, KL Div: 14.8980
+Epoch[44/55], Step [600/600], Reconst Loss: 236.0783, KL Div: 16.4280
+New images saved !
+Epoch[45/55], Step [50/600], Reconst Loss: 226.6922, KL Div: 15.9863
+Epoch[45/55], Step [100/600], Reconst Loss: 207.4653, KL Div: 16.2767
+Epoch[45/55], Step [150/600], Reconst Loss: 224.1646, KL Div: 16.1162
+Epoch[45/55], Step [200/600], Reconst Loss: 223.0292, KL Div: 15.6901
+Epoch[45/55], Step [250/600], Reconst Loss: 230.9033, KL Div: 15.9202
+Epoch[45/55], Step [300/600], Reconst Loss: 215.0753, KL Div: 17.1210
+Epoch[45/55], Step [350/600], Reconst Loss: 235.7959, KL Div: 15.7864
+Epoch[45/55], Step [400/600], Reconst Loss: 219.3427, KL Div: 16.3036
+Epoch[45/55], Step [450/600], Reconst Loss: 224.4961, KL Div: 16.2794
+Epoch[45/55], Step [500/600], Reconst Loss: 222.4598, KL Div: 16.7361
+Epoch[45/55], Step [550/600], Reconst Loss: 227.6629, KL Div: 16.4993
+Epoch[45/55], Step [600/600], Reconst Loss: 223.8714, KL Div: 16.2730
+New images saved !
+Epoch[46/55], Step [50/600], Reconst Loss: 227.1391, KL Div: 16.2367
+Epoch[46/55], Step [100/600], Reconst Loss: 220.0056, KL Div: 15.4991
+Epoch[46/55], Step [150/600], Reconst Loss: 220.5650, KL Div: 16.0771
+Epoch[46/55], Step [200/600], Reconst Loss: 228.8444, KL Div: 15.5450
+Epoch[46/55], Step [250/600], Reconst Loss: 217.1752, KL Div: 16.3953
+Epoch[46/55], Step [300/600], Reconst Loss: 236.0581, KL Div: 16.1306
+Epoch[46/55], Step [350/600], Reconst Loss: 219.0796, KL Div: 15.0826
+Epoch[46/55], Step [400/600], Reconst Loss: 209.4461, KL Div: 15.4530
+Epoch[46/55], Step [450/600], Reconst Loss: 215.1048, KL Div: 16.7551
+Epoch[46/55], Step [500/600], Reconst Loss: 244.6576, KL Div: 15.5453
+Epoch[46/55], Step [550/600], Reconst Loss: 224.2059, KL Div: 16.7390
+Epoch[46/55], Step [600/600], Reconst Loss: 230.7298, KL Div: 16.9450
+New images saved !
+Epoch[47/55], Step [50/600], Reconst Loss: 224.4597, KL Div: 16.7092
+Epoch[47/55], Step [100/600], Reconst Loss: 219.9024, KL Div: 15.5565
+Epoch[47/55], Step [150/600], Reconst Loss: 232.0037, KL Div: 16.5317
+Epoch[47/55], Step [200/600], Reconst Loss: 234.3870, KL Div: 15.5804
+Epoch[47/55], Step [250/600], Reconst Loss: 231.7834, KL Div: 16.8528
+Epoch[47/55], Step [300/600], Reconst Loss: 229.6001, KL Div: 16.8134
+Epoch[47/55], Step [350/600], Reconst Loss: 236.8239, KL Div: 15.5870
+Epoch[47/55], Step [400/600], Reconst Loss: 208.5603, KL Div: 15.7537
+Epoch[47/55], Step [450/600], Reconst Loss: 226.9109, KL Div: 16.0937
+Epoch[47/55], Step [500/600], Reconst Loss: 211.8411, KL Div: 16.2000
+Epoch[47/55], Step [550/600], Reconst Loss: 213.5932, KL Div: 15.8483
+Epoch[47/55], Step [600/600], Reconst Loss: 216.0171, KL Div: 16.1068
+New images saved !
+Epoch[48/55], Step [50/600], Reconst Loss: 214.3813, KL Div: 16.6838
+Epoch[48/55], Step [100/600], Reconst Loss: 223.4648, KL Div: 16.2225
+Epoch[48/55], Step [150/600], Reconst Loss: 216.4688, KL Div: 15.7181
+Epoch[48/55], Step [200/600], Reconst Loss: 217.0022, KL Div: 16.2778
+Epoch[48/55], Step [250/600], Reconst Loss: 209.7155, KL Div: 15.6657
+Epoch[48/55], Step [300/600], Reconst Loss: 223.6151, KL Div: 16.5522
+Epoch[48/55], Step [350/600], Reconst Loss: 217.6984, KL Div: 16.7202
+Epoch[48/55], Step [400/600], Reconst Loss: 219.8436, KL Div: 15.7142
+Epoch[48/55], Step [450/600], Reconst Loss: 219.6056, KL Div: 16.3238
+Epoch[48/55], Step [500/600], Reconst Loss: 226.0261, KL Div: 17.4287
+Epoch[48/55], Step [550/600], Reconst Loss: 227.0195, KL Div: 16.9330
+Epoch[48/55], Step [600/600], Reconst Loss: 218.9919, KL Div: 16.4354
+New images saved !
+Epoch[49/55], Step [50/600], Reconst Loss: 219.6698, KL Div: 16.0858
+Epoch[49/55], Step [100/600], Reconst Loss: 222.8432, KL Div: 15.7560
+Epoch[49/55], Step [150/600], Reconst Loss: 226.6451, KL Div: 15.3944
+Epoch[49/55], Step [200/600], Reconst Loss: 218.6515, KL Div: 16.2432
+Epoch[49/55], Step [250/600], Reconst Loss: 230.2974, KL Div: 15.8615
+Epoch[49/55], Step [300/600], Reconst Loss: 235.0848, KL Div: 16.2258
+Epoch[49/55], Step [350/600], Reconst Loss: 224.9288, KL Div: 16.1137
+Epoch[49/55], Step [400/600], Reconst Loss: 223.8687, KL Div: 16.1873
+Epoch[49/55], Step [450/600], Reconst Loss: 216.0461, KL Div: 15.9499
+Epoch[49/55], Step [500/600], Reconst Loss: 219.5096, KL Div: 15.9543
+Epoch[49/55], Step [550/600], Reconst Loss: 214.5027, KL Div: 15.2782
+Epoch[49/55], Step [600/600], Reconst Loss: 224.7072, KL Div: 17.3433
+New images saved !
+Epoch[50/55], Step [50/600], Reconst Loss: 218.4900, KL Div: 16.4213
+Epoch[50/55], Step [100/600], Reconst Loss: 219.3612, KL Div: 15.8219
+Epoch[50/55], Step [150/600], Reconst Loss: 215.0539, KL Div: 15.6619
+Epoch[50/55], Step [200/600], Reconst Loss: 230.1405, KL Div: 15.3967
+Epoch[50/55], Step [250/600], Reconst Loss: 209.9028, KL Div: 15.7606
+Epoch[50/55], Step [300/600], Reconst Loss: 212.5265, KL Div: 16.6950
+Epoch[50/55], Step [350/600], Reconst Loss: 224.5672, KL Div: 15.9206
+Epoch[50/55], Step [400/600], Reconst Loss: 219.3901, KL Div: 15.7637
+Epoch[50/55], Step [450/600], Reconst Loss: 216.0549, KL Div: 15.8631
+Epoch[50/55], Step [500/600], Reconst Loss: 225.0562, KL Div: 16.4924
+Epoch[50/55], Step [550/600], Reconst Loss: 224.9111, KL Div: 16.8878
+Epoch[50/55], Step [600/600], Reconst Loss: 213.8187, KL Div: 16.4802
+New images saved !
+Epoch[51/55], Step [50/600], Reconst Loss: 231.7468, KL Div: 16.2303
+Epoch[51/55], Step [100/600], Reconst Loss: 223.0593, KL Div: 16.9811
+Epoch[51/55], Step [150/600], Reconst Loss: 228.3427, KL Div: 16.3887
+Epoch[51/55], Step [200/600], Reconst Loss: 228.6790, KL Div: 16.5213
+Epoch[51/55], Step [250/600], Reconst Loss: 222.5342, KL Div: 16.0223
+Epoch[51/55], Step [300/600], Reconst Loss: 234.1843, KL Div: 15.6386
+Epoch[51/55], Step [350/600], Reconst Loss: 227.5553, KL Div: 16.0568
+Epoch[51/55], Step [400/600], Reconst Loss: 222.2185, KL Div: 16.4543
+Epoch[51/55], Step [450/600], Reconst Loss: 223.8497, KL Div: 16.0019
+Epoch[51/55], Step [500/600], Reconst Loss: 216.5793, KL Div: 16.4469
+Epoch[51/55], Step [550/600], Reconst Loss: 219.9025, KL Div: 15.9095
+Epoch[51/55], Step [600/600], Reconst Loss: 219.3915, KL Div: 16.3795
+New images saved !
+Epoch[52/55], Step [50/600], Reconst Loss: 238.0457, KL Div: 15.9527
+Epoch[52/55], Step [100/600], Reconst Loss: 226.2689, KL Div: 16.7906
+Epoch[52/55], Step [150/600], Reconst Loss: 223.3808, KL Div: 15.1503
+Epoch[52/55], Step [200/600], Reconst Loss: 210.6076, KL Div: 15.6949
+Epoch[52/55], Step [250/600], Reconst Loss: 221.3048, KL Div: 16.1151
+Epoch[52/55], Step [300/600], Reconst Loss: 215.8679, KL Div: 16.1134
+Epoch[52/55], Step [350/600], Reconst Loss: 215.3818, KL Div: 16.2532
+Epoch[52/55], Step [400/600], Reconst Loss: 220.6102, KL Div: 15.2278
+Epoch[52/55], Step [450/600], Reconst Loss: 207.8584, KL Div: 16.1403
+Epoch[52/55], Step [500/600], Reconst Loss: 221.9653, KL Div: 16.2569
+Epoch[52/55], Step [550/600], Reconst Loss: 220.7403, KL Div: 16.2092
+Epoch[52/55], Step [600/600], Reconst Loss: 222.0911, KL Div: 16.8599
+New images saved !
+Epoch[53/55], Step [50/600], Reconst Loss: 221.3231, KL Div: 16.0057
+Epoch[53/55], Step [100/600], Reconst Loss: 224.9088, KL Div: 16.1459
+Epoch[53/55], Step [150/600], Reconst Loss: 222.6641, KL Div: 16.2575
+Epoch[53/55], Step [200/600], Reconst Loss: 239.0835, KL Div: 15.4607
+Epoch[53/55], Step [250/600], Reconst Loss: 213.1405, KL Div: 16.1572
+Epoch[53/55], Step [300/600], Reconst Loss: 229.2520, KL Div: 15.4907
+Epoch[53/55], Step [350/600], Reconst Loss: 232.1579, KL Div: 16.4400
+Epoch[53/55], Step [400/600], Reconst Loss: 206.9731, KL Div: 16.2000
+Epoch[53/55], Step [450/600], Reconst Loss: 230.3922, KL Div: 16.2605
+Epoch[53/55], Step [500/600], Reconst Loss: 225.2842, KL Div: 15.7308
+Epoch[53/55], Step [550/600], Reconst Loss: 214.2072, KL Div: 16.4192
+Epoch[53/55], Step [600/600], Reconst Loss: 222.1064, KL Div: 16.4438
+New images saved !
+Epoch[54/55], Step [50/600], Reconst Loss: 225.3805, KL Div: 15.7930
+Epoch[54/55], Step [100/600], Reconst Loss: 230.3136, KL Div: 16.3186
+Epoch[54/55], Step [150/600], Reconst Loss: 235.2441, KL Div: 16.0234
+Epoch[54/55], Step [200/600], Reconst Loss: 210.4375, KL Div: 15.8814
+Epoch[54/55], Step [250/600], Reconst Loss: 219.7980, KL Div: 15.9411
+Epoch[54/55], Step [300/600], Reconst Loss: 229.2142, KL Div: 15.7625
+Epoch[54/55], Step [350/600], Reconst Loss: 237.9328, KL Div: 16.3691
+Epoch[54/55], Step [400/600], Reconst Loss: 229.7590, KL Div: 15.9099
+Epoch[54/55], Step [450/600], Reconst Loss: 232.6753, KL Div: 15.2891
+Epoch[54/55], Step [500/600], Reconst Loss: 218.2374, KL Div: 16.3588
+Epoch[54/55], Step [550/600], Reconst Loss: 214.3934, KL Div: 15.7810
+Epoch[54/55], Step [600/600], Reconst Loss: 230.1954, KL Div: 16.5971
+New images saved !
+Epoch[55/55], Step [50/600], Reconst Loss: 225.6023, KL Div: 16.1921
+Epoch[55/55], Step [100/600], Reconst Loss: 220.3038, KL Div: 15.9812
+Epoch[55/55], Step [150/600], Reconst Loss: 229.3011, KL Div: 15.8103
+Epoch[55/55], Step [200/600], Reconst Loss: 228.7753, KL Div: 16.0964
+Epoch[55/55], Step [250/600], Reconst Loss: 230.1676, KL Div: 16.2422
+Epoch[55/55], Step [300/600], Reconst Loss: 218.5433, KL Div: 15.3533
+Epoch[55/55], Step [350/600], Reconst Loss: 223.9937, KL Div: 16.1449
+Epoch[55/55], Step [400/600], Reconst Loss: 232.7395, KL Div: 16.3838
+Epoch[55/55], Step [450/600], Reconst Loss: 213.2917, KL Div: 15.9896
+Epoch[55/55], Step [500/600], Reconst Loss: 225.3112, KL Div: 15.8994
+Epoch[55/55], Step [550/600], Reconst Loss: 231.8870, KL Div: 16.5318
+Epoch[55/55], Step [600/600], Reconst Loss: 222.7553, KL Div: 15.7707
+New images saved !

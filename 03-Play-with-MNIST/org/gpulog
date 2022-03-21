@@ -1,0 +1,138 @@
+2022-03-15 15:53:23.610117: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2022-03-15 15:53:24.905646: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcuda.so.1
+2022-03-15 15:53:26.561963: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:04:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-15 15:53:26.562018: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2022-03-15 15:53:26.568282: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2022-03-15 15:53:26.568345: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2022-03-15 15:53:26.571462: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcufft.so.10
+2022-03-15 15:53:26.571803: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcurand.so.10
+2022-03-15 15:53:26.572537: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusolver.so.11
+2022-03-15 15:53:26.573992: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusparse.so.11
+2022-03-15 15:53:26.574170: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8
+2022-03-15 15:53:26.575583: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2022-03-15 15:53:26.576029: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-03-15 15:53:26.576926: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:04:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-15 15:53:26.578391: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2022-03-15 15:53:26.578438: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2022-03-15 15:53:27.340707: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2022-03-15 15:53:27.340769: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2022-03-15 15:53:27.340780: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2022-03-15 15:53:27.343234: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11426 MB memory) -> physical GPU (device: 0, name: NVIDIA TITAN Xp, pci bus id: 0000:04:00.0, compute capability: 6.1)
+datasets: (60000, 28, 28) (60000,) 0 255
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+dense (Dense)                (None, 256)               200960    
+_________________________________________________________________
+dense_1 (Dense)              (None, 256)               65792     
+_________________________________________________________________
+dense_2 (Dense)              (None, 256)               65792     
+_________________________________________________________________
+dense_3 (Dense)              (None, 10)                2570      
+=================================================================
+Total params: 335,114
+Trainable params: 335,114
+Non-trainable params: 0
+_________________________________________________________________
+2022-03-15 15:53:28.677242: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2022-03-15 15:53:29.134096: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+0 loss: 1.260296106338501 acc: 0.09375
+200 loss: 0.4528682231903076 acc: 0.684375
+400 loss: 0.3645848035812378 acc: 0.85296875
+600 loss: 0.3300216794013977 acc: 0.8715625
+800 loss: 0.26400136947631836 acc: 0.9
+1000 loss: 0.32409629225730896 acc: 0.89890623
+1200 loss: 0.26654210686683655 acc: 0.91515625
+1400 loss: 0.20824705064296722 acc: 0.92015624
+1600 loss: 0.19080491364002228 acc: 0.91203123
+1800 loss: 0.19166740775108337 acc: 0.9315625
+2000 loss: 0.19627155363559723 acc: 0.9425
+2200 loss: 0.1604911983013153 acc: 0.93125
+2400 loss: 0.23801739513874054 acc: 0.93078125
+2600 loss: 0.1781875044107437 acc: 0.9376562
+2800 loss: 0.1306023746728897 acc: 0.9373438
+3000 loss: 0.2144690752029419 acc: 0.938125
+3200 loss: 0.15522445738315582 acc: 0.94203126
+3400 loss: 0.13009682297706604 acc: 0.93796873
+3600 loss: 0.10613998025655746 acc: 0.94109374
+3800 loss: 0.2006586343050003 acc: 0.95734376
+4000 loss: 0.17811959981918335 acc: 0.95359373
+4200 loss: 0.1497410237789154 acc: 0.94375
+4400 loss: 0.14741766452789307 acc: 0.94859374
+4600 loss: 0.17449088394641876 acc: 0.94734377
+4800 loss: 0.1414855420589447 acc: 0.94359374
+5000 loss: 0.13518264889717102 acc: 0.9534375
+5200 loss: 0.24500474333763123 acc: 0.945625
+5400 loss: 0.21549861133098602 acc: 0.94953126
+5600 loss: 0.08490059524774551 acc: 0.96171874
+5800 loss: 0.14966191351413727 acc: 0.9621875
+6000 loss: 0.12951742112636566 acc: 0.955625
+6200 loss: 0.1513119637966156 acc: 0.95171875
+6400 loss: 0.11307039856910706 acc: 0.9546875
+6600 loss: 0.10013549029827118 acc: 0.9529688
+6800 loss: 0.10255114734172821 acc: 0.954375
+7000 loss: 0.0860937312245369 acc: 0.9557812
+7200 loss: 0.2766948640346527 acc: 0.9490625
+7400 loss: 0.13338668644428253 acc: 0.95984375
+7600 loss: 0.14428886771202087 acc: 0.969375
+7800 loss: 0.08594908565282822 acc: 0.9621875
+8000 loss: 0.1508033275604248 acc: 0.9590625
+8200 loss: 0.06756198406219482 acc: 0.9607813
+8400 loss: 0.08251761645078659 acc: 0.956875
+8600 loss: 0.11022113263607025 acc: 0.9571875
+8800 loss: 0.15588992834091187 acc: 0.96015626
+9000 loss: 0.11335054785013199 acc: 0.95703125
+9200 loss: 0.06720691919326782 acc: 0.96
+9400 loss: 0.06928543001413345 acc: 0.9728125
+9600 loss: 0.1706525832414627 acc: 0.9675
+9800 loss: 0.06379792094230652 acc: 0.9625
+10000 loss: 0.16366879642009735 acc: 0.9625
+10200 loss: 0.12005949020385742 acc: 0.96203125
+10400 loss: 0.12681785225868225 acc: 0.95734376
+10600 loss: 0.07815153151750565 acc: 0.965625
+10800 loss: 0.18674670159816742 acc: 0.96140623
+11000 loss: 0.1086471676826477 acc: 0.9621875
+11200 loss: 0.08641965687274933 acc: 0.9696875
+11400 loss: 0.09484588354825974 acc: 0.9717187
+11600 loss: 0.12784746289253235 acc: 0.968125
+11800 loss: 0.09036475419998169 acc: 0.96515626
+12000 loss: 0.06833665072917938 acc: 0.96546876
+12200 loss: 0.057670630514621735 acc: 0.96375
+12400 loss: 0.12114784866571426 acc: 0.96625
+12600 loss: 0.15404967963695526 acc: 0.9634375
+12800 loss: 0.10529658943414688 acc: 0.9640625
+13000 loss: 0.08674890547990799 acc: 0.969375
+13200 loss: 0.16105440258979797 acc: 0.974375
+13400 loss: 0.08366797864437103 acc: 0.9734375
+13600 loss: 0.10089331120252609 acc: 0.96703124
+13800 loss: 0.09950900077819824 acc: 0.96875
+14000 loss: 0.06661917269229889 acc: 0.96671873
+14200 loss: 0.18110106885433197 acc: 0.96828127
+14400 loss: 0.09779474139213562 acc: 0.9685938
+14600 loss: 0.17077337205410004 acc: 0.96515626
+14800 loss: 0.06881392002105713 acc: 0.96671873
+15000 loss: 0.08316630125045776 acc: 0.978125
+15200 loss: 0.09486842155456543 acc: 0.9742187
+15400 loss: 0.09733635187149048 acc: 0.96953124
+15600 loss: 0.08819461613893509 acc: 0.9709375
+15800 loss: 0.07859782874584198 acc: 0.97046876
+16000 loss: 0.12690488994121552 acc: 0.9659375
+16200 loss: 0.08973884582519531 acc: 0.9717187
+16400 loss: 0.0896562784910202 acc: 0.9703125
+16600 loss: 0.08140770345926285 acc: 0.9659375
+16800 loss: 0.08970706164836884 acc: 0.9740625
+17000 loss: 0.07537146657705307 acc: 0.978125
+17200 loss: 0.04502609372138977 acc: 0.97375
+17400 loss: 0.08310122042894363 acc: 0.9717187
+17600 loss: 0.08866701275110245 acc: 0.9715625
+17800 loss: 0.0473954863846302 acc: 0.97078127
+18000 loss: 0.07786644995212555 acc: 0.97328126
+18200 loss: 0.0837923139333725 acc: 0.96984375
+18400 loss: 0.04878712445497513 acc: 0.971875
+18600 loss: 0.050561949610710144 acc: 0.97046876

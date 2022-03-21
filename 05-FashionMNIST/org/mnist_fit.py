@@ -3,6 +3,12 @@ import  tensorflow as tf
 from    tensorflow import keras
 from    tensorflow.keras import layers, optimizers, datasets
 
+# tensorboard
+import datetime
+current_time = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+log_dir = 'logs/org-board/' + current_time + '/train'
+tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir=log_dir, histogram_freq=1)
+
 
 
 def prepare_mnist_features_and_labels(x, y):
@@ -50,7 +56,8 @@ def main():
 
     model.fit(train_dataset.repeat(), epochs=30, steps_per_epoch=500,
               validation_data=val_dataset.repeat(),
-              validation_steps=2
+              validation_steps=2,
+              callbacks=[tensorboard_callback],
               )
 
 

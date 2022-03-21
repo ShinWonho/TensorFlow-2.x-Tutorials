@@ -1,0 +1,893 @@
+2022-03-17 15:09:27.871749: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2022-03-17 15:09:27.871749: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2022-03-17 15:09:27.890852: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2022-03-17 15:09:27.890852: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   dl020
+  Local device: mlx4_0
+--------------------------------------------------------------------------
+2022-03-17 15:09:28.994404: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcuda.so.1
+2022-03-17 15:09:28.994404: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcuda.so.1
+2022-03-17 15:09:28.994399: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcuda.so.1
+2022-03-17 15:09:28.994596: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcuda.so.1
+2022-03-17 15:09:30.597655: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:02:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-17 15:09:30.599153: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:02:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-17 15:09:30.600503: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 1 with properties: 
+pciBusID: 0000:04:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-17 15:09:30.603328: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:02:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-17 15:09:30.603327: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 1 with properties: 
+pciBusID: 0000:04:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-17 15:09:30.604768: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 2 with properties: 
+pciBusID: 0000:83:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-17 15:09:30.618862: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 2 with properties: 
+pciBusID: 0000:83:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-17 15:09:30.618959: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 1 with properties: 
+pciBusID: 0000:04:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-17 15:09:30.621921: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 3 with properties: 
+pciBusID: 0000:84:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-17 15:09:30.621963: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2022-03-17 15:09:30.624442: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:02:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-17 15:09:30.624631: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 3 with properties: 
+pciBusID: 0000:84:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-17 15:09:30.624670: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 2 with properties: 
+pciBusID: 0000:83:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-17 15:09:30.624683: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2022-03-17 15:09:30.628387: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2022-03-17 15:09:30.628454: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2022-03-17 15:09:30.630310: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 1 with properties: 
+pciBusID: 0000:04:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-17 15:09:30.630411: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 3 with properties: 
+pciBusID: 0000:84:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-17 15:09:30.630469: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2022-03-17 15:09:30.631391: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2022-03-17 15:09:30.631451: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2022-03-17 15:09:30.631776: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 2 with properties: 
+pciBusID: 0000:83:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-17 15:09:30.631950: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcufft.so.10
+2022-03-17 15:09:30.632355: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcurand.so.10
+2022-03-17 15:09:30.633225: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 3 with properties: 
+pciBusID: 0000:84:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-17 15:09:30.633281: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2022-03-17 15:09:30.633272: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusolver.so.11
+2022-03-17 15:09:30.634343: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcufft.so.10
+2022-03-17 15:09:30.634678: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcurand.so.10
+2022-03-17 15:09:30.634768: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusparse.so.11
+2022-03-17 15:09:30.634966: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8
+2022-03-17 15:09:30.635434: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusolver.so.11
+2022-03-17 15:09:30.636659: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusparse.so.11
+2022-03-17 15:09:30.636825: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8
+2022-03-17 15:09:30.638325: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2022-03-17 15:09:30.638420: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2022-03-17 15:09:30.640344: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2022-03-17 15:09:30.640432: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2022-03-17 15:09:30.642178: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcufft.so.10
+2022-03-17 15:09:30.642444: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcurand.so.10
+2022-03-17 15:09:30.643033: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcufft.so.10
+2022-03-17 15:09:30.643004: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusolver.so.11
+2022-03-17 15:09:30.643294: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcurand.so.10
+2022-03-17 15:09:30.643855: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusolver.so.11
+2022-03-17 15:09:30.643937: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusparse.so.11
+2022-03-17 15:09:30.644068: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8
+2022-03-17 15:09:30.644777: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusparse.so.11
+2022-03-17 15:09:30.644910: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8
+2022-03-17 15:09:30.663276: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0, 1, 2, 3
+2022-03-17 15:09:30.664344: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0, 1, 2, 3
+2022-03-17 15:09:30.664332: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-03-17 15:09:30.665889: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-03-17 15:09:30.669841: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:83:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-17 15:09:30.729172: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:84:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-17 15:09:30.735832: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0, 1, 2, 3
+2022-03-17 15:09:30.736000: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0, 1, 2, 3
+2022-03-17 15:09:30.737469: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 2
+2022-03-17 15:09:30.737547: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2022-03-17 15:09:30.737616: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-03-17 15:09:30.737684: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-03-17 15:09:30.740386: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 3
+2022-03-17 15:09:30.740485: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2022-03-17 15:09:30.745001: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:04:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-17 15:09:30.746234: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:02:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-17 15:09:30.755473: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 1
+2022-03-17 15:09:30.755535: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2022-03-17 15:09:30.756868: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2022-03-17 15:09:30.756931: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2022-03-17 15:09:32.037509: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2022-03-17 15:09:32.037556: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      3 
+2022-03-17 15:09:32.037565: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 3:   N 
+2022-03-17 15:09:32.040278: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11396 MB memory) -> physical GPU (device: 3, name: NVIDIA TITAN Xp, pci bus id: 0000:84:00.0, compute capability: 6.1)
+2022-03-17 15:09:32.040337: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2022-03-17 15:09:32.040381: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      2 
+2022-03-17 15:09:32.040391: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 2:   N 
+2022-03-17 15:09:32.043124: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11396 MB memory) -> physical GPU (device: 2, name: NVIDIA TITAN Xp, pci bus id: 0000:83:00.0, compute capability: 6.1)
+2022-03-17 15:09:32.047563: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2022-03-17 15:09:32.047597: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2022-03-17 15:09:32.047622: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2022-03-17 15:09:32.050147: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11396 MB memory) -> physical GPU (device: 0, name: NVIDIA TITAN Xp, pci bus id: 0000:02:00.0, compute capability: 6.1)
+2022-03-17 15:09:32.050358: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2022-03-17 15:09:32.050397: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      1 
+2022-03-17 15:09:32.050406: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 1:   N 
+2022-03-17 15:09:32.052911: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11396 MB memory) -> physical GPU (device: 1, name: NVIDIA TITAN Xp, pci bus id: 0000:04:00.0, compute capability: 6.1)
+(60000, 28, 28) (60000,)
+(10000, 28, 28) (10000,)
+Model: "ae"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+dense (Dense)                multiple                  401920    
+_________________________________________________________________
+dense_1 (Dense)              multiple                  10260     
+_________________________________________________________________
+dense_2 (Dense)              multiple                  10752     
+_________________________________________________________________
+dense_3 (Dense)              multiple                  402192    
+=================================================================
+Total params: 825,124
+Trainable params: 825,124
+Non-trainable params: 0
+_________________________________________________________________
+2022-03-17 15:09:32.738809: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2022-03-17 15:09:32.741644: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2022-03-17 15:09:32.748134: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2022-03-17 15:09:32.763972: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2022-03-17 15:09:33.071280: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2022-03-17 15:09:33.073318: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2022-03-17 15:09:33.076163: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2022-03-17 15:09:33.106549: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+[dl020:1589926] 3 more processes have sent help message help-mpi-btl-openib.txt / error in device init
+[dl020:1589926] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+2022-03-17 15:09:34.370623: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:176] None of the MLIR Optimization Passes are enabled (registered 2)
+2022-03-17 15:09:34.374508: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:176] None of the MLIR Optimization Passes are enabled (registered 2)
+2022-03-17 15:09:34.378669: I tensorflow/core/platform/profile_utils/cpu_utils.cc:114] CPU Frequency: 2596820000 Hz
+2022-03-17 15:09:34.384434: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:176] None of the MLIR Optimization Passes are enabled (registered 2)
+2022-03-17 15:09:34.389917: I tensorflow/core/platform/profile_utils/cpu_utils.cc:114] CPU Frequency: 2596820000 Hz
+2022-03-17 15:09:34.393407: I tensorflow/core/platform/profile_utils/cpu_utils.cc:114] CPU Frequency: 2596820000 Hz
+2022-03-17 15:09:34.424782: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:176] None of the MLIR Optimization Passes are enabled (registered 2)
+2022-03-17 15:09:34.430246: I tensorflow/core/platform/profile_utils/cpu_utils.cc:114] CPU Frequency: 2596820000 Hz
+Epoch[1/55], Step [50/600], Reconst Loss: 119.1741
+Epoch[1/55], Step [100/600], Reconst Loss: 100.1218
+Epoch[1/55], Step [150/600], Reconst Loss: 87.9808
+Epoch[1/55], Step [200/600], Reconst Loss: 86.8072
+Epoch[1/55], Step [250/600], Reconst Loss: 76.5038
+Epoch[1/55], Step [300/600], Reconst Loss: 75.8884
+Epoch[1/55], Step [350/600], Reconst Loss: 80.2173
+Epoch[1/55], Step [400/600], Reconst Loss: 74.2291
+Epoch[1/55], Step [450/600], Reconst Loss: 76.4401
+Epoch[1/55], Step [500/600], Reconst Loss: 82.6713
+Epoch[1/55], Step [550/600], Reconst Loss: 74.4519
+Epoch[1/55], Step [600/600], Reconst Loss: 75.4898
+New images saved !
+Epoch[2/55], Step [50/600], Reconst Loss: 72.1397
+Epoch[2/55], Step [100/600], Reconst Loss: 72.2906
+Epoch[2/55], Step [150/600], Reconst Loss: 72.8186
+Epoch[2/55], Step [200/600], Reconst Loss: 73.1312
+Epoch[2/55], Step [250/600], Reconst Loss: 68.9214
+Epoch[2/55], Step [300/600], Reconst Loss: 71.2172
+Epoch[2/55], Step [350/600], Reconst Loss: 66.9852
+Epoch[2/55], Step [400/600], Reconst Loss: 68.1141
+Epoch[2/55], Step [450/600], Reconst Loss: 73.5892
+Epoch[2/55], Step [500/600], Reconst Loss: 72.1413
+Epoch[2/55], Step [550/600], Reconst Loss: 68.7835
+Epoch[2/55], Step [600/600], Reconst Loss: 70.7820
+New images saved !
+Epoch[3/55], Step [50/600], Reconst Loss: 70.0868
+Epoch[3/55], Step [100/600], Reconst Loss: 68.2662
+Epoch[3/55], Step [150/600], Reconst Loss: 71.3063
+Epoch[3/55], Step [200/600], Reconst Loss: 69.3305
+Epoch[3/55], Step [250/600], Reconst Loss: 65.7185
+Epoch[3/55], Step [300/600], Reconst Loss: 69.7866
+Epoch[3/55], Step [350/600], Reconst Loss: 71.8334
+Epoch[3/55], Step [400/600], Reconst Loss: 70.6906
+Epoch[3/55], Step [450/600], Reconst Loss: 72.6180
+Epoch[3/55], Step [500/600], Reconst Loss: 71.3597
+Epoch[3/55], Step [550/600], Reconst Loss: 66.6504
+Epoch[3/55], Step [600/600], Reconst Loss: 68.9810
+New images saved !
+Epoch[4/55], Step [50/600], Reconst Loss: 72.2517
+Epoch[4/55], Step [100/600], Reconst Loss: 67.4248
+Epoch[4/55], Step [150/600], Reconst Loss: 66.6396
+Epoch[4/55], Step [200/600], Reconst Loss: 70.1418
+Epoch[4/55], Step [250/600], Reconst Loss: 65.5770
+Epoch[4/55], Step [300/600], Reconst Loss: 70.6475
+Epoch[4/55], Step [350/600], Reconst Loss: 69.8948
+Epoch[4/55], Step [400/600], Reconst Loss: 70.0923
+Epoch[4/55], Step [450/600], Reconst Loss: 70.3822
+Epoch[4/55], Step [500/600], Reconst Loss: 70.1361
+Epoch[4/55], Step [550/600], Reconst Loss: 66.1717
+Epoch[4/55], Step [600/600], Reconst Loss: 67.9155
+New images saved !
+Epoch[5/55], Step [50/600], Reconst Loss: 71.9463
+Epoch[5/55], Step [100/600], Reconst Loss: 68.7799
+Epoch[5/55], Step [150/600], Reconst Loss: 68.6767
+Epoch[5/55], Step [200/600], Reconst Loss: 65.0409
+Epoch[5/55], Step [250/600], Reconst Loss: 67.2872
+Epoch[5/55], Step [300/600], Reconst Loss: 66.0466
+Epoch[5/55], Step [350/600], Reconst Loss: 65.2860
+Epoch[5/55], Step [400/600], Reconst Loss: 69.0786
+Epoch[5/55], Step [450/600], Reconst Loss: 70.5867
+Epoch[5/55], Step [500/600], Reconst Loss: 68.4356
+Epoch[5/55], Step [550/600], Reconst Loss: 68.3849
+Epoch[5/55], Step [600/600], Reconst Loss: 68.7176
+New images saved !
+Epoch[6/55], Step [50/600], Reconst Loss: 68.8744
+Epoch[6/55], Step [100/600], Reconst Loss: 65.2379
+Epoch[6/55], Step [150/600], Reconst Loss: 66.8565
+Epoch[6/55], Step [200/600], Reconst Loss: 68.3559
+Epoch[6/55], Step [250/600], Reconst Loss: 67.1539
+Epoch[6/55], Step [300/600], Reconst Loss: 64.7747
+Epoch[6/55], Step [350/600], Reconst Loss: 69.8005
+Epoch[6/55], Step [400/600], Reconst Loss: 70.4495
+Epoch[6/55], Step [450/600], Reconst Loss: 67.6863
+Epoch[6/55], Step [500/600], Reconst Loss: 70.3271
+Epoch[6/55], Step [550/600], Reconst Loss: 66.7398
+Epoch[6/55], Step [600/600], Reconst Loss: 67.9732
+New images saved !
+Epoch[7/55], Step [50/600], Reconst Loss: 70.2727
+Epoch[7/55], Step [100/600], Reconst Loss: 69.0496
+Epoch[7/55], Step [150/600], Reconst Loss: 62.8110
+Epoch[7/55], Step [200/600], Reconst Loss: 68.1663
+Epoch[7/55], Step [250/600], Reconst Loss: 67.1189
+Epoch[7/55], Step [300/600], Reconst Loss: 65.2420
+Epoch[7/55], Step [350/600], Reconst Loss: 66.2148
+Epoch[7/55], Step [400/600], Reconst Loss: 66.3552
+Epoch[7/55], Step [450/600], Reconst Loss: 66.3704
+Epoch[7/55], Step [500/600], Reconst Loss: 66.2995
+Epoch[7/55], Step [550/600], Reconst Loss: 70.0972
+Epoch[7/55], Step [600/600], Reconst Loss: 67.2648
+New images saved !
+Epoch[8/55], Step [50/600], Reconst Loss: 65.9700
+Epoch[8/55], Step [100/600], Reconst Loss: 62.3678
+Epoch[8/55], Step [150/600], Reconst Loss: 67.1203
+Epoch[8/55], Step [200/600], Reconst Loss: 63.8858
+Epoch[8/55], Step [250/600], Reconst Loss: 61.5192
+Epoch[8/55], Step [300/600], Reconst Loss: 65.8865
+Epoch[8/55], Step [350/600], Reconst Loss: 64.6242
+Epoch[8/55], Step [400/600], Reconst Loss: 63.6973
+Epoch[8/55], Step [450/600], Reconst Loss: 70.5520
+Epoch[8/55], Step [500/600], Reconst Loss: 72.6966
+Epoch[8/55], Step [550/600], Reconst Loss: 65.8478
+Epoch[8/55], Step [600/600], Reconst Loss: 66.0113
+New images saved !
+Epoch[9/55], Step [50/600], Reconst Loss: 66.9873
+Epoch[9/55], Step [100/600], Reconst Loss: 64.6189
+Epoch[9/55], Step [150/600], Reconst Loss: 63.9052
+Epoch[9/55], Step [200/600], Reconst Loss: 69.5905
+Epoch[9/55], Step [250/600], Reconst Loss: 63.4898
+Epoch[9/55], Step [300/600], Reconst Loss: 67.7215
+Epoch[9/55], Step [350/600], Reconst Loss: 66.3848
+Epoch[9/55], Step [400/600], Reconst Loss: 66.5368
+Epoch[9/55], Step [450/600], Reconst Loss: 70.4877
+Epoch[9/55], Step [500/600], Reconst Loss: 69.7734
+Epoch[9/55], Step [550/600], Reconst Loss: 64.3253
+Epoch[9/55], Step [600/600], Reconst Loss: 65.8640
+New images saved !
+Epoch[10/55], Step [50/600], Reconst Loss: 68.5535
+Epoch[10/55], Step [100/600], Reconst Loss: 65.7954
+Epoch[10/55], Step [150/600], Reconst Loss: 67.5593
+Epoch[10/55], Step [200/600], Reconst Loss: 65.2268
+Epoch[10/55], Step [250/600], Reconst Loss: 64.7186
+Epoch[10/55], Step [300/600], Reconst Loss: 65.5267
+Epoch[10/55], Step [350/600], Reconst Loss: 66.8548
+Epoch[10/55], Step [400/600], Reconst Loss: 67.8221
+Epoch[10/55], Step [450/600], Reconst Loss: 67.1988
+Epoch[10/55], Step [500/600], Reconst Loss: 70.3724
+Epoch[10/55], Step [550/600], Reconst Loss: 69.0308
+Epoch[10/55], Step [600/600], Reconst Loss: 64.5020
+New images saved !
+Epoch[11/55], Step [50/600], Reconst Loss: 66.7041
+Epoch[11/55], Step [100/600], Reconst Loss: 66.3556
+Epoch[11/55], Step [150/600], Reconst Loss: 66.0644
+Epoch[11/55], Step [200/600], Reconst Loss: 68.1256
+Epoch[11/55], Step [250/600], Reconst Loss: 65.7314
+Epoch[11/55], Step [300/600], Reconst Loss: 65.4407
+Epoch[11/55], Step [350/600], Reconst Loss: 64.9763
+Epoch[11/55], Step [400/600], Reconst Loss: 66.5736
+Epoch[11/55], Step [450/600], Reconst Loss: 65.3206
+Epoch[11/55], Step [500/600], Reconst Loss: 70.9366
+Epoch[11/55], Step [550/600], Reconst Loss: 64.8509
+Epoch[11/55], Step [600/600], Reconst Loss: 65.9850
+New images saved !
+Epoch[12/55], Step [50/600], Reconst Loss: 71.0248
+Epoch[12/55], Step [100/600], Reconst Loss: 63.0958
+Epoch[12/55], Step [150/600], Reconst Loss: 65.6583
+Epoch[12/55], Step [200/600], Reconst Loss: 64.8489
+Epoch[12/55], Step [250/600], Reconst Loss: 64.6349
+Epoch[12/55], Step [300/600], Reconst Loss: 63.6343
+Epoch[12/55], Step [350/600], Reconst Loss: 62.9829
+Epoch[12/55], Step [400/600], Reconst Loss: 66.0906
+Epoch[12/55], Step [450/600], Reconst Loss: 67.4790
+Epoch[12/55], Step [500/600], Reconst Loss: 67.0808
+Epoch[12/55], Step [550/600], Reconst Loss: 62.1718
+Epoch[12/55], Step [600/600], Reconst Loss: 61.4062
+New images saved !
+Epoch[13/55], Step [50/600], Reconst Loss: 66.2828
+Epoch[13/55], Step [100/600], Reconst Loss: 65.5806
+Epoch[13/55], Step [150/600], Reconst Loss: 63.0978
+Epoch[13/55], Step [200/600], Reconst Loss: 64.3737
+Epoch[13/55], Step [250/600], Reconst Loss: 66.5208
+Epoch[13/55], Step [300/600], Reconst Loss: 66.0663
+Epoch[13/55], Step [350/600], Reconst Loss: 63.7046
+Epoch[13/55], Step [400/600], Reconst Loss: 63.8955
+Epoch[13/55], Step [450/600], Reconst Loss: 64.5866
+Epoch[13/55], Step [500/600], Reconst Loss: 65.0232
+Epoch[13/55], Step [550/600], Reconst Loss: 65.3617
+Epoch[13/55], Step [600/600], Reconst Loss: 63.8382
+New images saved !
+Epoch[14/55], Step [50/600], Reconst Loss: 68.1520
+Epoch[14/55], Step [100/600], Reconst Loss: 64.4775
+Epoch[14/55], Step [150/600], Reconst Loss: 65.3776
+Epoch[14/55], Step [200/600], Reconst Loss: 65.8883
+Epoch[14/55], Step [250/600], Reconst Loss: 63.3731
+Epoch[14/55], Step [300/600], Reconst Loss: 68.6600
+Epoch[14/55], Step [350/600], Reconst Loss: 63.2768
+Epoch[14/55], Step [400/600], Reconst Loss: 67.8841
+Epoch[14/55], Step [450/600], Reconst Loss: 65.1636
+Epoch[14/55], Step [500/600], Reconst Loss: 67.6280
+Epoch[14/55], Step [550/600], Reconst Loss: 66.7880
+Epoch[14/55], Step [600/600], Reconst Loss: 64.2621
+New images saved !
+Epoch[15/55], Step [50/600], Reconst Loss: 66.2072
+Epoch[15/55], Step [100/600], Reconst Loss: 65.3326
+Epoch[15/55], Step [150/600], Reconst Loss: 64.9664
+Epoch[15/55], Step [200/600], Reconst Loss: 70.9449
+Epoch[15/55], Step [250/600], Reconst Loss: 65.0712
+Epoch[15/55], Step [300/600], Reconst Loss: 63.7783
+Epoch[15/55], Step [350/600], Reconst Loss: 67.7660
+Epoch[15/55], Step [400/600], Reconst Loss: 66.0241
+Epoch[15/55], Step [450/600], Reconst Loss: 65.7371
+Epoch[15/55], Step [500/600], Reconst Loss: 70.1693
+Epoch[15/55], Step [550/600], Reconst Loss: 64.6355
+Epoch[15/55], Step [600/600], Reconst Loss: 65.8915
+New images saved !
+Epoch[16/55], Step [50/600], Reconst Loss: 66.0623
+Epoch[16/55], Step [100/600], Reconst Loss: 65.9328
+Epoch[16/55], Step [150/600], Reconst Loss: 62.0545
+Epoch[16/55], Step [200/600], Reconst Loss: 63.6237
+Epoch[16/55], Step [250/600], Reconst Loss: 63.0970
+Epoch[16/55], Step [300/600], Reconst Loss: 68.5848
+Epoch[16/55], Step [350/600], Reconst Loss: 63.4533
+Epoch[16/55], Step [400/600], Reconst Loss: 67.9073
+Epoch[16/55], Step [450/600], Reconst Loss: 63.8545
+Epoch[16/55], Step [500/600], Reconst Loss: 68.2231
+Epoch[16/55], Step [550/600], Reconst Loss: 68.6290
+Epoch[16/55], Step [600/600], Reconst Loss: 66.9564
+New images saved !
+Epoch[17/55], Step [50/600], Reconst Loss: 66.7396
+Epoch[17/55], Step [100/600], Reconst Loss: 63.6390
+Epoch[17/55], Step [150/600], Reconst Loss: 65.1746
+Epoch[17/55], Step [200/600], Reconst Loss: 61.3933
+Epoch[17/55], Step [250/600], Reconst Loss: 66.8783
+Epoch[17/55], Step [300/600], Reconst Loss: 66.7419
+Epoch[17/55], Step [350/600], Reconst Loss: 66.9767
+Epoch[17/55], Step [400/600], Reconst Loss: 62.5368
+Epoch[17/55], Step [450/600], Reconst Loss: 64.3149
+Epoch[17/55], Step [500/600], Reconst Loss: 67.6327
+Epoch[17/55], Step [550/600], Reconst Loss: 66.0384
+Epoch[17/55], Step [600/600], Reconst Loss: 64.9614
+New images saved !
+Epoch[18/55], Step [50/600], Reconst Loss: 66.6291
+Epoch[18/55], Step [100/600], Reconst Loss: 64.7916
+Epoch[18/55], Step [150/600], Reconst Loss: 67.1133
+Epoch[18/55], Step [200/600], Reconst Loss: 65.9365
+Epoch[18/55], Step [250/600], Reconst Loss: 64.3812
+Epoch[18/55], Step [300/600], Reconst Loss: 65.3495
+Epoch[18/55], Step [350/600], Reconst Loss: 67.8860
+Epoch[18/55], Step [400/600], Reconst Loss: 66.7593
+Epoch[18/55], Step [450/600], Reconst Loss: 64.4891
+Epoch[18/55], Step [500/600], Reconst Loss: 65.4911
+Epoch[18/55], Step [550/600], Reconst Loss: 64.2059
+Epoch[18/55], Step [600/600], Reconst Loss: 62.9997
+New images saved !
+Epoch[19/55], Step [50/600], Reconst Loss: 64.2982
+Epoch[19/55], Step [100/600], Reconst Loss: 65.5558
+Epoch[19/55], Step [150/600], Reconst Loss: 67.3396
+Epoch[19/55], Step [200/600], Reconst Loss: 66.3458
+Epoch[19/55], Step [250/600], Reconst Loss: 63.7123
+Epoch[19/55], Step [300/600], Reconst Loss: 65.3667
+Epoch[19/55], Step [350/600], Reconst Loss: 64.8958
+Epoch[19/55], Step [400/600], Reconst Loss: 65.6481
+Epoch[19/55], Step [450/600], Reconst Loss: 67.8192
+Epoch[19/55], Step [500/600], Reconst Loss: 64.6535
+Epoch[19/55], Step [550/600], Reconst Loss: 66.0600
+Epoch[19/55], Step [600/600], Reconst Loss: 62.8988
+New images saved !
+Epoch[20/55], Step [50/600], Reconst Loss: 64.5941
+Epoch[20/55], Step [100/600], Reconst Loss: 63.7296
+Epoch[20/55], Step [150/600], Reconst Loss: 65.1200
+Epoch[20/55], Step [200/600], Reconst Loss: 63.0514
+Epoch[20/55], Step [250/600], Reconst Loss: 62.6989
+Epoch[20/55], Step [300/600], Reconst Loss: 64.6371
+Epoch[20/55], Step [350/600], Reconst Loss: 62.0329
+Epoch[20/55], Step [400/600], Reconst Loss: 62.1423
+Epoch[20/55], Step [450/600], Reconst Loss: 65.5502
+Epoch[20/55], Step [500/600], Reconst Loss: 66.3293
+Epoch[20/55], Step [550/600], Reconst Loss: 65.5742
+Epoch[20/55], Step [600/600], Reconst Loss: 65.7661
+New images saved !
+Epoch[21/55], Step [50/600], Reconst Loss: 67.9272
+Epoch[21/55], Step [100/600], Reconst Loss: 64.0982
+Epoch[21/55], Step [150/600], Reconst Loss: 62.8175
+Epoch[21/55], Step [200/600], Reconst Loss: 64.0716
+Epoch[21/55], Step [250/600], Reconst Loss: 63.1536
+Epoch[21/55], Step [300/600], Reconst Loss: 64.8437
+Epoch[21/55], Step [350/600], Reconst Loss: 67.4186
+Epoch[21/55], Step [400/600], Reconst Loss: 64.8690
+Epoch[21/55], Step [450/600], Reconst Loss: 66.9967
+Epoch[21/55], Step [500/600], Reconst Loss: 67.9494
+Epoch[21/55], Step [550/600], Reconst Loss: 61.1536
+Epoch[21/55], Step [600/600], Reconst Loss: 66.4172
+New images saved !
+Epoch[22/55], Step [50/600], Reconst Loss: 64.1226
+Epoch[22/55], Step [100/600], Reconst Loss: 67.4809
+Epoch[22/55], Step [150/600], Reconst Loss: 65.2706
+Epoch[22/55], Step [200/600], Reconst Loss: 63.4292
+Epoch[22/55], Step [250/600], Reconst Loss: 62.0695
+Epoch[22/55], Step [300/600], Reconst Loss: 62.3199
+Epoch[22/55], Step [350/600], Reconst Loss: 64.7489
+Epoch[22/55], Step [400/600], Reconst Loss: 65.4744
+Epoch[22/55], Step [450/600], Reconst Loss: 67.8886
+Epoch[22/55], Step [500/600], Reconst Loss: 67.6263
+Epoch[22/55], Step [550/600], Reconst Loss: 63.2082
+Epoch[22/55], Step [600/600], Reconst Loss: 68.0634
+New images saved !
+Epoch[23/55], Step [50/600], Reconst Loss: 63.5642
+Epoch[23/55], Step [100/600], Reconst Loss: 61.0076
+Epoch[23/55], Step [150/600], Reconst Loss: 63.2937
+Epoch[23/55], Step [200/600], Reconst Loss: 66.1457
+Epoch[23/55], Step [250/600], Reconst Loss: 64.1506
+Epoch[23/55], Step [300/600], Reconst Loss: 64.1197
+Epoch[23/55], Step [350/600], Reconst Loss: 65.2351
+Epoch[23/55], Step [400/600], Reconst Loss: 66.3085
+Epoch[23/55], Step [450/600], Reconst Loss: 62.3821
+Epoch[23/55], Step [500/600], Reconst Loss: 67.0398
+Epoch[23/55], Step [550/600], Reconst Loss: 61.2670
+Epoch[23/55], Step [600/600], Reconst Loss: 67.0266
+New images saved !
+Epoch[24/55], Step [50/600], Reconst Loss: 65.1336
+Epoch[24/55], Step [100/600], Reconst Loss: 64.0771
+Epoch[24/55], Step [150/600], Reconst Loss: 65.4660
+Epoch[24/55], Step [200/600], Reconst Loss: 66.4092
+Epoch[24/55], Step [250/600], Reconst Loss: 62.6540
+Epoch[24/55], Step [300/600], Reconst Loss: 60.9524
+Epoch[24/55], Step [350/600], Reconst Loss: 66.1374
+Epoch[24/55], Step [400/600], Reconst Loss: 65.4267
+Epoch[24/55], Step [450/600], Reconst Loss: 64.0453
+Epoch[24/55], Step [500/600], Reconst Loss: 65.1590
+Epoch[24/55], Step [550/600], Reconst Loss: 66.0641
+Epoch[24/55], Step [600/600], Reconst Loss: 67.0456
+New images saved !
+Epoch[25/55], Step [50/600], Reconst Loss: 67.3808
+Epoch[25/55], Step [100/600], Reconst Loss: 66.4525
+Epoch[25/55], Step [150/600], Reconst Loss: 60.2367
+Epoch[25/55], Step [200/600], Reconst Loss: 62.1780
+Epoch[25/55], Step [250/600], Reconst Loss: 68.0884
+Epoch[25/55], Step [300/600], Reconst Loss: 63.9600
+Epoch[25/55], Step [350/600], Reconst Loss: 64.1517
+Epoch[25/55], Step [400/600], Reconst Loss: 65.4742
+Epoch[25/55], Step [450/600], Reconst Loss: 67.2204
+Epoch[25/55], Step [500/600], Reconst Loss: 66.6121
+Epoch[25/55], Step [550/600], Reconst Loss: 65.4902
+Epoch[25/55], Step [600/600], Reconst Loss: 65.2251
+New images saved !
+Epoch[26/55], Step [50/600], Reconst Loss: 65.8890
+Epoch[26/55], Step [100/600], Reconst Loss: 63.6250
+Epoch[26/55], Step [150/600], Reconst Loss: 67.2446
+Epoch[26/55], Step [200/600], Reconst Loss: 66.7068
+Epoch[26/55], Step [250/600], Reconst Loss: 65.3775
+Epoch[26/55], Step [300/600], Reconst Loss: 66.9960
+Epoch[26/55], Step [350/600], Reconst Loss: 62.8520
+Epoch[26/55], Step [400/600], Reconst Loss: 64.1938
+Epoch[26/55], Step [450/600], Reconst Loss: 65.9638
+Epoch[26/55], Step [500/600], Reconst Loss: 66.1891
+Epoch[26/55], Step [550/600], Reconst Loss: 62.2672
+Epoch[26/55], Step [600/600], Reconst Loss: 67.8532
+New images saved !
+Epoch[27/55], Step [50/600], Reconst Loss: 69.3011
+Epoch[27/55], Step [100/600], Reconst Loss: 64.8031
+Epoch[27/55], Step [150/600], Reconst Loss: 60.5229
+Epoch[27/55], Step [200/600], Reconst Loss: 58.7458
+Epoch[27/55], Step [250/600], Reconst Loss: 62.9810
+Epoch[27/55], Step [300/600], Reconst Loss: 62.4461
+Epoch[27/55], Step [350/600], Reconst Loss: 65.7857
+Epoch[27/55], Step [400/600], Reconst Loss: 65.2722
+Epoch[27/55], Step [450/600], Reconst Loss: 67.6705
+Epoch[27/55], Step [500/600], Reconst Loss: 66.4698
+Epoch[27/55], Step [550/600], Reconst Loss: 66.2099
+Epoch[27/55], Step [600/600], Reconst Loss: 66.9587
+New images saved !
+Epoch[28/55], Step [50/600], Reconst Loss: 65.8668
+Epoch[28/55], Step [100/600], Reconst Loss: 63.2468
+Epoch[28/55], Step [150/600], Reconst Loss: 63.7642
+Epoch[28/55], Step [200/600], Reconst Loss: 63.4468
+Epoch[28/55], Step [250/600], Reconst Loss: 66.0154
+Epoch[28/55], Step [300/600], Reconst Loss: 64.5841
+Epoch[28/55], Step [350/600], Reconst Loss: 63.1962
+Epoch[28/55], Step [400/600], Reconst Loss: 68.8969
+Epoch[28/55], Step [450/600], Reconst Loss: 63.5138
+Epoch[28/55], Step [500/600], Reconst Loss: 65.7490
+Epoch[28/55], Step [550/600], Reconst Loss: 67.1202
+Epoch[28/55], Step [600/600], Reconst Loss: 65.2052
+New images saved !
+Epoch[29/55], Step [50/600], Reconst Loss: 67.4476
+Epoch[29/55], Step [100/600], Reconst Loss: 64.5891
+Epoch[29/55], Step [150/600], Reconst Loss: 64.9950
+Epoch[29/55], Step [200/600], Reconst Loss: 65.2142
+Epoch[29/55], Step [250/600], Reconst Loss: 65.0363
+Epoch[29/55], Step [300/600], Reconst Loss: 61.1983
+Epoch[29/55], Step [350/600], Reconst Loss: 62.1582
+Epoch[29/55], Step [400/600], Reconst Loss: 64.7743
+Epoch[29/55], Step [450/600], Reconst Loss: 65.7971
+Epoch[29/55], Step [500/600], Reconst Loss: 63.5180
+Epoch[29/55], Step [550/600], Reconst Loss: 60.4843
+Epoch[29/55], Step [600/600], Reconst Loss: 63.6445
+New images saved !
+Epoch[30/55], Step [50/600], Reconst Loss: 63.6947
+Epoch[30/55], Step [100/600], Reconst Loss: 59.6733
+Epoch[30/55], Step [150/600], Reconst Loss: 64.4207
+Epoch[30/55], Step [200/600], Reconst Loss: 63.5533
+Epoch[30/55], Step [250/600], Reconst Loss: 64.4708
+Epoch[30/55], Step [300/600], Reconst Loss: 67.6838
+Epoch[30/55], Step [350/600], Reconst Loss: 60.6901
+Epoch[30/55], Step [400/600], Reconst Loss: 66.6312
+Epoch[30/55], Step [450/600], Reconst Loss: 67.1321
+Epoch[30/55], Step [500/600], Reconst Loss: 65.2955
+Epoch[30/55], Step [550/600], Reconst Loss: 65.1859
+Epoch[30/55], Step [600/600], Reconst Loss: 67.1460
+New images saved !
+Epoch[31/55], Step [50/600], Reconst Loss: 65.2860
+Epoch[31/55], Step [100/600], Reconst Loss: 66.6204
+Epoch[31/55], Step [150/600], Reconst Loss: 64.3769
+Epoch[31/55], Step [200/600], Reconst Loss: 66.3164
+Epoch[31/55], Step [250/600], Reconst Loss: 63.0540
+Epoch[31/55], Step [300/600], Reconst Loss: 61.9191
+Epoch[31/55], Step [350/600], Reconst Loss: 61.9481
+Epoch[31/55], Step [400/600], Reconst Loss: 64.9473
+Epoch[31/55], Step [450/600], Reconst Loss: 65.1118
+Epoch[31/55], Step [500/600], Reconst Loss: 67.2309
+Epoch[31/55], Step [550/600], Reconst Loss: 62.9586
+Epoch[31/55], Step [600/600], Reconst Loss: 65.3661
+New images saved !
+Epoch[32/55], Step [50/600], Reconst Loss: 67.7869
+Epoch[32/55], Step [100/600], Reconst Loss: 60.6753
+Epoch[32/55], Step [150/600], Reconst Loss: 64.6039
+Epoch[32/55], Step [200/600], Reconst Loss: 59.9789
+Epoch[32/55], Step [250/600], Reconst Loss: 62.8858
+Epoch[32/55], Step [300/600], Reconst Loss: 63.9168
+Epoch[32/55], Step [350/600], Reconst Loss: 63.9917
+Epoch[32/55], Step [400/600], Reconst Loss: 66.5233
+Epoch[32/55], Step [450/600], Reconst Loss: 66.2794
+Epoch[32/55], Step [500/600], Reconst Loss: 67.7226
+Epoch[32/55], Step [550/600], Reconst Loss: 63.4242
+Epoch[32/55], Step [600/600], Reconst Loss: 63.4785
+New images saved !
+Epoch[33/55], Step [50/600], Reconst Loss: 66.7129
+Epoch[33/55], Step [100/600], Reconst Loss: 65.3835
+Epoch[33/55], Step [150/600], Reconst Loss: 65.4083
+Epoch[33/55], Step [200/600], Reconst Loss: 64.4008
+Epoch[33/55], Step [250/600], Reconst Loss: 62.0971
+Epoch[33/55], Step [300/600], Reconst Loss: 59.5654
+Epoch[33/55], Step [350/600], Reconst Loss: 64.6591
+Epoch[33/55], Step [400/600], Reconst Loss: 66.6633
+Epoch[33/55], Step [450/600], Reconst Loss: 65.2971
+Epoch[33/55], Step [500/600], Reconst Loss: 64.8107
+Epoch[33/55], Step [550/600], Reconst Loss: 64.9612
+Epoch[33/55], Step [600/600], Reconst Loss: 66.5031
+New images saved !
+Epoch[34/55], Step [50/600], Reconst Loss: 69.2289
+Epoch[34/55], Step [100/600], Reconst Loss: 64.2294
+Epoch[34/55], Step [150/600], Reconst Loss: 64.9574
+Epoch[34/55], Step [200/600], Reconst Loss: 65.7524
+Epoch[34/55], Step [250/600], Reconst Loss: 65.9307
+Epoch[34/55], Step [300/600], Reconst Loss: 65.8307
+Epoch[34/55], Step [350/600], Reconst Loss: 66.9381
+Epoch[34/55], Step [400/600], Reconst Loss: 63.1743
+Epoch[34/55], Step [450/600], Reconst Loss: 66.1469
+Epoch[34/55], Step [500/600], Reconst Loss: 66.0697
+Epoch[34/55], Step [550/600], Reconst Loss: 65.8513
+Epoch[34/55], Step [600/600], Reconst Loss: 66.7393
+New images saved !
+Epoch[35/55], Step [50/600], Reconst Loss: 63.7998
+Epoch[35/55], Step [100/600], Reconst Loss: 65.0614
+Epoch[35/55], Step [150/600], Reconst Loss: 66.9536
+Epoch[35/55], Step [200/600], Reconst Loss: 63.4727
+Epoch[35/55], Step [250/600], Reconst Loss: 66.9330
+Epoch[35/55], Step [300/600], Reconst Loss: 66.4406
+Epoch[35/55], Step [350/600], Reconst Loss: 62.2275
+Epoch[35/55], Step [400/600], Reconst Loss: 61.7864
+Epoch[35/55], Step [450/600], Reconst Loss: 63.0879
+Epoch[35/55], Step [500/600], Reconst Loss: 67.4321
+Epoch[35/55], Step [550/600], Reconst Loss: 65.1930
+Epoch[35/55], Step [600/600], Reconst Loss: 63.7382
+New images saved !
+Epoch[36/55], Step [50/600], Reconst Loss: 66.6283
+Epoch[36/55], Step [100/600], Reconst Loss: 61.3000
+Epoch[36/55], Step [150/600], Reconst Loss: 66.2301
+Epoch[36/55], Step [200/600], Reconst Loss: 64.0791
+Epoch[36/55], Step [250/600], Reconst Loss: 64.9099
+Epoch[36/55], Step [300/600], Reconst Loss: 65.7737
+Epoch[36/55], Step [350/600], Reconst Loss: 62.9120
+Epoch[36/55], Step [400/600], Reconst Loss: 67.1903
+Epoch[36/55], Step [450/600], Reconst Loss: 62.8936
+Epoch[36/55], Step [500/600], Reconst Loss: 64.9308
+Epoch[36/55], Step [550/600], Reconst Loss: 61.0364
+Epoch[36/55], Step [600/600], Reconst Loss: 65.5736
+New images saved !
+Epoch[37/55], Step [50/600], Reconst Loss: 67.7301
+Epoch[37/55], Step [100/600], Reconst Loss: 61.5450
+Epoch[37/55], Step [150/600], Reconst Loss: 65.2164
+Epoch[37/55], Step [200/600], Reconst Loss: 64.9518
+Epoch[37/55], Step [250/600], Reconst Loss: 63.3047
+Epoch[37/55], Step [300/600], Reconst Loss: 65.2384
+Epoch[37/55], Step [350/600], Reconst Loss: 63.6767
+Epoch[37/55], Step [400/600], Reconst Loss: 63.4518
+Epoch[37/55], Step [450/600], Reconst Loss: 65.0226
+Epoch[37/55], Step [500/600], Reconst Loss: 71.2805
+Epoch[37/55], Step [550/600], Reconst Loss: 65.9324
+Epoch[37/55], Step [600/600], Reconst Loss: 64.9793
+New images saved !
+Epoch[38/55], Step [50/600], Reconst Loss: 68.3203
+Epoch[38/55], Step [100/600], Reconst Loss: 61.3860
+Epoch[38/55], Step [150/600], Reconst Loss: 61.7264
+Epoch[38/55], Step [200/600], Reconst Loss: 65.7752
+Epoch[38/55], Step [250/600], Reconst Loss: 65.6675
+Epoch[38/55], Step [300/600], Reconst Loss: 64.0447
+Epoch[38/55], Step [350/600], Reconst Loss: 65.0618
+Epoch[38/55], Step [400/600], Reconst Loss: 64.9485
+Epoch[38/55], Step [450/600], Reconst Loss: 65.2730
+Epoch[38/55], Step [500/600], Reconst Loss: 64.1255
+Epoch[38/55], Step [550/600], Reconst Loss: 66.5623
+Epoch[38/55], Step [600/600], Reconst Loss: 66.1796
+New images saved !
+Epoch[39/55], Step [50/600], Reconst Loss: 67.8486
+Epoch[39/55], Step [100/600], Reconst Loss: 65.2095
+Epoch[39/55], Step [150/600], Reconst Loss: 65.2526
+Epoch[39/55], Step [200/600], Reconst Loss: 65.8012
+Epoch[39/55], Step [250/600], Reconst Loss: 59.5976
+Epoch[39/55], Step [300/600], Reconst Loss: 61.5548
+Epoch[39/55], Step [350/600], Reconst Loss: 62.2506
+Epoch[39/55], Step [400/600], Reconst Loss: 63.7612
+Epoch[39/55], Step [450/600], Reconst Loss: 64.8123
+Epoch[39/55], Step [500/600], Reconst Loss: 66.6395
+Epoch[39/55], Step [550/600], Reconst Loss: 63.9464
+Epoch[39/55], Step [600/600], Reconst Loss: 66.7439
+New images saved !
+Epoch[40/55], Step [50/600], Reconst Loss: 65.1292
+Epoch[40/55], Step [100/600], Reconst Loss: 61.4765
+Epoch[40/55], Step [150/600], Reconst Loss: 63.9612
+Epoch[40/55], Step [200/600], Reconst Loss: 64.3716
+Epoch[40/55], Step [250/600], Reconst Loss: 58.9193
+Epoch[40/55], Step [300/600], Reconst Loss: 63.6085
+Epoch[40/55], Step [350/600], Reconst Loss: 64.6151
+Epoch[40/55], Step [400/600], Reconst Loss: 65.4721
+Epoch[40/55], Step [450/600], Reconst Loss: 63.2261
+Epoch[40/55], Step [500/600], Reconst Loss: 66.5480
+Epoch[40/55], Step [550/600], Reconst Loss: 65.2403
+Epoch[40/55], Step [600/600], Reconst Loss: 64.7199
+New images saved !
+Epoch[41/55], Step [50/600], Reconst Loss: 64.9259
+Epoch[41/55], Step [100/600], Reconst Loss: 62.9361
+Epoch[41/55], Step [150/600], Reconst Loss: 62.4983
+Epoch[41/55], Step [200/600], Reconst Loss: 66.9825
+Epoch[41/55], Step [250/600], Reconst Loss: 61.8947
+Epoch[41/55], Step [300/600], Reconst Loss: 65.6364
+Epoch[41/55], Step [350/600], Reconst Loss: 63.6287
+Epoch[41/55], Step [400/600], Reconst Loss: 63.6942
+Epoch[41/55], Step [450/600], Reconst Loss: 64.5671
+Epoch[41/55], Step [500/600], Reconst Loss: 63.9369
+Epoch[41/55], Step [550/600], Reconst Loss: 62.0591
+Epoch[41/55], Step [600/600], Reconst Loss: 66.7156
+New images saved !
+Epoch[42/55], Step [50/600], Reconst Loss: 64.3904
+Epoch[42/55], Step [100/600], Reconst Loss: 65.4824
+Epoch[42/55], Step [150/600], Reconst Loss: 61.0789
+Epoch[42/55], Step [200/600], Reconst Loss: 63.8944
+Epoch[42/55], Step [250/600], Reconst Loss: 63.1612
+Epoch[42/55], Step [300/600], Reconst Loss: 61.8800
+Epoch[42/55], Step [350/600], Reconst Loss: 64.5283
+Epoch[42/55], Step [400/600], Reconst Loss: 63.1669
+Epoch[42/55], Step [450/600], Reconst Loss: 65.6241
+Epoch[42/55], Step [500/600], Reconst Loss: 65.1819
+Epoch[42/55], Step [550/600], Reconst Loss: 60.9728
+Epoch[42/55], Step [600/600], Reconst Loss: 65.2098
+New images saved !
+Epoch[43/55], Step [50/600], Reconst Loss: 63.7797
+Epoch[43/55], Step [100/600], Reconst Loss: 63.3614
+Epoch[43/55], Step [150/600], Reconst Loss: 64.8654
+Epoch[43/55], Step [200/600], Reconst Loss: 63.7215
+Epoch[43/55], Step [250/600], Reconst Loss: 61.8467
+Epoch[43/55], Step [300/600], Reconst Loss: 62.7674
+Epoch[43/55], Step [350/600], Reconst Loss: 69.4087
+Epoch[43/55], Step [400/600], Reconst Loss: 64.3927
+Epoch[43/55], Step [450/600], Reconst Loss: 62.5231
+Epoch[43/55], Step [500/600], Reconst Loss: 67.4026
+Epoch[43/55], Step [550/600], Reconst Loss: 65.5505
+Epoch[43/55], Step [600/600], Reconst Loss: 63.7252
+New images saved !
+Epoch[44/55], Step [50/600], Reconst Loss: 62.2871
+Epoch[44/55], Step [100/600], Reconst Loss: 62.7622
+Epoch[44/55], Step [150/600], Reconst Loss: 65.3090
+Epoch[44/55], Step [200/600], Reconst Loss: 62.0057
+Epoch[44/55], Step [250/600], Reconst Loss: 61.8975
+Epoch[44/55], Step [300/600], Reconst Loss: 64.5236
+Epoch[44/55], Step [350/600], Reconst Loss: 62.6326
+Epoch[44/55], Step [400/600], Reconst Loss: 63.6804
+Epoch[44/55], Step [450/600], Reconst Loss: 66.2615
+Epoch[44/55], Step [500/600], Reconst Loss: 65.4764
+Epoch[44/55], Step [550/600], Reconst Loss: 64.1036
+Epoch[44/55], Step [600/600], Reconst Loss: 63.7696
+New images saved !
+Epoch[45/55], Step [50/600], Reconst Loss: 64.8272
+Epoch[45/55], Step [100/600], Reconst Loss: 62.6056
+Epoch[45/55], Step [150/600], Reconst Loss: 64.8685
+Epoch[45/55], Step [200/600], Reconst Loss: 61.8285
+Epoch[45/55], Step [250/600], Reconst Loss: 65.3907
+Epoch[45/55], Step [300/600], Reconst Loss: 65.6128
+Epoch[45/55], Step [350/600], Reconst Loss: 64.0823
+Epoch[45/55], Step [400/600], Reconst Loss: 63.3108
+Epoch[45/55], Step [450/600], Reconst Loss: 67.7390
+Epoch[45/55], Step [500/600], Reconst Loss: 64.5380
+Epoch[45/55], Step [550/600], Reconst Loss: 65.0437
+Epoch[45/55], Step [600/600], Reconst Loss: 64.2449
+New images saved !
+Epoch[46/55], Step [50/600], Reconst Loss: 66.6295
+Epoch[46/55], Step [100/600], Reconst Loss: 63.7380
+Epoch[46/55], Step [150/600], Reconst Loss: 61.4546
+Epoch[46/55], Step [200/600], Reconst Loss: 63.1860
+Epoch[46/55], Step [250/600], Reconst Loss: 63.0318
+Epoch[46/55], Step [300/600], Reconst Loss: 66.0169
+Epoch[46/55], Step [350/600], Reconst Loss: 62.0327
+Epoch[46/55], Step [400/600], Reconst Loss: 66.5486
+Epoch[46/55], Step [450/600], Reconst Loss: 65.1611
+Epoch[46/55], Step [500/600], Reconst Loss: 67.0948
+Epoch[46/55], Step [550/600], Reconst Loss: 62.3303
+Epoch[46/55], Step [600/600], Reconst Loss: 67.7910
+New images saved !
+Epoch[47/55], Step [50/600], Reconst Loss: 64.7205
+Epoch[47/55], Step [100/600], Reconst Loss: 65.9962
+Epoch[47/55], Step [150/600], Reconst Loss: 64.4182
+Epoch[47/55], Step [200/600], Reconst Loss: 65.2464
+Epoch[47/55], Step [250/600], Reconst Loss: 63.2367
+Epoch[47/55], Step [300/600], Reconst Loss: 64.1352
+Epoch[47/55], Step [350/600], Reconst Loss: 64.8794
+Epoch[47/55], Step [400/600], Reconst Loss: 66.5691
+Epoch[47/55], Step [450/600], Reconst Loss: 69.0979
+Epoch[47/55], Step [500/600], Reconst Loss: 67.2628
+Epoch[47/55], Step [550/600], Reconst Loss: 62.1952
+Epoch[47/55], Step [600/600], Reconst Loss: 64.4374
+New images saved !
+Epoch[48/55], Step [50/600], Reconst Loss: 67.7010
+Epoch[48/55], Step [100/600], Reconst Loss: 61.3271
+Epoch[48/55], Step [150/600], Reconst Loss: 64.3129
+Epoch[48/55], Step [200/600], Reconst Loss: 65.2432
+Epoch[48/55], Step [250/600], Reconst Loss: 65.6884
+Epoch[48/55], Step [300/600], Reconst Loss: 61.3638
+Epoch[48/55], Step [350/600], Reconst Loss: 63.6250
+Epoch[48/55], Step [400/600], Reconst Loss: 64.5531
+Epoch[48/55], Step [450/600], Reconst Loss: 67.3042
+Epoch[48/55], Step [500/600], Reconst Loss: 67.9131
+Epoch[48/55], Step [550/600], Reconst Loss: 63.7727
+Epoch[48/55], Step [600/600], Reconst Loss: 63.9080
+New images saved !
+Epoch[49/55], Step [50/600], Reconst Loss: 67.8841
+Epoch[49/55], Step [100/600], Reconst Loss: 63.4071
+Epoch[49/55], Step [150/600], Reconst Loss: 64.9513
+Epoch[49/55], Step [200/600], Reconst Loss: 63.7187
+Epoch[49/55], Step [250/600], Reconst Loss: 61.3679
+Epoch[49/55], Step [300/600], Reconst Loss: 68.0545
+Epoch[49/55], Step [350/600], Reconst Loss: 64.2731
+Epoch[49/55], Step [400/600], Reconst Loss: 64.6511
+Epoch[49/55], Step [450/600], Reconst Loss: 65.5828
+Epoch[49/55], Step [500/600], Reconst Loss: 68.7797
+Epoch[49/55], Step [550/600], Reconst Loss: 61.4999
+Epoch[49/55], Step [600/600], Reconst Loss: 66.2487
+New images saved !
+Epoch[50/55], Step [50/600], Reconst Loss: 66.4973
+Epoch[50/55], Step [100/600], Reconst Loss: 60.7071
+Epoch[50/55], Step [150/600], Reconst Loss: 62.5296
+Epoch[50/55], Step [200/600], Reconst Loss: 63.5206
+Epoch[50/55], Step [250/600], Reconst Loss: 60.7352
+Epoch[50/55], Step [300/600], Reconst Loss: 64.3418
+Epoch[50/55], Step [350/600], Reconst Loss: 61.9805
+Epoch[50/55], Step [400/600], Reconst Loss: 68.3678
+Epoch[50/55], Step [450/600], Reconst Loss: 64.2518
+Epoch[50/55], Step [500/600], Reconst Loss: 64.8692
+Epoch[50/55], Step [550/600], Reconst Loss: 63.0842
+Epoch[50/55], Step [600/600], Reconst Loss: 65.3281
+New images saved !
+Epoch[51/55], Step [50/600], Reconst Loss: 62.9265
+Epoch[51/55], Step [100/600], Reconst Loss: 64.0981
+Epoch[51/55], Step [150/600], Reconst Loss: 60.8897
+Epoch[51/55], Step [200/600], Reconst Loss: 63.5864
+Epoch[51/55], Step [250/600], Reconst Loss: 58.9470
+Epoch[51/55], Step [300/600], Reconst Loss: 63.5183
+Epoch[51/55], Step [350/600], Reconst Loss: 63.1629
+Epoch[51/55], Step [400/600], Reconst Loss: 64.4512
+Epoch[51/55], Step [450/600], Reconst Loss: 68.2211
+Epoch[51/55], Step [500/600], Reconst Loss: 71.4404
+Epoch[51/55], Step [550/600], Reconst Loss: 64.4623
+Epoch[51/55], Step [600/600], Reconst Loss: 62.9661
+New images saved !
+Epoch[52/55], Step [50/600], Reconst Loss: 66.2946
+Epoch[52/55], Step [100/600], Reconst Loss: 65.6284
+Epoch[52/55], Step [150/600], Reconst Loss: 62.5335
+Epoch[52/55], Step [200/600], Reconst Loss: 64.8313
+Epoch[52/55], Step [250/600], Reconst Loss: 64.3695
+Epoch[52/55], Step [300/600], Reconst Loss: 63.0425
+Epoch[52/55], Step [350/600], Reconst Loss: 64.7144
+Epoch[52/55], Step [400/600], Reconst Loss: 67.2100
+Epoch[52/55], Step [450/600], Reconst Loss: 64.2134
+Epoch[52/55], Step [500/600], Reconst Loss: 69.2577
+Epoch[52/55], Step [550/600], Reconst Loss: 63.3772
+Epoch[52/55], Step [600/600], Reconst Loss: 63.9095
+New images saved !
+Epoch[53/55], Step [50/600], Reconst Loss: 66.0699
+Epoch[53/55], Step [100/600], Reconst Loss: 61.1731
+Epoch[53/55], Step [150/600], Reconst Loss: 63.4000
+Epoch[53/55], Step [200/600], Reconst Loss: 64.9478
+Epoch[53/55], Step [250/600], Reconst Loss: 64.6635
+Epoch[53/55], Step [300/600], Reconst Loss: 62.3018
+Epoch[53/55], Step [350/600], Reconst Loss: 63.6443
+Epoch[53/55], Step [400/600], Reconst Loss: 69.1364
+Epoch[53/55], Step [450/600], Reconst Loss: 63.7969
+Epoch[53/55], Step [500/600], Reconst Loss: 63.7997
+Epoch[53/55], Step [550/600], Reconst Loss: 61.5608
+Epoch[53/55], Step [600/600], Reconst Loss: 65.3403
+New images saved !
+Epoch[54/55], Step [50/600], Reconst Loss: 62.2631
+Epoch[54/55], Step [100/600], Reconst Loss: 63.6014
+Epoch[54/55], Step [150/600], Reconst Loss: 65.4904
+Epoch[54/55], Step [200/600], Reconst Loss: 63.3748
+Epoch[54/55], Step [250/600], Reconst Loss: 63.7556
+Epoch[54/55], Step [300/600], Reconst Loss: 63.0290
+Epoch[54/55], Step [350/600], Reconst Loss: 65.7891
+Epoch[54/55], Step [400/600], Reconst Loss: 64.8930
+Epoch[54/55], Step [450/600], Reconst Loss: 64.5142
+Epoch[54/55], Step [500/600], Reconst Loss: 64.1500
+Epoch[54/55], Step [550/600], Reconst Loss: 64.6823
+Epoch[54/55], Step [600/600], Reconst Loss: 66.3797
+New images saved !
+Epoch[55/55], Step [50/600], Reconst Loss: 62.9033
+Epoch[55/55], Step [100/600], Reconst Loss: 64.8807
+Epoch[55/55], Step [150/600], Reconst Loss: 65.3743
+Epoch[55/55], Step [200/600], Reconst Loss: 65.4981
+Epoch[55/55], Step [250/600], Reconst Loss: 62.7248
+Epoch[55/55], Step [300/600], Reconst Loss: 64.8580
+Epoch[55/55], Step [350/600], Reconst Loss: 66.1842
+Epoch[55/55], Step [400/600], Reconst Loss: 65.9772
+Epoch[55/55], Step [450/600], Reconst Loss: 64.1684
+Epoch[55/55], Step [500/600], Reconst Loss: 64.9950
+Epoch[55/55], Step [550/600], Reconst Loss: 66.5874
+Epoch[55/55], Step [600/600], Reconst Loss: 64.6919
+New images saved !

@@ -3,6 +3,13 @@ import  tensorflow as tf
 import  numpy as np
 from    tensorflow import keras
 
+# tensorboard
+import datetime
+current_time = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+train_log_dir = 'logs/org-board/' + current_time + '/train'
+train_summary_writer = tf.summary.create_file_writer(train_log_dir)
+
+
 
 # In[1]:
 
@@ -189,5 +196,12 @@ for epoch in range(100):
         pred = tf.argmax(logits, axis=1)
         # [b] vs [b, 10]
         acc_meter.update_state(y, pred)
+
+    # tensorboard
+    with train_summary_writer.as_default():
+            tf.summary.scalar('loss', loss, step=100*epoch+step)
+            tf.summary.scalar('acc', acc_meter.result(), step=100*epoch+step)
+
+
 
     print(epoch, 'evaluation acc:', acc_meter.result().numpy())

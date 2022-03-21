@@ -1,6 +1,13 @@
 from tensorflow import keras
 from bert import get_base_dict, get_model, gen_batch_inputs
 
+# tensorboard
+import datetime
+current_time = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+log_dir = 'logs/org-board/' + current_time + '/train'
+tensorboard_callback = keras.callbacks.TensorBoard(log_dir=log_dir, histogram_freq=1)
+
+
 
 # A toy input example
 sentence_pairs = [
@@ -50,7 +57,8 @@ model.fit_generator(
     validation_data=_generator(),
     validation_steps=100,
     callbacks=[
-        keras.callbacks.EarlyStopping(monitor='val_loss', patience=5)
+        keras.callbacks.EarlyStopping(monitor='val_loss', patience=5),
+        tensorboard_callback
     ],
 )
 
@@ -67,6 +75,6 @@ inputs, output_layer = get_model(
     dropout_rate=0.05,
     training=False,      # The input layers and output layer will be returned if `training` is `False`
     trainable=False,     # Whether the model is trainable. The default value is the same with `training`
-    output_layer_num=4,  # The number of layers whose outputs will be concatenated as a single output.
+    # output_layer_num=4,  # The number of layers whose outputs will be concatenated as a single output.
                          # Only available when `training` is `False`.
 )

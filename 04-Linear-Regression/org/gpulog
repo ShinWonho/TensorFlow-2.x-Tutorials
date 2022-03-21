@@ -1,0 +1,273 @@
+2022-03-08 20:15:57.042099: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2022-03-08 20:15:58.342129: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcuda.so.1
+2022-03-08 20:15:59.980019: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:04:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-08 20:15:59.980072: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2022-03-08 20:15:59.986444: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2022-03-08 20:15:59.986506: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2022-03-08 20:15:59.989635: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcufft.so.10
+2022-03-08 20:15:59.989955: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcurand.so.10
+2022-03-08 20:15:59.990713: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusolver.so.11
+2022-03-08 20:15:59.992079: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusparse.so.11
+2022-03-08 20:15:59.992242: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8
+2022-03-08 20:15:59.993806: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2022-03-08 20:15:59.994232: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-03-08 20:15:59.995132: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:04:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-08 20:15:59.996565: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2022-03-08 20:15:59.996610: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2022-03-08 20:16:00.756565: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2022-03-08 20:16:00.756628: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2022-03-08 20:16:00.756639: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2022-03-08 20:16:00.759112: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11426 MB memory) -> physical GPU (device: 0, name: NVIDIA TITAN Xp, pci bus id: 0000:04:00.0, compute capability: 6.1)
+(404, 13) (404,) (102, 13) (102,)
+(13, 1) (1,)
+<class 'tensorflow.python.ops.resource_variable_ops.ResourceVariable'> True meanless-name:0
+<class 'tensorflow.python.ops.resource_variable_ops.ResourceVariable'> True meanless-name:0
+2022-03-08 20:16:01.041913: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2022-03-08 20:16:01.467704: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+0 loss: 39694.82
+0 val loss: 36500.332
+2022-03-08 20:16:01.685533: W tensorflow/core/kernels/data/model_dataset_op.cc:205] Optimization loop failed: Cancelled: Operation was cancelled
+1 loss: 18709.125
+2 loss: 6534.4346
+3 loss: 1271.5068
+4 loss: 51.908894
+5 loss: 236.74033
+6 loss: 401.17242
+7 loss: 293.07904
+8 loss: 127.253456
+9 loss: 48.899597
+10 loss: 42.268055
+10 val loss: 124.677574
+2022-03-08 20:16:02.429060: W tensorflow/core/kernels/data/model_dataset_op.cc:205] Optimization loop failed: Cancelled: Operation was cancelled
+11 loss: 49.233555
+12 loss: 47.356434
+13 loss: 42.244324
+14 loss: 39.96755
+15 loss: 39.8223
+16 loss: 39.752235
+17 loss: 39.398033
+18 loss: 39.110874
+19 loss: 38.935944
+20 loss: 38.738983
+20 val loss: 120.3187
+2022-03-08 20:16:03.173536: W tensorflow/core/kernels/data/model_dataset_op.cc:205] Optimization loop failed: Cancelled: Operation was cancelled
+21 loss: 38.48421
+22 loss: 38.20948
+23 loss: 37.93725
+24 loss: 37.667336
+25 loss: 37.395905
+26 loss: 37.119164
+27 loss: 36.833477
+28 loss: 36.537876
+29 loss: 36.234398
+30 loss: 35.92582
+30 val loss: 114.442184
+2022-03-08 20:16:03.918662: W tensorflow/core/kernels/data/model_dataset_op.cc:205] Optimization loop failed: Cancelled: Operation was cancelled
+31 loss: 35.61399
+32 loss: 35.299515
+33 loss: 34.982445
+34 loss: 34.662853
+35 loss: 34.34115
+36 loss: 34.01806
+37 loss: 33.694305
+38 loss: 33.370476
+39 loss: 33.047012
+40 loss: 32.72424
+40 val loss: 107.79624
+2022-03-08 20:16:04.664853: W tensorflow/core/kernels/data/model_dataset_op.cc:205] Optimization loop failed: Cancelled: Operation was cancelled
+41 loss: 32.402504
+42 loss: 32.082157
+43 loss: 31.76353
+44 loss: 31.446949
+45 loss: 31.13268
+46 loss: 30.820965
+47 loss: 30.512033
+48 loss: 30.206081
+49 loss: 29.90329
+50 loss: 29.603836
+50 val loss: 101.2273
+2022-03-08 20:16:05.409449: W tensorflow/core/kernels/data/model_dataset_op.cc:205] Optimization loop failed: Cancelled: Operation was cancelled
+51 loss: 29.30787
+52 loss: 29.015537
+53 loss: 28.726965
+54 loss: 28.442265
+55 loss: 28.16154
+56 loss: 27.884882
+57 loss: 27.612377
+58 loss: 27.34411
+59 loss: 27.08014
+60 loss: 26.820505
+60 val loss: 95.07061
+2022-03-08 20:16:06.151774: W tensorflow/core/kernels/data/model_dataset_op.cc:205] Optimization loop failed: Cancelled: Operation was cancelled
+61 loss: 26.565292
+62 loss: 26.314514
+63 loss: 26.068233
+64 loss: 25.826466
+65 loss: 25.58925
+66 loss: 25.356602
+67 loss: 25.128523
+68 loss: 24.90504
+69 loss: 24.686152
+70 loss: 24.471865
+70 val loss: 89.49144
+2022-03-08 20:16:06.896291: W tensorflow/core/kernels/data/model_dataset_op.cc:205] Optimization loop failed: Cancelled: Operation was cancelled
+71 loss: 24.262169
+72 loss: 24.05706
+73 loss: 23.856522
+74 loss: 23.660542
+75 loss: 23.469097
+76 loss: 23.282177
+77 loss: 23.099745
+78 loss: 22.921774
+79 loss: 22.748238
+80 loss: 22.579094
+80 val loss: 84.54923
+2022-03-08 20:16:07.638215: W tensorflow/core/kernels/data/model_dataset_op.cc:205] Optimization loop failed: Cancelled: Operation was cancelled
+81 loss: 22.414312
+82 loss: 22.253849
+83 loss: 22.097666
+84 loss: 21.945717
+85 loss: 21.797955
+86 loss: 21.654339
+87 loss: 21.51481
+88 loss: 21.379322
+89 loss: 21.247822
+90 loss: 21.120266
+90 val loss: 80.23585
+2022-03-08 20:16:08.379329: W tensorflow/core/kernels/data/model_dataset_op.cc:205] Optimization loop failed: Cancelled: Operation was cancelled
+91 loss: 20.996593
+92 loss: 20.87673
+93 loss: 20.760641
+94 loss: 20.648264
+95 loss: 20.539534
+96 loss: 20.434393
+97 loss: 20.332788
+98 loss: 20.23465
+99 loss: 20.139923
+100 loss: 20.048544
+100 val loss: 76.50178
+2022-03-08 20:16:09.121506: W tensorflow/core/kernels/data/model_dataset_op.cc:205] Optimization loop failed: Cancelled: Operation was cancelled
+101 loss: 19.96045
+102 loss: 19.875582
+103 loss: 19.793869
+104 loss: 19.715261
+105 loss: 19.639698
+106 loss: 19.567097
+107 loss: 19.497423
+108 loss: 19.430592
+109 loss: 19.366558
+110 loss: 19.305248
+110 val loss: 73.276215
+2022-03-08 20:16:09.863106: W tensorflow/core/kernels/data/model_dataset_op.cc:205] Optimization loop failed: Cancelled: Operation was cancelled
+111 loss: 19.246609
+112 loss: 19.190586
+113 loss: 19.137104
+114 loss: 19.086117
+115 loss: 19.037563
+116 loss: 18.991375
+117 loss: 18.947504
+118 loss: 18.90589
+119 loss: 18.866482
+120 loss: 18.829214
+120 val loss: 70.481636
+2022-03-08 20:16:10.604094: W tensorflow/core/kernels/data/model_dataset_op.cc:205] Optimization loop failed: Cancelled: Operation was cancelled
+121 loss: 18.794046
+122 loss: 18.760906
+123 loss: 18.729753
+124 loss: 18.700527
+125 loss: 18.673185
+126 loss: 18.647673
+127 loss: 18.623932
+128 loss: 18.601923
+129 loss: 18.581589
+130 loss: 18.562891
+130 val loss: 68.04348
+2022-03-08 20:16:11.340553: W tensorflow/core/kernels/data/model_dataset_op.cc:205] Optimization loop failed: Cancelled: Operation was cancelled
+131 loss: 18.54577
+132 loss: 18.530201
+133 loss: 18.516123
+134 loss: 18.503485
+135 loss: 18.492264
+136 loss: 18.482407
+137 loss: 18.47387
+138 loss: 18.466616
+139 loss: 18.460598
+140 loss: 18.4558
+140 val loss: 65.895584
+2022-03-08 20:16:12.079537: W tensorflow/core/kernels/data/model_dataset_op.cc:205] Optimization loop failed: Cancelled: Operation was cancelled
+141 loss: 18.452145
+142 loss: 18.449635
+143 loss: 18.448208
+144 loss: 18.447844
+145 loss: 18.448498
+146 loss: 18.450144
+147 loss: 18.452738
+148 loss: 18.45626
+149 loss: 18.460678
+150 loss: 18.465952
+150 val loss: 63.982597
+2022-03-08 20:16:12.821258: W tensorflow/core/kernels/data/model_dataset_op.cc:205] Optimization loop failed: Cancelled: Operation was cancelled
+151 loss: 18.472061
+152 loss: 18.478968
+153 loss: 18.486658
+154 loss: 18.49509
+155 loss: 18.504242
+156 loss: 18.514095
+157 loss: 18.524612
+158 loss: 18.535772
+159 loss: 18.547552
+160 loss: 18.559937
+160 val loss: 62.26008
+2022-03-08 20:16:13.563191: W tensorflow/core/kernels/data/model_dataset_op.cc:205] Optimization loop failed: Cancelled: Operation was cancelled
+161 loss: 18.572893
+162 loss: 18.586401
+163 loss: 18.600445
+164 loss: 18.615002
+165 loss: 18.630045
+166 loss: 18.645557
+167 loss: 18.661524
+168 loss: 18.67793
+169 loss: 18.694756
+170 loss: 18.711971
+170 val loss: 60.693523
+2022-03-08 20:16:14.302235: W tensorflow/core/kernels/data/model_dataset_op.cc:205] Optimization loop failed: Cancelled: Operation was cancelled
+171 loss: 18.729578
+172 loss: 18.747553
+173 loss: 18.765879
+174 loss: 18.78453
+175 loss: 18.80351
+176 loss: 18.82279
+177 loss: 18.842371
+178 loss: 18.862225
+179 loss: 18.882349
+180 loss: 18.902723
+180 val loss: 59.256615
+2022-03-08 20:16:15.043159: W tensorflow/core/kernels/data/model_dataset_op.cc:205] Optimization loop failed: Cancelled: Operation was cancelled
+181 loss: 18.92334
+182 loss: 18.944185
+183 loss: 18.96525
+184 loss: 18.986515
+185 loss: 19.007978
+186 loss: 19.029634
+187 loss: 19.051453
+188 loss: 19.07344
+189 loss: 19.095585
+190 loss: 19.117868
+190 val loss: 57.929432
+2022-03-08 20:16:15.783469: W tensorflow/core/kernels/data/model_dataset_op.cc:205] Optimization loop failed: Cancelled: Operation was cancelled
+191 loss: 19.140297
+192 loss: 19.16285
+193 loss: 19.185528
+194 loss: 19.20831
+195 loss: 19.231186
+196 loss: 19.25417
+197 loss: 19.277239
+198 loss: 19.300385
+199 loss: 19.323597
+/data/plrg/ve/lib/python3.8/site-packages/tensorflow/python/keras/engine/base_layer.py:2191: UserWarning: `layer.add_variable` is deprecated and will be removed in a future version. Please use `layer.add_weight` method instead.
+  warnings.warn('`layer.add_variable` is deprecated and '

@@ -3,6 +3,13 @@ import  tensorflow as tf
 import  numpy as np
 from    tensorflow import keras
 
+# tensorboard
+import datetime
+current_time = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+log_dir = 'logs/org-board/' + current_time + '/train'
+tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir=log_dir, histogram_freq=1)
+
+
 
 # In[16]:
 
@@ -86,7 +93,8 @@ def main():
 
     # train
     model.fit(x_train, y_train, batch_size=batch_size, epochs=epochs,
-              validation_data=(x_test, y_test), verbose=1)
+              validation_data=(x_test, y_test), verbose=1,
+              callbacks=[tensorboard_callback])
 
     # evaluate on test set
     scores = model.evaluate(x_test, y_test, batch_size, verbose=1)

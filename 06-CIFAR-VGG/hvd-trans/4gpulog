@@ -1,0 +1,1672 @@
+2022-03-17 16:49:08.459316: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2022-03-17 16:49:08.491893: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2022-03-17 16:49:08.505613: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2022-03-17 16:49:08.505613: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   dl019
+  Local device: mlx4_0
+--------------------------------------------------------------------------
+2022-03-17 16:49:09.623990: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcuda.so.1
+2022-03-17 16:49:09.624333: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcuda.so.1
+2022-03-17 16:49:09.624333: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcuda.so.1
+2022-03-17 16:49:09.624979: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcuda.so.1
+2022-03-17 16:49:11.156721: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:02:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-17 16:49:11.158248: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:02:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-17 16:49:11.159538: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 1 with properties: 
+pciBusID: 0000:04:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-17 16:49:11.162357: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 1 with properties: 
+pciBusID: 0000:04:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-17 16:49:11.162988: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:02:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-17 16:49:11.163643: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 2 with properties: 
+pciBusID: 0000:83:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-17 16:49:11.166898: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 2 with properties: 
+pciBusID: 0000:83:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-17 16:49:11.167805: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 1 with properties: 
+pciBusID: 0000:04:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-17 16:49:11.169607: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 3 with properties: 
+pciBusID: 0000:84:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-17 16:49:11.169646: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2022-03-17 16:49:11.172188: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:02:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-17 16:49:11.172560: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 3 with properties: 
+pciBusID: 0000:84:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-17 16:49:11.172616: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2022-03-17 16:49:11.172769: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 2 with properties: 
+pciBusID: 0000:83:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-17 16:49:11.174613: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 1 with properties: 
+pciBusID: 0000:04:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-17 16:49:11.175503: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2022-03-17 16:49:11.175557: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2022-03-17 16:49:11.176064: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 3 with properties: 
+pciBusID: 0000:84:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-17 16:49:11.176103: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2022-03-17 16:49:11.177546: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 2 with properties: 
+pciBusID: 0000:83:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-17 16:49:11.178399: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcufft.so.10
+2022-03-17 16:49:11.178628: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 3 with properties: 
+pciBusID: 0000:84:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-17 16:49:11.178657: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2022-03-17 16:49:11.178665: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcurand.so.10
+2022-03-17 16:49:11.179289: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusolver.so.11
+2022-03-17 16:49:11.179556: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2022-03-17 16:49:11.179602: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2022-03-17 16:49:11.180296: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusparse.so.11
+2022-03-17 16:49:11.180446: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8
+2022-03-17 16:49:11.181715: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcufft.so.10
+2022-03-17 16:49:11.181983: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcurand.so.10
+2022-03-17 16:49:11.182517: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusolver.so.11
+2022-03-17 16:49:11.183426: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusparse.so.11
+2022-03-17 16:49:11.183554: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8
+2022-03-17 16:49:11.183555: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2022-03-17 16:49:11.183608: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2022-03-17 16:49:11.184138: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2022-03-17 16:49:11.184218: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2022-03-17 16:49:11.186441: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcufft.so.10
+2022-03-17 16:49:11.186777: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcurand.so.10
+2022-03-17 16:49:11.186991: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcufft.so.10
+2022-03-17 16:49:11.187239: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcurand.so.10
+2022-03-17 16:49:11.187530: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusolver.so.11
+2022-03-17 16:49:11.187769: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusolver.so.11
+2022-03-17 16:49:11.188694: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusparse.so.11
+2022-03-17 16:49:11.188739: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusparse.so.11
+2022-03-17 16:49:11.188841: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8
+2022-03-17 16:49:11.188883: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8
+2022-03-17 16:49:11.201047: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0, 1, 2, 3
+2022-03-17 16:49:11.201949: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-03-17 16:49:11.207996: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:02:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-17 16:49:11.220332: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0, 1, 2, 3
+2022-03-17 16:49:11.220704: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2022-03-17 16:49:11.220768: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2022-03-17 16:49:11.221746: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-03-17 16:49:11.229135: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:83:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-17 16:49:11.241418: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 2
+2022-03-17 16:49:11.241514: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2022-03-17 16:49:11.242564: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0, 1, 2, 3
+2022-03-17 16:49:11.242763: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0, 1, 2, 3
+2022-03-17 16:49:11.244287: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-03-17 16:49:11.244349: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-03-17 16:49:11.253064: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:84:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-17 16:49:11.253223: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:04:00.0 name: NVIDIA TITAN Xp computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 30 deviceMemorySize: 11.91GiB deviceMemoryBandwidth: 510.07GiB/s
+2022-03-17 16:49:11.415714: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 3
+2022-03-17 16:49:11.415762: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 1
+2022-03-17 16:49:11.415818: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2022-03-17 16:49:11.415851: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2022-03-17 16:49:12.526088: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2022-03-17 16:49:12.526139: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      2 
+2022-03-17 16:49:12.526149: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 2:   N 
+2022-03-17 16:49:12.528699: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11396 MB memory) -> physical GPU (device: 2, name: NVIDIA TITAN Xp, pci bus id: 0000:83:00.0, compute capability: 6.1)
+2022-03-17 16:49:12.531570: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2022-03-17 16:49:12.531597: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2022-03-17 16:49:12.531605: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2022-03-17 16:49:12.534884: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11396 MB memory) -> physical GPU (device: 0, name: NVIDIA TITAN Xp, pci bus id: 0000:02:00.0, compute capability: 6.1)
+loading data...
+2022-03-17 16:49:12.544692: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2022-03-17 16:49:12.544734: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      3 
+2022-03-17 16:49:12.544743: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 3:   N 
+2022-03-17 16:49:12.545430: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2022-03-17 16:49:12.545454: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      1 
+2022-03-17 16:49:12.545462: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 1:   N 
+2022-03-17 16:49:12.548836: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11396 MB memory) -> physical GPU (device: 3, name: NVIDIA TITAN Xp, pci bus id: 0000:84:00.0, compute capability: 6.1)
+2022-03-17 16:49:12.549598: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11396 MB memory) -> physical GPU (device: 1, name: NVIDIA TITAN Xp, pci bus id: 0000:04:00.0, compute capability: 6.1)
+[dl019:1106967] 3 more processes have sent help message help-mpi-btl-openib.txt / error in device init
+[dl019:1106967] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+mean: 0.4733630004850874 std: 0.25156892506322026
+(50000, 32, 32, 3) (50000, 1) (10000, 32, 32, 3) (10000, 1)
+done.
+2022-03-17 16:49:18.516778: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:176] None of the MLIR Optimization Passes are enabled (registered 2)
+2022-03-17 16:49:18.517249: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:176] None of the MLIR Optimization Passes are enabled (registered 2)
+2022-03-17 16:49:18.537790: I tensorflow/core/platform/profile_utils/cpu_utils.cc:114] CPU Frequency: 2597015000 Hz
+2022-03-17 16:49:18.537790: I tensorflow/core/platform/profile_utils/cpu_utils.cc:114] CPU Frequency: 2597015000 Hz
+2022-03-17 16:49:18.549045: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:176] None of the MLIR Optimization Passes are enabled (registered 2)
+2022-03-17 16:49:18.550737: I tensorflow/core/platform/profile_utils/cpu_utils.cc:114] CPU Frequency: 2597015000 Hz
+2022-03-17 16:49:18.589840: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:176] None of the MLIR Optimization Passes are enabled (registered 2)
+2022-03-17 16:49:18.590582: I tensorflow/core/platform/profile_utils/cpu_utils.cc:114] CPU Frequency: 2597015000 Hz
+2022-03-17 16:49:19.367374: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8
+2022-03-17 16:49:19.377634: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8
+2022-03-17 16:49:19.379078: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8
+2022-03-17 16:49:19.436168: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8
+2022-03-17 16:49:19.800958: I tensorflow/stream_executor/cuda/cuda_dnn.cc:359] Loaded cuDNN version 8204
+2022-03-17 16:49:19.806929: I tensorflow/stream_executor/cuda/cuda_dnn.cc:359] Loaded cuDNN version 8204
+2022-03-17 16:49:19.813097: I tensorflow/stream_executor/cuda/cuda_dnn.cc:359] Loaded cuDNN version 8204
+2022-03-17 16:49:19.861675: I tensorflow/stream_executor/cuda/cuda_dnn.cc:359] Loaded cuDNN version 8204
+2022-03-17 16:49:20.266403: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2022-03-17 16:49:20.273885: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2022-03-17 16:49:20.275600: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2022-03-17 16:49:20.318122: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2022-03-17 16:49:20.599152: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2022-03-17 16:49:20.600672: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2022-03-17 16:49:20.609631: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2022-03-17 16:49:20.648539: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+0 0 loss: 2.3026363849639893 acc: 0.1015625
+0 40 loss: 2.3040966987609863 acc: 0.11367188
+0 80 loss: 2.0402488708496094 acc: 0.1609375
+0 120 loss: 1.858680009841919 acc: 0.2296875
+0 160 loss: 1.7633986473083496 acc: 0.27041015
+test acc: 0.3322
+1 0 loss: 1.7316373586654663 acc: 0.296875
+1 40 loss: 1.666570782661438 acc: 0.3544922
+1 80 loss: 1.5471323728561401 acc: 0.38144532
+1 120 loss: 1.5346864461898804 acc: 0.4198242
+1 160 loss: 1.4767956733703613 acc: 0.41269532
+test acc: 0.5028
+2 0 loss: 1.2661689519882202 acc: 0.53125
+2 40 loss: 1.5394234657287598 acc: 0.5144531
+2 80 loss: 1.2500765323638916 acc: 0.5300781
+2 120 loss: 1.0743370056152344 acc: 0.5661133
+2 160 loss: 1.0238656997680664 acc: 0.6013672
+test acc: 0.5855
+3 0 loss: 1.0243449211120605 acc: 0.6328125
+3 40 loss: 0.9777500629425049 acc: 0.6460937
+3 80 loss: 0.9016871452331543 acc: 0.66748047
+3 120 loss: 0.8524137735366821 acc: 0.68134767
+3 160 loss: 0.7813527584075928 acc: 0.6959961
+test acc: 0.7107
+4 0 loss: 0.6664058566093445 acc: 0.74609375
+4 40 loss: 0.7778556942939758 acc: 0.7453125
+4 80 loss: 0.6582462787628174 acc: 0.74550784
+4 120 loss: 0.8069621324539185 acc: 0.7538086
+4 160 loss: 0.6470656394958496 acc: 0.7477539
+test acc: 0.7413
+5 0 loss: 0.6145866513252258 acc: 0.80859375
+5 40 loss: 0.6050421595573425 acc: 0.7974609
+5 80 loss: 0.443503737449646 acc: 0.8185547
+5 120 loss: 0.6587627530097961 acc: 0.79404294
+5 160 loss: 0.6094462275505066 acc: 0.8036133
+test acc: 0.7499
+6 0 loss: 0.6185243129730225 acc: 0.81640625
+6 40 loss: 0.40277981758117676 acc: 0.8571289
+6 80 loss: 0.45709675550460815 acc: 0.85478514
+6 120 loss: 0.41162148118019104 acc: 0.84648436
+6 160 loss: 0.37396374344825745 acc: 0.8526367
+test acc: 0.7884
+7 0 loss: 0.2532508969306946 acc: 0.90625
+7 40 loss: 0.30227452516555786 acc: 0.88857424
+7 80 loss: 0.42947983741760254 acc: 0.8923828
+7 120 loss: 0.3373183012008667 acc: 0.8790039
+7 160 loss: 0.40278273820877075 acc: 0.88017577
+test acc: 0.7906
+8 0 loss: 0.2596508264541626 acc: 0.91796875
+8 40 loss: 0.28783687949180603 acc: 0.91083986
+8 80 loss: 0.288299560546875 acc: 0.9076172
+8 120 loss: 0.28258106112480164 acc: 0.9080078
+8 160 loss: 0.18512794375419617 acc: 0.90791017
+test acc: 0.7953
+9 0 loss: 0.18112292885780334 acc: 0.9375
+9 40 loss: 0.205696240067482 acc: 0.93720704
+9 80 loss: 0.16014453768730164 acc: 0.9379883
+9 120 loss: 0.1658971905708313 acc: 0.9361328
+9 160 loss: 0.20263387262821198 acc: 0.9321289
+test acc: 0.7982
+10 0 loss: 0.13045041263103485 acc: 0.9609375
+10 40 loss: 0.10805966705083847 acc: 0.94453126
+10 80 loss: 0.1572798490524292 acc: 0.95634764
+10 120 loss: 0.14633168280124664 acc: 0.9447266
+10 160 loss: 0.19323109090328217 acc: 0.94697267
+test acc: 0.7979
+11 0 loss: 0.11320673674345016 acc: 0.96484375
+11 40 loss: 0.09560161083936691 acc: 0.96259767
+11 80 loss: 0.11829373240470886 acc: 0.9616211
+11 120 loss: 0.18224260210990906 acc: 0.962207
+11 160 loss: 0.10593270510435104 acc: 0.9578125
+test acc: 0.8043
+12 0 loss: 0.03107329085469246 acc: 0.9921875
+12 40 loss: 0.09733032435178757 acc: 0.9692383
+12 80 loss: 0.12663976848125458 acc: 0.9716797
+12 120 loss: 0.09961725026369095 acc: 0.97041017
+12 160 loss: 0.07323705404996872 acc: 0.96298826
+test acc: 0.8001
+13 0 loss: 0.061848849058151245 acc: 0.98046875
+13 40 loss: 0.10718311369419098 acc: 0.97158206
+13 80 loss: 0.11992070823907852 acc: 0.9694336
+13 120 loss: 0.04573068395256996 acc: 0.97207034
+13 160 loss: 0.07271835207939148 acc: 0.9725586
+test acc: 0.8104
+14 0 loss: 0.07255231589078903 acc: 0.984375
+14 40 loss: 0.06922435760498047 acc: 0.978418
+14 80 loss: 0.0385320819914341 acc: 0.9794922
+14 120 loss: 0.04377833008766174 acc: 0.97207034
+14 160 loss: 0.03300326317548752 acc: 0.9751953
+test acc: 0.8006
+15 0 loss: 0.03916897624731064 acc: 0.984375
+15 40 loss: 0.061145540326833725 acc: 0.9806641
+15 80 loss: 0.056448210030794144 acc: 0.98183596
+15 120 loss: 0.04669917747378349 acc: 0.97578126
+15 160 loss: 0.04640760272741318 acc: 0.9776367
+test acc: 0.8049
+16 0 loss: 0.06079588085412979 acc: 0.98046875
+16 40 loss: 0.036719441413879395 acc: 0.98427737
+16 80 loss: 0.0738406628370285 acc: 0.9837891
+16 120 loss: 0.08562314510345459 acc: 0.9754883
+16 160 loss: 0.1094856709241867 acc: 0.9779297
+test acc: 0.7998
+17 0 loss: 0.04655078798532486 acc: 0.98828125
+17 40 loss: 0.04225699231028557 acc: 0.98427737
+17 80 loss: 0.11400890350341797 acc: 0.9788086
+17 120 loss: 0.05907328426837921 acc: 0.97939456
+17 160 loss: 0.07272547483444214 acc: 0.98115236
+test acc: 0.8089
+18 0 loss: 0.028172269463539124 acc: 0.98828125
+18 40 loss: 0.052766166627407074 acc: 0.9866211
+18 80 loss: 0.028116224333643913 acc: 0.98525393
+18 120 loss: 0.024960678070783615 acc: 0.9875
+18 160 loss: 0.048952989280223846 acc: 0.98232424
+test acc: 0.804
+19 0 loss: 0.049623358994722366 acc: 0.984375
+19 40 loss: 0.024505265057086945 acc: 0.9837891
+19 80 loss: 0.03514403849840164 acc: 0.9874023
+19 120 loss: 0.014453156851232052 acc: 0.98515624
+19 160 loss: 0.08252445608377457 acc: 0.98339844
+test acc: 0.8084
+20 0 loss: 0.017387226223945618 acc: 0.99609375
+20 40 loss: 0.023601094260811806 acc: 0.9859375
+20 80 loss: 0.028416790068149567 acc: 0.9898437
+20 120 loss: 0.06668543815612793 acc: 0.9891602
+20 160 loss: 0.06330248713493347 acc: 0.9820312
+test acc: 0.8067
+21 0 loss: 0.0223238505423069 acc: 0.98828125
+21 40 loss: 0.02932809852063656 acc: 0.9902344
+21 80 loss: 0.08291736245155334 acc: 0.9873047
+21 120 loss: 0.12418551743030548 acc: 0.9899414
+21 160 loss: 0.07405295222997665 acc: 0.9879883
+test acc: 0.8014
+22 0 loss: 0.025169890373945236 acc: 0.9921875
+22 40 loss: 0.023974334821105003 acc: 0.99121094
+22 80 loss: 0.021314449608325958 acc: 0.98720706
+22 120 loss: 0.097298264503479 acc: 0.98759764
+22 160 loss: 0.01876967027783394 acc: 0.9873047
+test acc: 0.8031
+23 0 loss: 0.04728952795267105 acc: 0.98046875
+23 40 loss: 0.02492900937795639 acc: 0.98408204
+23 80 loss: 0.061965055763721466 acc: 0.9866211
+23 120 loss: 0.07418328523635864 acc: 0.98779297
+23 160 loss: 0.033638857305049896 acc: 0.98759764
+test acc: 0.8063
+24 0 loss: 0.030710238963365555 acc: 0.98828125
+24 40 loss: 0.015211997553706169 acc: 0.9898437
+24 80 loss: 0.005006402265280485 acc: 0.98535156
+24 120 loss: 0.02287284843623638 acc: 0.98828125
+24 160 loss: 0.07533331215381622 acc: 0.98779297
+test acc: 0.8113
+25 0 loss: 0.016555899754166603 acc: 0.99609375
+25 40 loss: 0.06505688279867172 acc: 0.9902344
+25 80 loss: 0.017703084275126457 acc: 0.9874023
+25 120 loss: 0.018010800704360008 acc: 0.990332
+25 160 loss: 0.0691920667886734 acc: 0.98720706
+test acc: 0.8025
+26 0 loss: 0.02881065383553505 acc: 0.99609375
+26 40 loss: 0.05694596469402313 acc: 0.98769534
+26 80 loss: 0.08578363060951233 acc: 0.9890625
+26 120 loss: 0.023136530071496964 acc: 0.9886719
+26 160 loss: 0.02086331695318222 acc: 0.9838867
+test acc: 0.802
+27 0 loss: 0.03924337401986122 acc: 0.98828125
+27 40 loss: 0.02729407139122486 acc: 0.9923828
+27 80 loss: 0.035192687064409256 acc: 0.98945314
+27 120 loss: 0.0365472286939621 acc: 0.9862305
+27 160 loss: 0.0692249983549118 acc: 0.9861328
+test acc: 0.8124
+28 0 loss: 0.0038061938248574734 acc: 1.0
+28 40 loss: 0.054825328290462494 acc: 0.990625
+28 80 loss: 0.01312799658626318 acc: 0.98935544
+28 120 loss: 0.05490558221936226 acc: 0.9874023
+28 160 loss: 0.04128110781311989 acc: 0.9848633
+test acc: 0.805
+29 0 loss: 0.14145958423614502 acc: 0.96875
+29 40 loss: 0.012624160386621952 acc: 0.99013674
+29 80 loss: 0.10387380421161652 acc: 0.9897461
+29 120 loss: 0.019888196140527725 acc: 0.98828125
+29 160 loss: 0.059355493634939194 acc: 0.9875
+test acc: 0.8162
+30 0 loss: 0.05037837103009224 acc: 0.984375
+30 40 loss: 0.01008088979870081 acc: 0.99296874
+30 80 loss: 0.060828231275081635 acc: 0.99423826
+30 120 loss: 0.004451034590601921 acc: 0.9908203
+30 160 loss: 0.10397758334875107 acc: 0.9850586
+test acc: 0.8158
+31 0 loss: 0.015271399170160294 acc: 0.9921875
+31 40 loss: 0.01554291695356369 acc: 0.9923828
+31 80 loss: 0.05068424716591835 acc: 0.9867188
+31 120 loss: 0.035996053367853165 acc: 0.99140626
+31 160 loss: 0.03252590820193291 acc: 0.98691404
+test acc: 0.8124
+32 0 loss: 0.04557110369205475 acc: 0.9765625
+32 40 loss: 0.007911870256066322 acc: 0.9919922
+32 80 loss: 0.06362642347812653 acc: 0.99189454
+32 120 loss: 0.028880419209599495 acc: 0.99013674
+32 160 loss: 0.023853125050663948 acc: 0.99140626
+test acc: 0.8073
+33 0 loss: 0.011989288032054901 acc: 1.0
+33 40 loss: 0.009887026622891426 acc: 0.9878906
+33 80 loss: 0.09734423458576202 acc: 0.9923828
+33 120 loss: 0.007565065287053585 acc: 0.9880859
+33 160 loss: 0.039720818400382996 acc: 0.9874023
+test acc: 0.8146
+34 0 loss: 0.017355654388666153 acc: 0.9921875
+34 40 loss: 0.031208008527755737 acc: 0.9880859
+34 80 loss: 0.019954809918999672 acc: 0.99296874
+34 120 loss: 0.015647506341338158 acc: 0.990918
+34 160 loss: 0.026254691183567047 acc: 0.9928711
+test acc: 0.8054
+35 0 loss: 0.022120054811239243 acc: 0.9921875
+35 40 loss: 0.005464491434395313 acc: 0.9932617
+35 80 loss: 0.04585088789463043 acc: 0.9915039
+35 120 loss: 0.033201657235622406 acc: 0.98886716
+35 160 loss: 0.013556898571550846 acc: 0.9916992
+test acc: 0.812
+36 0 loss: 0.05135788023471832 acc: 0.984375
+36 40 loss: 0.0060448357835412025 acc: 0.99130857
+36 80 loss: 0.015806587412953377 acc: 0.99013674
+36 120 loss: 0.06674566864967346 acc: 0.9919922
+36 160 loss: 0.01826031133532524 acc: 0.99052733
+test acc: 0.8106
+37 0 loss: 0.013456087559461594 acc: 1.0
+37 40 loss: 0.004037307575345039 acc: 0.99472654
+37 80 loss: 0.005147350020706654 acc: 0.99003905
+37 120 loss: 0.03057725727558136 acc: 0.99248046
+37 160 loss: 0.008483217097818851 acc: 0.9915039
+test acc: 0.8187
+38 0 loss: 0.019141415134072304 acc: 0.9921875
+38 40 loss: 0.021803895011544228 acc: 0.9944336
+38 80 loss: 0.007654515560716391 acc: 0.99189454
+38 120 loss: 0.009006701409816742 acc: 0.9879883
+38 160 loss: 0.05120798572897911 acc: 0.9883789
+test acc: 0.8138
+39 0 loss: 0.007231893949210644 acc: 1.0
+39 40 loss: 0.0142139233648777 acc: 0.99433595
+39 80 loss: 0.02165612205862999 acc: 0.99257815
+39 120 loss: 0.027790697291493416 acc: 0.99433595
+39 160 loss: 0.007184054236859083 acc: 0.9921875
+test acc: 0.8111
+40 0 loss: 0.0031406281050294638 acc: 1.0
+40 40 loss: 0.023943861946463585 acc: 0.990625
+40 80 loss: 0.052905015647411346 acc: 0.99501956
+40 120 loss: 0.04222486913204193 acc: 0.98896486
+40 160 loss: 0.038315411657094955 acc: 0.99296874
+test acc: 0.8108
+41 0 loss: 0.011508604511618614 acc: 0.99609375
+41 40 loss: 0.012117098085582256 acc: 0.9875
+41 80 loss: 0.0332065150141716 acc: 0.9886719
+41 120 loss: 0.02434081956744194 acc: 0.98828125
+41 160 loss: 0.04678557813167572 acc: 0.9884766
+test acc: 0.815
+42 0 loss: 0.00700383260846138 acc: 1.0
+42 40 loss: 0.0072160400450229645 acc: 0.99365234
+42 80 loss: 0.024521654471755028 acc: 0.9941406
+42 120 loss: 0.02446555159986019 acc: 0.9941406
+42 160 loss: 0.030188804492354393 acc: 0.9939453
+test acc: 0.8148
+43 0 loss: 0.0346091203391552 acc: 0.98828125
+43 40 loss: 0.02001846581697464 acc: 0.9946289
+43 80 loss: 0.015542982146143913 acc: 0.9926758
+43 120 loss: 0.01671123132109642 acc: 0.9935547
+43 160 loss: 0.04251597449183464 acc: 0.990625
+test acc: 0.8098
+44 0 loss: 0.0056362696923315525 acc: 1.0
+44 40 loss: 0.026096263900399208 acc: 0.99228513
+44 80 loss: 0.008138108998537064 acc: 0.990625
+44 120 loss: 0.012206538580358028 acc: 0.99248046
+44 160 loss: 0.026205752044916153 acc: 0.99130857
+test acc: 0.8112
+45 0 loss: 0.013734400272369385 acc: 0.99609375
+45 40 loss: 0.020508022978901863 acc: 0.99257815
+45 80 loss: 0.06032595783472061 acc: 0.990625
+45 120 loss: 0.00868991669267416 acc: 0.990625
+45 160 loss: 0.024771004915237427 acc: 0.98769534
+test acc: 0.8193
+46 0 loss: 0.008537368848919868 acc: 1.0
+46 40 loss: 0.007752500474452972 acc: 0.99501956
+46 80 loss: 0.02293003909289837 acc: 0.9958008
+46 120 loss: 0.05665450170636177 acc: 0.9951172
+46 160 loss: 0.025508498772978783 acc: 0.9944336
+test acc: 0.8108
+47 0 loss: 0.031736455857753754 acc: 0.98828125
+47 40 loss: 0.006120289210230112 acc: 0.99541014
+47 80 loss: 0.03888606280088425 acc: 0.9945313
+47 120 loss: 0.03398778662085533 acc: 0.9957031
+47 160 loss: 0.02786821499466896 acc: 0.9921875
+test acc: 0.8103
+48 0 loss: 0.05156434699892998 acc: 0.98828125
+48 40 loss: 0.04560864344239235 acc: 0.99296874
+48 80 loss: 0.009106168523430824 acc: 0.9916992
+48 120 loss: 0.0328315794467926 acc: 0.9933594
+48 160 loss: 0.015166138298809528 acc: 0.99140626
+test acc: 0.8167
+49 0 loss: 0.005331089254468679 acc: 1.0
+49 40 loss: 0.00831144955009222 acc: 0.99179685
+49 80 loss: 0.02162948064506054 acc: 0.99257815
+49 120 loss: 0.008049221709370613 acc: 0.99492186
+49 160 loss: 0.05226995423436165 acc: 0.99306643
+test acc: 0.8161
+50 0 loss: 0.019149016588926315 acc: 0.99609375
+50 40 loss: 0.008287004195153713 acc: 0.99365234
+50 80 loss: 0.0037611001171171665 acc: 0.99609375
+50 120 loss: 0.09953874349594116 acc: 0.99482423
+50 160 loss: 0.01348199974745512 acc: 0.9902344
+test acc: 0.8034
+51 0 loss: 0.033866237848997116 acc: 0.98828125
+51 40 loss: 0.010939644649624825 acc: 0.98427737
+51 80 loss: 0.04911625385284424 acc: 0.99052733
+51 120 loss: 0.005825321190059185 acc: 0.9915039
+51 160 loss: 0.018203385174274445 acc: 0.9939453
+test acc: 0.8118
+52 0 loss: 0.011748493649065495 acc: 0.9921875
+52 40 loss: 0.0023200795985758305 acc: 0.99365234
+52 80 loss: 0.015944041311740875 acc: 0.9927734
+52 120 loss: 0.017147069796919823 acc: 0.99492186
+52 160 loss: 0.044576048851013184 acc: 0.9932617
+test acc: 0.8138
+53 0 loss: 0.0015767529839649796 acc: 1.0
+53 40 loss: 0.01598776876926422 acc: 0.9969727
+53 80 loss: 0.02514640800654888 acc: 0.99482423
+53 120 loss: 0.05028701201081276 acc: 0.9915039
+53 160 loss: 0.04781466722488403 acc: 0.9926758
+test acc: 0.8165
+54 0 loss: 0.029221510514616966 acc: 0.98828125
+54 40 loss: 0.09643833339214325 acc: 0.99208987
+54 80 loss: 0.019032621756196022 acc: 0.9932617
+54 120 loss: 0.012968068942427635 acc: 0.99316406
+54 160 loss: 0.025837482884526253 acc: 0.99208987
+test acc: 0.8172
+55 0 loss: 0.03259502351284027 acc: 0.98828125
+55 40 loss: 0.009993491694331169 acc: 0.99560547
+55 80 loss: 0.011690770275890827 acc: 0.99365234
+55 120 loss: 0.03132111579179764 acc: 0.99306643
+55 160 loss: 0.003717960324138403 acc: 0.99423826
+test acc: 0.8138
+56 0 loss: 0.0017044773558154702 acc: 1.0
+56 40 loss: 0.0032963224221020937 acc: 0.9969727
+56 80 loss: 0.015638131648302078 acc: 0.9964844
+56 120 loss: 0.0010513425804674625 acc: 0.9975586
+56 160 loss: 0.006651106756180525 acc: 0.9961914
+test acc: 0.8204
+57 0 loss: 0.008296933956444263 acc: 1.0
+57 40 loss: 0.005621740128844976 acc: 0.9963867
+57 80 loss: 0.03505297750234604 acc: 0.9933594
+57 120 loss: 0.03570619598031044 acc: 0.9904297
+57 160 loss: 0.004700290970504284 acc: 0.99384767
+test acc: 0.8219
+58 0 loss: 0.0032737855799496174 acc: 1.0
+58 40 loss: 0.04337254539132118 acc: 0.99248046
+58 80 loss: 0.02305973879992962 acc: 0.990918
+58 120 loss: 0.09924236685037613 acc: 0.99121094
+58 160 loss: 0.013717622496187687 acc: 0.99433595
+test acc: 0.8193
+59 0 loss: 0.007888064719736576 acc: 0.99609375
+59 40 loss: 0.011378965340554714 acc: 0.993457
+59 80 loss: 0.013455999083817005 acc: 0.99423826
+59 120 loss: 0.01126682385802269 acc: 0.9946289
+59 160 loss: 0.02714313007891178 acc: 0.99228513
+test acc: 0.8107
+60 0 loss: 0.041879020631313324 acc: 0.984375
+60 40 loss: 0.026881879195570946 acc: 0.9939453
+60 80 loss: 0.010152283124625683 acc: 0.99365234
+60 120 loss: 0.001957973465323448 acc: 0.99472654
+60 160 loss: 0.017343144863843918 acc: 0.9944336
+test acc: 0.8122
+61 0 loss: 0.010062195360660553 acc: 1.0
+61 40 loss: 0.001386315911076963 acc: 0.99746096
+61 80 loss: 0.004551260266453028 acc: 0.99560547
+61 120 loss: 0.008363991975784302 acc: 0.99257815
+61 160 loss: 0.012022111564874649 acc: 0.993457
+test acc: 0.822
+62 0 loss: 0.011201569810509682 acc: 0.99609375
+62 40 loss: 0.004391852766275406 acc: 0.9964844
+62 80 loss: 0.002340334467589855 acc: 0.9957031
+62 120 loss: 0.0057985819876194 acc: 0.9946289
+62 160 loss: 0.010964903980493546 acc: 0.99179685
+test acc: 0.8083
+63 0 loss: 0.00670072715729475 acc: 1.0
+63 40 loss: 0.02867858298122883 acc: 0.9916992
+63 80 loss: 0.02672211080789566 acc: 0.99423826
+63 120 loss: 0.06849776208400726 acc: 0.9957031
+63 160 loss: 0.030566714704036713 acc: 0.9927734
+test acc: 0.8219
+64 0 loss: 0.011022093705832958 acc: 0.9921875
+64 40 loss: 0.014541368931531906 acc: 0.99658203
+64 80 loss: 0.011513830162584782 acc: 0.9961914
+64 120 loss: 0.01274017058312893 acc: 0.99375
+64 160 loss: 0.007275294046849012 acc: 0.99179685
+test acc: 0.821
+65 0 loss: 0.01962321810424328 acc: 0.98828125
+65 40 loss: 0.05157410353422165 acc: 0.99472654
+65 80 loss: 0.0032937852665781975 acc: 0.99609375
+65 120 loss: 0.04935424402356148 acc: 0.996875
+65 160 loss: 0.011120883747935295 acc: 0.99248046
+test acc: 0.8198
+66 0 loss: 0.0328129418194294 acc: 0.9921875
+66 40 loss: 0.030721455812454224 acc: 0.99375
+66 80 loss: 0.00787564367055893 acc: 0.9941406
+66 120 loss: 0.010177170857787132 acc: 0.9961914
+66 160 loss: 0.028890816494822502 acc: 0.9958984
+test acc: 0.8241
+67 0 loss: 0.0031772120855748653 acc: 1.0
+67 40 loss: 0.005885661114007235 acc: 0.9975586
+67 80 loss: 0.006513973698019981 acc: 0.9945313
+67 120 loss: 0.011899257078766823 acc: 0.9976562
+67 160 loss: 0.037220876663923264 acc: 0.9951172
+test acc: 0.8144
+68 0 loss: 0.0011434619082137942 acc: 1.0
+68 40 loss: 0.017676349729299545 acc: 0.9953125
+68 80 loss: 0.07365882396697998 acc: 0.9961914
+68 120 loss: 0.058074966073036194 acc: 0.990918
+68 160 loss: 0.01691294275224209 acc: 0.9933594
+test acc: 0.8217
+69 0 loss: 0.008447855710983276 acc: 0.99609375
+69 40 loss: 0.0009516068384982646 acc: 0.9959961
+69 80 loss: 0.03473002836108208 acc: 0.9951172
+69 120 loss: 0.006264263764023781 acc: 0.99492186
+69 160 loss: 0.007521355524659157 acc: 0.9921875
+test acc: 0.8209
+70 0 loss: 0.05149521678686142 acc: 0.9921875
+70 40 loss: 0.0068313367664813995 acc: 0.9969727
+70 80 loss: 0.007316343020647764 acc: 0.9961914
+70 120 loss: 0.01193249598145485 acc: 0.9951172
+70 160 loss: 0.01453249529004097 acc: 0.99423826
+test acc: 0.8194
+71 0 loss: 0.010563436895608902 acc: 0.99609375
+71 40 loss: 0.004443190526217222 acc: 0.99492186
+71 80 loss: 0.025632964447140694 acc: 0.9964844
+71 120 loss: 0.006343495566397905 acc: 0.9958984
+71 160 loss: 0.01755957305431366 acc: 0.9953125
+test acc: 0.8227
+72 0 loss: 0.01107859704643488 acc: 0.99609375
+72 40 loss: 0.01993834786117077 acc: 0.9977539
+72 80 loss: 0.0025504804216325283 acc: 0.99716794
+72 120 loss: 0.004435212351381779 acc: 0.99316406
+72 160 loss: 0.03368397057056427 acc: 0.9946289
+test acc: 0.818
+73 0 loss: 0.00288837100379169 acc: 1.0
+73 40 loss: 0.017719360068440437 acc: 0.9958984
+73 80 loss: 0.012403041124343872 acc: 0.9916992
+73 120 loss: 0.012164847925305367 acc: 0.9919922
+73 160 loss: 0.0038304447662085295 acc: 0.99257815
+test acc: 0.8257
+74 0 loss: 0.006320730783045292 acc: 1.0
+74 40 loss: 0.0028827800415456295 acc: 0.9959961
+74 80 loss: 0.0012676541227847338 acc: 0.99560547
+74 120 loss: 0.003982802387326956 acc: 0.9944336
+74 160 loss: 0.022252507507801056 acc: 0.9951172
+test acc: 0.817
+75 0 loss: 0.01972801983356476 acc: 0.98828125
+75 40 loss: 0.03640151396393776 acc: 0.9916992
+75 80 loss: 0.02425280027091503 acc: 0.9961914
+75 120 loss: 0.025829218327999115 acc: 0.9953125
+75 160 loss: 0.006609792821109295 acc: 0.996875
+test acc: 0.8192
+76 0 loss: 0.002774646272882819 acc: 1.0
+76 40 loss: 0.027822308242321014 acc: 0.9833008
+76 80 loss: 0.012226318009197712 acc: 0.99257815
+76 120 loss: 0.01613742485642433 acc: 0.99609375
+76 160 loss: 0.045971907675266266 acc: 0.9953125
+test acc: 0.8265
+77 0 loss: 0.011323066428303719 acc: 0.99609375
+77 40 loss: 0.0002594533725641668 acc: 0.9981445
+77 80 loss: 0.1244138702750206 acc: 0.99853516
+77 120 loss: 0.005014626309275627 acc: 0.9945313
+77 160 loss: 0.001471782918088138 acc: 0.9958984
+test acc: 0.8182
+78 0 loss: 0.005280043929815292 acc: 0.99609375
+78 40 loss: 0.01769324764609337 acc: 0.99833983
+78 80 loss: 0.04241044446825981 acc: 0.99716794
+78 120 loss: 0.002403177320957184 acc: 0.9944336
+78 160 loss: 0.001389570184983313 acc: 0.99501956
+test acc: 0.8251
+79 0 loss: 0.0014694610144942999 acc: 1.0
+79 40 loss: 0.021255044266581535 acc: 0.9957031
+79 80 loss: 0.011982766911387444 acc: 0.9945313
+79 120 loss: 0.002340565202757716 acc: 0.99560547
+79 160 loss: 0.005263541825115681 acc: 0.99550784
+test acc: 0.8232
+80 0 loss: 0.012516172602772713 acc: 0.99609375
+80 40 loss: 0.059224218130111694 acc: 0.9958984
+80 80 loss: 0.022316154092550278 acc: 0.9951172
+80 120 loss: 0.0072057973593473434 acc: 0.99501956
+80 160 loss: 0.03965511918067932 acc: 0.99375
+test acc: 0.8264
+81 0 loss: 0.004416820593178272 acc: 1.0
+81 40 loss: 0.011315474286675453 acc: 0.9958008
+81 80 loss: 0.0020742714405059814 acc: 0.9958984
+81 120 loss: 0.00035064155235886574 acc: 0.99726564
+81 160 loss: 0.011733616702258587 acc: 0.99423826
+test acc: 0.8253
+82 0 loss: 0.006216295063495636 acc: 0.99609375
+82 40 loss: 0.016162356361746788 acc: 0.9911133
+82 80 loss: 0.014611922204494476 acc: 0.99609375
+82 120 loss: 0.022993668913841248 acc: 0.9953125
+82 160 loss: 0.014181907288730145 acc: 0.99541014
+test acc: 0.8247
+83 0 loss: 0.011412788182497025 acc: 0.99609375
+83 40 loss: 0.00019520780188031495 acc: 0.99794924
+83 80 loss: 0.005284552928060293 acc: 0.996875
+83 120 loss: 0.012294147163629532 acc: 0.996875
+83 160 loss: 0.009140477515757084 acc: 0.99658203
+test acc: 0.8243
+84 0 loss: 0.0015205349773168564 acc: 1.0
+84 40 loss: 0.007064491510391235 acc: 0.99560547
+84 80 loss: 0.027904650196433067 acc: 0.9981445
+84 120 loss: 0.007265365682542324 acc: 0.99609375
+84 160 loss: 0.028851430863142014 acc: 0.9946289
+test acc: 0.8262
+85 0 loss: 0.0007662319112569094 acc: 1.0
+85 40 loss: 0.026625359430909157 acc: 0.9957031
+85 80 loss: 0.0039484938606619835 acc: 0.994043
+85 120 loss: 0.027527976781129837 acc: 0.99384767
+85 160 loss: 0.01166384294629097 acc: 0.99482423
+test acc: 0.823
+86 0 loss: 0.007221623789519072 acc: 0.99609375
+86 40 loss: 0.002156329108402133 acc: 0.99746096
+86 80 loss: 0.0027366308495402336 acc: 0.9970703
+86 120 loss: 0.003854114329442382 acc: 0.9951172
+86 160 loss: 0.00388323119841516 acc: 0.99785155
+test acc: 0.8254
+87 0 loss: 0.007576706353574991 acc: 1.0
+87 40 loss: 0.00393722765147686 acc: 0.99726564
+87 80 loss: 0.018094386905431747 acc: 0.9959961
+87 120 loss: 0.0022519880440086126 acc: 0.99736327
+87 160 loss: 0.009859833866357803 acc: 0.99365234
+test acc: 0.8261
+88 0 loss: 0.00254832417704165 acc: 1.0
+88 40 loss: 0.012449866160750389 acc: 0.9961914
+88 80 loss: 0.022260863333940506 acc: 0.9926758
+88 120 loss: 0.008214686997234821 acc: 0.9932617
+88 160 loss: 0.01870594546198845 acc: 0.9952148
+test acc: 0.8163
+89 0 loss: 0.012216576375067234 acc: 0.99609375
+89 40 loss: 0.010295829735696316 acc: 0.9964844
+89 80 loss: 0.0031062166672199965 acc: 0.9980469
+89 120 loss: 0.011825591325759888 acc: 0.9970703
+89 160 loss: 0.08602842688560486 acc: 0.99794924
+test acc: 0.8113
+90 0 loss: 0.005441192537546158 acc: 1.0
+90 40 loss: 0.0010031502461060882 acc: 0.99726564
+90 80 loss: 0.011021813377737999 acc: 0.99658203
+90 120 loss: 0.0284234918653965 acc: 0.9932617
+90 160 loss: 0.02484709583222866 acc: 0.99433595
+test acc: 0.8236
+91 0 loss: 0.0026120662223547697 acc: 1.0
+91 40 loss: 0.003981982823461294 acc: 0.9970703
+91 80 loss: 0.011319048702716827 acc: 0.99560547
+91 120 loss: 0.008863323368132114 acc: 0.99736327
+91 160 loss: 0.07579836994409561 acc: 0.9908203
+test acc: 0.8181
+92 0 loss: 0.022411879152059555 acc: 0.9921875
+92 40 loss: 0.05670120567083359 acc: 0.9837891
+92 80 loss: 0.05338480323553085 acc: 0.99248046
+92 120 loss: 0.011621078476309776 acc: 0.9962891
+92 160 loss: 0.016733437776565552 acc: 0.99492186
+test acc: 0.8221
+93 0 loss: 0.0010243930155411363 acc: 1.0
+93 40 loss: 0.20515573024749756 acc: 0.9772461
+93 80 loss: 0.05326671153306961 acc: 0.9794922
+93 120 loss: 0.02195199579000473 acc: 0.98769534
+93 160 loss: 0.004862483590841293 acc: 0.99208987
+test acc: 0.8187
+94 0 loss: 0.0021448074840009212 acc: 1.0
+94 40 loss: 0.0034016957506537437 acc: 0.99785155
+94 80 loss: 0.0006477840943261981 acc: 0.9980469
+94 120 loss: 0.011197957210242748 acc: 0.9982422
+94 160 loss: 0.0008791136788204312 acc: 0.9986328
+test acc: 0.8299
+95 0 loss: 0.0010505844838917255 acc: 1.0
+95 40 loss: 0.0009970745304599404 acc: 0.99921876
+95 80 loss: 0.006213363725692034 acc: 0.9988281
+95 120 loss: 0.0010524655226618052 acc: 0.9977539
+95 160 loss: 0.01528504490852356 acc: 0.99833983
+test acc: 0.829
+96 0 loss: 0.004461682867258787 acc: 0.99609375
+96 40 loss: 0.0004218868270982057 acc: 0.9977539
+96 80 loss: 0.0006576806772500277 acc: 0.99726564
+96 120 loss: 0.004830451682209969 acc: 0.99736327
+96 160 loss: 0.000959482800681144 acc: 0.9977539
+test acc: 0.8267
+97 0 loss: 0.0007918640621937811 acc: 1.0
+97 40 loss: 0.0005005876300856471 acc: 0.9975586
+97 80 loss: 0.007908198051154613 acc: 0.99726564
+97 120 loss: 0.00353482854552567 acc: 0.9982422
+97 160 loss: 0.0005132455844432116 acc: 0.9986328
+test acc: 0.8224
+98 0 loss: 0.001573756686411798 acc: 1.0
+98 40 loss: 0.0012646762188524008 acc: 0.99658203
+98 80 loss: 0.010460978373885155 acc: 0.9963867
+98 120 loss: 0.014889335259795189 acc: 0.9958008
+98 160 loss: 0.025368133559823036 acc: 0.9961914
+test acc: 0.8261
+99 0 loss: 0.0004176357761025429 acc: 1.0
+99 40 loss: 0.0008751994464546442 acc: 0.9980469
+99 80 loss: 0.0017043491825461388 acc: 0.9975586
+99 120 loss: 0.004588328301906586 acc: 0.9976562
+99 160 loss: 0.025882864370942116 acc: 0.99677736
+test acc: 0.8329
+100 0 loss: 0.0012814408401027322 acc: 1.0
+100 40 loss: 0.002642466686666012 acc: 0.9976562
+100 80 loss: 0.016182374209165573 acc: 0.99375
+100 120 loss: 0.01968667283654213 acc: 0.99550784
+100 160 loss: 0.015653811395168304 acc: 0.9963867
+test acc: 0.8077
+101 0 loss: 0.05100809037685394 acc: 0.98828125
+101 40 loss: 0.036532286554574966 acc: 0.9880859
+101 80 loss: 0.055124372243881226 acc: 0.9911133
+101 120 loss: 0.03852108493447304 acc: 0.99013674
+101 160 loss: 0.024737000465393066 acc: 0.9921875
+test acc: 0.8248
+102 0 loss: 0.005449458956718445 acc: 0.99609375
+102 40 loss: 0.0035807895474135876 acc: 0.9953125
+102 80 loss: 0.006828682031482458 acc: 0.99746096
+102 120 loss: 0.029532892629504204 acc: 0.99609375
+102 160 loss: 0.017969254404306412 acc: 0.994043
+test acc: 0.8156
+103 0 loss: 0.00047990091843530536 acc: 1.0
+103 40 loss: 0.031122421845793724 acc: 0.99658203
+103 80 loss: 0.004192068707197905 acc: 0.99736327
+103 120 loss: 0.0019292283104732633 acc: 0.9977539
+103 160 loss: 0.002676049480214715 acc: 0.99746096
+test acc: 0.8282
+104 0 loss: 0.00011411483865231276 acc: 1.0
+104 40 loss: 0.00295781041495502 acc: 0.9989258
+104 80 loss: 0.00038850188138894737 acc: 0.9986328
+104 120 loss: 0.0012508925283327699 acc: 0.9980469
+104 160 loss: 7.876815652707592e-05 acc: 0.9984375
+test acc: 0.8276
+105 0 loss: 0.029458479955792427 acc: 0.9921875
+105 40 loss: 0.006792786996811628 acc: 0.9984375
+105 80 loss: 0.004709948319941759 acc: 0.99550784
+105 120 loss: 0.0435352623462677 acc: 0.99609375
+105 160 loss: 0.004639037419110537 acc: 0.9933594
+test acc: 0.8258
+106 0 loss: 0.013482225127518177 acc: 0.9921875
+106 40 loss: 0.0013700636336579919 acc: 0.9951172
+106 80 loss: 0.0011651129461824894 acc: 0.99736327
+106 120 loss: 0.0074368929490447044 acc: 0.9952148
+106 160 loss: 0.04587144777178764 acc: 0.9977539
+test acc: 0.8218
+107 0 loss: 0.0018627565586939454 acc: 1.0
+107 40 loss: 0.012631137855350971 acc: 0.99130857
+107 80 loss: 0.003687595948576927 acc: 0.99736327
+107 120 loss: 0.022262273356318474 acc: 0.9963867
+107 160 loss: 0.0005814175819978118 acc: 0.99746096
+test acc: 0.8251
+108 0 loss: 0.014254947192966938 acc: 0.9921875
+108 40 loss: 0.003159040119498968 acc: 0.9981445
+108 80 loss: 6.686289998469874e-05 acc: 0.9989258
+108 120 loss: 0.02771066688001156 acc: 0.9982422
+108 160 loss: 0.010695933364331722 acc: 0.9961914
+test acc: 0.8264
+109 0 loss: 0.0014669514494016767 acc: 1.0
+109 40 loss: 0.008275558240711689 acc: 0.993457
+109 80 loss: 0.008000337518751621 acc: 0.9964844
+109 120 loss: 0.017997147515416145 acc: 0.9964844
+109 160 loss: 0.019525276497006416 acc: 0.99501956
+test acc: 0.8209
+110 0 loss: 0.006381952203810215 acc: 1.0
+110 40 loss: 0.02314753271639347 acc: 0.99609375
+110 80 loss: 0.049269869923591614 acc: 0.9969727
+110 120 loss: 0.009480263106524944 acc: 0.9958008
+110 160 loss: 0.020258115604519844 acc: 0.99667966
+test acc: 0.8241
+111 0 loss: 0.0009233108721673489 acc: 1.0
+111 40 loss: 0.0006313920603133738 acc: 0.99921876
+111 80 loss: 0.03411818668246269 acc: 0.9981445
+111 120 loss: 0.003456054488196969 acc: 0.9975586
+111 160 loss: 0.0073691243305802345 acc: 0.99794924
+test acc: 0.8259
+112 0 loss: 0.014049479737877846 acc: 0.9921875
+112 40 loss: 0.0051023224368691444 acc: 0.9976562
+112 80 loss: 0.006158473435789347 acc: 0.9958984
+112 120 loss: 0.006885116919875145 acc: 0.9963867
+112 160 loss: 0.024561258032917976 acc: 0.99736327
+test acc: 0.8218
+113 0 loss: 0.0019350426737219095 acc: 1.0
+113 40 loss: 0.0042310054413974285 acc: 0.9916016
+113 80 loss: 0.004213561769574881 acc: 0.996875
+113 120 loss: 0.025508571416139603 acc: 0.996875
+113 160 loss: 0.005324206780642271 acc: 0.99785155
+test acc: 0.8227
+114 0 loss: 0.008900421671569347 acc: 1.0
+114 40 loss: 0.001840009237639606 acc: 0.9969727
+114 80 loss: 0.006403418257832527 acc: 0.99833983
+114 120 loss: 0.017670582979917526 acc: 0.9980469
+114 160 loss: 0.0268500167876482 acc: 0.9961914
+test acc: 0.8235
+115 0 loss: 0.0007250728667713702 acc: 1.0
+115 40 loss: 0.0034981060307472944 acc: 0.99736327
+115 80 loss: 0.0015989160165190697 acc: 0.99550784
+115 120 loss: 0.0053145745769143105 acc: 0.9969727
+115 160 loss: 0.022911863401532173 acc: 0.9957031
+test acc: 0.8058
+116 0 loss: 0.050549283623695374 acc: 0.98046875
+116 40 loss: 0.003126436611637473 acc: 0.99365234
+116 80 loss: 0.0029335152357816696 acc: 0.99677736
+116 120 loss: 0.016234969720244408 acc: 0.99433595
+116 160 loss: 0.03819362446665764 acc: 0.99609375
+test acc: 0.8296
+117 0 loss: 0.0015202360227704048 acc: 1.0
+117 40 loss: 0.017127053812146187 acc: 0.99746096
+117 80 loss: 0.005014366935938597 acc: 0.9976562
+117 120 loss: 0.0034785319585353136 acc: 0.9969727
+117 160 loss: 0.003950011450797319 acc: 0.9957031
+test acc: 0.826
+118 0 loss: 0.001016206806525588 acc: 1.0
+118 40 loss: 0.030963584780693054 acc: 0.99658203
+118 80 loss: 0.08521705865859985 acc: 0.9976562
+118 120 loss: 0.028093529865145683 acc: 0.99658203
+118 160 loss: 0.023054499179124832 acc: 0.996875
+test acc: 0.8244
+119 0 loss: 0.017738666385412216 acc: 0.9921875
+119 40 loss: 0.005739009939134121 acc: 0.99746096
+119 80 loss: 0.001148299197666347 acc: 0.9986328
+119 120 loss: 0.006991978734731674 acc: 0.9977539
+119 160 loss: 0.00038406887324526906 acc: 0.99785155
+test acc: 0.8209
+120 0 loss: 0.005963153671473265 acc: 1.0
+120 40 loss: 0.0001976501225726679 acc: 0.9982422
+120 80 loss: 0.011072379536926746 acc: 0.9957031
+120 120 loss: 0.013372774235904217 acc: 0.9976562
+120 160 loss: 0.024252619594335556 acc: 0.9953125
+test acc: 0.8291
+121 0 loss: 0.004217671230435371 acc: 0.99609375
+121 40 loss: 0.0013483080547302961 acc: 0.9982422
+121 80 loss: 0.010443619452416897 acc: 0.9981445
+121 120 loss: 0.003950074315071106 acc: 0.99726564
+121 160 loss: 0.00117692188359797 acc: 0.99833983
+test acc: 0.8208
+122 0 loss: 0.00045172451063990593 acc: 1.0
+122 40 loss: 0.05697224289178848 acc: 0.99609375
+122 80 loss: 0.008789191953837872 acc: 0.9961914
+122 120 loss: 0.008083715103566647 acc: 0.99550784
+122 160 loss: 0.0385575033724308 acc: 0.9963867
+test acc: 0.8234
+123 0 loss: 0.014479229226708412 acc: 0.9921875
+123 40 loss: 0.03953176364302635 acc: 0.9902344
+123 80 loss: 0.06999170035123825 acc: 0.99306643
+123 120 loss: 0.008944648317992687 acc: 0.99541014
+123 160 loss: 0.009741831570863724 acc: 0.9957031
+test acc: 0.8259
+124 0 loss: 0.001294823014177382 acc: 1.0
+124 40 loss: 0.00959392637014389 acc: 0.9945313
+124 80 loss: 0.00018831886700354517 acc: 0.9975586
+124 120 loss: 0.031454093754291534 acc: 0.99658203
+124 160 loss: 0.021897749975323677 acc: 0.99316406
+test acc: 0.8007
+125 0 loss: 0.041983604431152344 acc: 0.984375
+125 40 loss: 0.06434265524148941 acc: 0.98720706
+125 80 loss: 0.02793094888329506 acc: 0.9952148
+125 120 loss: 0.009717888198792934 acc: 0.994043
+125 160 loss: 0.0021042630542069674 acc: 0.99677736
+test acc: 0.8173
+126 0 loss: 0.008780086413025856 acc: 0.99609375
+126 40 loss: 0.00128498999401927 acc: 0.996875
+126 80 loss: 0.0011591966031119227 acc: 0.99794924
+126 120 loss: 0.012229520827531815 acc: 0.9959961
+126 160 loss: 0.0010018935427069664 acc: 0.99785155
+test acc: 0.826
+127 0 loss: 0.028541166335344315 acc: 0.99609375
+127 40 loss: 0.0016906369710341096 acc: 0.9984375
+127 80 loss: 0.008067391812801361 acc: 0.9977539
+127 120 loss: 0.037462081760168076 acc: 0.9994141
+127 160 loss: 0.0032436277251690626 acc: 0.99853516
+test acc: 0.8288
+128 0 loss: 0.0012817445676773787 acc: 1.0
+128 40 loss: 0.003405520459637046 acc: 0.99921876
+128 80 loss: 8.929429168347269e-05 acc: 0.99921876
+128 120 loss: 0.003391997655853629 acc: 0.99960935
+128 160 loss: 0.003192696487531066 acc: 0.99853516
+test acc: 0.8239
+129 0 loss: 0.0009422103757970035 acc: 1.0
+129 40 loss: 0.024748416617512703 acc: 0.9989258
+129 80 loss: 0.0017821451183408499 acc: 0.99736327
+129 120 loss: 0.001377853099256754 acc: 0.9975586
+129 160 loss: 0.046881698071956635 acc: 0.9976562
+test acc: 0.8287
+130 0 loss: 0.0023661016020923853 acc: 1.0
+130 40 loss: 0.0003170871932525188 acc: 0.9977539
+130 80 loss: 0.021803192794322968 acc: 0.99785155
+130 120 loss: 0.0261154193431139 acc: 0.99550784
+130 160 loss: 0.02417074143886566 acc: 0.99736327
+test acc: 0.8224
+131 0 loss: 0.00709273386746645 acc: 0.99609375
+131 40 loss: 0.0011077203089371324 acc: 0.99667966
+131 80 loss: 0.0018218237673863769 acc: 0.996875
+131 120 loss: 0.0060208342038095 acc: 0.99501956
+131 160 loss: 0.011538060382008553 acc: 0.9961914
+test acc: 0.83
+132 0 loss: 0.004246919881552458 acc: 1.0
+132 40 loss: 0.0004426968516781926 acc: 0.9970703
+132 80 loss: 0.03891841322183609 acc: 0.99833983
+132 120 loss: 0.032144270837306976 acc: 0.9977539
+132 160 loss: 0.004342157393693924 acc: 0.9958984
+test acc: 0.8298
+133 0 loss: 0.0020893793553113937 acc: 1.0
+133 40 loss: 0.005175571423023939 acc: 0.99375
+133 80 loss: 0.0013198726810514927 acc: 0.9957031
+133 120 loss: 0.003241170197725296 acc: 0.9958984
+133 160 loss: 0.050993673503398895 acc: 0.99609375
+test acc: 0.824
+134 0 loss: 0.0065712761133909225 acc: 0.99609375
+134 40 loss: 0.003149976721033454 acc: 0.9970703
+134 80 loss: 0.014855315908789635 acc: 0.9964844
+134 120 loss: 0.002123382408171892 acc: 0.99853516
+134 160 loss: 0.09675588458776474 acc: 0.99785155
+test acc: 0.8211
+135 0 loss: 0.003867770079523325 acc: 1.0
+135 40 loss: 0.0030974126420915127 acc: 0.9970703
+135 80 loss: 0.006302960216999054 acc: 0.9975586
+135 120 loss: 0.006420663092285395 acc: 0.99609375
+135 160 loss: 0.006999634671956301 acc: 0.99736327
+test acc: 0.8223
+136 0 loss: 0.0013935861643403769 acc: 1.0
+136 40 loss: 0.01086393091827631 acc: 0.99609375
+136 80 loss: 0.007039132062345743 acc: 0.9958984
+136 120 loss: 0.0018311493331566453 acc: 0.9958984
+136 160 loss: 0.0032274897675961256 acc: 0.99716794
+test acc: 0.826
+137 0 loss: 0.0035429573617875576 acc: 1.0
+137 40 loss: 0.0003617701877374202 acc: 0.9982422
+137 80 loss: 0.0038521760143339634 acc: 0.99736327
+137 120 loss: 0.0075673386454582214 acc: 0.99609375
+137 160 loss: 0.0013501434586942196 acc: 0.9977539
+test acc: 0.8266
+138 0 loss: 0.02352515049278736 acc: 0.9921875
+138 40 loss: 0.00034731332561932504 acc: 0.99912107
+138 80 loss: 0.003969990648329258 acc: 0.9988281
+138 120 loss: 0.0013240352272987366 acc: 0.9987305
+138 160 loss: 0.00030477347900159657 acc: 0.99853516
+test acc: 0.8144
+139 0 loss: 0.007578309625387192 acc: 0.99609375
+139 40 loss: 0.004077027551829815 acc: 0.99658203
+139 80 loss: 0.02211650274693966 acc: 0.99609375
+139 120 loss: 0.02496560662984848 acc: 0.9958008
+139 160 loss: 0.00352472229860723 acc: 0.9958984
+test acc: 0.8113
+140 0 loss: 0.013247238472104073 acc: 0.9921875
+140 40 loss: 0.010037372820079327 acc: 0.99550784
+140 80 loss: 0.00320798740722239 acc: 0.99609375
+140 120 loss: 0.002432691166177392 acc: 0.9981445
+140 160 loss: 0.02111361175775528 acc: 0.9962891
+test acc: 0.8271
+141 0 loss: 0.0005734254373237491 acc: 1.0
+141 40 loss: 0.01807049848139286 acc: 0.99833983
+141 80 loss: 8.843868999974802e-05 acc: 0.99921876
+141 120 loss: 0.0028446821961551905 acc: 0.9993164
+141 160 loss: 0.00018898959388025105 acc: 0.9989258
+test acc: 0.8327
+142 0 loss: 4.923665983369574e-05 acc: 1.0
+142 40 loss: 0.0007372018881142139 acc: 0.9994141
+142 80 loss: 0.00552094541490078 acc: 0.9986328
+142 120 loss: 8.726294618099928e-05 acc: 0.99921876
+142 160 loss: 0.05541696026921272 acc: 0.994043
+test acc: 0.8204
+143 0 loss: 0.0020955202635377645 acc: 1.0
+143 40 loss: 0.0008509858744218946 acc: 0.99736327
+143 80 loss: 0.004721537698060274 acc: 0.99658203
+143 120 loss: 0.0035271956585347652 acc: 0.9975586
+143 160 loss: 0.05943072587251663 acc: 0.99853516
+test acc: 0.8236
+144 0 loss: 0.02408762462437153 acc: 0.9921875
+144 40 loss: 0.008843391202390194 acc: 0.9963867
+144 80 loss: 0.0018022098811343312 acc: 0.99658203
+144 120 loss: 0.04375503584742546 acc: 0.9980469
+144 160 loss: 0.01843096688389778 acc: 0.9970703
+test acc: 0.8238
+145 0 loss: 0.005635813809931278 acc: 0.99609375
+145 40 loss: 0.011275759898126125 acc: 0.99658203
+145 80 loss: 0.0012119790771976113 acc: 0.9970703
+145 120 loss: 0.015519718639552593 acc: 0.9963867
+145 160 loss: 0.008502812124788761 acc: 0.9977539
+test acc: 0.8221
+146 0 loss: 0.005242128390818834 acc: 0.99609375
+146 40 loss: 0.0022133176680654287 acc: 0.99726564
+146 80 loss: 0.004503281787037849 acc: 0.99492186
+146 120 loss: 0.004389191046357155 acc: 0.9963867
+146 160 loss: 0.009731747210025787 acc: 0.99726564
+test acc: 0.8227
+147 0 loss: 0.008351256139576435 acc: 0.99609375
+147 40 loss: 0.01045260764658451 acc: 0.99794924
+147 80 loss: 0.022858504205942154 acc: 0.9958008
+147 120 loss: 0.020702559500932693 acc: 0.9970703
+147 160 loss: 0.030628390610218048 acc: 0.9944336
+test acc: 0.822
+148 0 loss: 0.005655517801642418 acc: 1.0
+148 40 loss: 0.0035266513004899025 acc: 0.9982422
+148 80 loss: 0.00846785306930542 acc: 0.99677736
+148 120 loss: 0.001169700757600367 acc: 0.99658203
+148 160 loss: 0.0019304428715258837 acc: 0.9969727
+test acc: 0.8265
+149 0 loss: 0.00986326765269041 acc: 0.9921875
+149 40 loss: 0.001159702311269939 acc: 0.9988281
+149 80 loss: 0.004035969730466604 acc: 0.99746096
+149 120 loss: 0.024322310462594032 acc: 0.9961914
+149 160 loss: 0.004891709890216589 acc: 0.99677736
+test acc: 0.8255
+150 0 loss: 0.0023212311789393425 acc: 1.0
+150 40 loss: 0.004150887951254845 acc: 0.9989258
+150 80 loss: 0.00042975976248271763 acc: 0.9989258
+150 120 loss: 0.0037148070987313986 acc: 0.9980469
+150 160 loss: 0.010421870276331902 acc: 0.99365234
+test acc: 0.8196
+151 0 loss: 0.0007675280794501305 acc: 1.0
+151 40 loss: 0.0009472777601331472 acc: 0.9982422
+151 80 loss: 0.003661882597953081 acc: 0.9932617
+151 120 loss: 0.004919436294585466 acc: 0.99541014
+151 160 loss: 0.006888594478368759 acc: 0.99658203
+test acc: 0.8279
+152 0 loss: 0.0017248697113245726 acc: 1.0
+152 40 loss: 0.0028667591977864504 acc: 0.9994141
+152 80 loss: 0.000488411751575768 acc: 0.9984375
+152 120 loss: 0.005476417485624552 acc: 0.993457
+152 160 loss: 0.002086333464831114 acc: 0.9962891
+test acc: 0.8258
+153 0 loss: 0.0007133137551136315 acc: 1.0
+153 40 loss: 0.016414590179920197 acc: 0.9982422
+153 80 loss: 0.0013139270013198256 acc: 0.9980469
+153 120 loss: 0.03580944985151291 acc: 0.9969727
+153 160 loss: 0.020283706486225128 acc: 0.9976562
+test acc: 0.8319
+154 0 loss: 0.0636693462729454 acc: 0.99609375
+154 40 loss: 0.00024079420836642385 acc: 0.9977539
+154 80 loss: 0.004632045980542898 acc: 0.9986328
+154 120 loss: 0.001806147862225771 acc: 0.9989258
+154 160 loss: 0.00010380931780673563 acc: 0.99833983
+test acc: 0.8304
+155 0 loss: 0.0038146250881254673 acc: 0.99609375
+155 40 loss: 4.860481931245886e-05 acc: 0.9984375
+155 80 loss: 0.03561243787407875 acc: 0.9980469
+155 120 loss: 0.005042958538979292 acc: 0.9953125
+155 160 loss: 0.002225782722234726 acc: 0.99716794
+test acc: 0.8283
+156 0 loss: 0.0009808860486373305 acc: 1.0
+156 40 loss: 0.007779440842568874 acc: 0.99726564
+156 80 loss: 0.014984802342951298 acc: 0.9982422
+156 120 loss: 0.012944616377353668 acc: 0.99658203
+156 160 loss: 0.005931663326919079 acc: 0.9987305
+test acc: 0.8248
+157 0 loss: 0.00010309973731637001 acc: 1.0
+157 40 loss: 0.04004659503698349 acc: 0.99716794
+157 80 loss: 0.005986619740724564 acc: 0.9961914
+157 120 loss: 0.0014939274406060576 acc: 0.9962891
+157 160 loss: 0.00813465565443039 acc: 0.9953125
+test acc: 0.817
+158 0 loss: 0.0010265400633215904 acc: 1.0
+158 40 loss: 0.0582919716835022 acc: 0.99550784
+158 80 loss: 0.0011592553928494453 acc: 0.99482423
+158 120 loss: 0.03897363692522049 acc: 0.99677736
+158 160 loss: 0.01510743610560894 acc: 0.9953125
+test acc: 0.8226
+159 0 loss: 0.0008651932002976537 acc: 1.0
+159 40 loss: 0.00016567789134569466 acc: 0.9988281
+159 80 loss: 0.007602458819746971 acc: 0.9977539
+159 120 loss: 0.031364403665065765 acc: 0.99736327
+159 160 loss: 0.003358538029715419 acc: 0.9958984
+test acc: 0.8261
+160 0 loss: 0.006009554956108332 acc: 0.99609375
+160 40 loss: 0.0072250510565936565 acc: 0.9982422
+160 80 loss: 0.005329684820026159 acc: 0.9977539
+160 120 loss: 0.00011625233310041949 acc: 0.99794924
+160 160 loss: 0.0006477903807535768 acc: 0.9980469
+test acc: 0.8332
+161 0 loss: 0.0005767504335381091 acc: 1.0
+161 40 loss: 0.0007920790230855346 acc: 0.9988281
+161 80 loss: 8.38852793094702e-06 acc: 0.99990237
+161 120 loss: 0.004596531856805086 acc: 0.9988281
+161 160 loss: 0.00014492533227894455 acc: 0.9995117
+test acc: 0.8235
+162 0 loss: 0.0316949337720871 acc: 0.9921875
+162 40 loss: 0.0011622519232332706 acc: 0.9982422
+162 80 loss: 0.011652020737528801 acc: 0.99677736
+162 120 loss: 0.00028788967756554484 acc: 0.99716794
+162 160 loss: 0.013195541687309742 acc: 0.9959961
+test acc: 0.8275
+163 0 loss: 0.009701978415250778 acc: 0.99609375
+163 40 loss: 0.0025492627173662186 acc: 0.99794924
+163 80 loss: 0.0012579626636579633 acc: 0.9981445
+163 120 loss: 0.0039458791725337505 acc: 0.9981445
+163 160 loss: 0.00032241770531982183 acc: 0.9981445
+test acc: 0.8332
+164 0 loss: 0.00036334595642983913 acc: 1.0
+164 40 loss: 0.0005520416889339685 acc: 0.9984375
+164 80 loss: 0.021007217466831207 acc: 0.9952148
+164 120 loss: 0.0141268540173769 acc: 0.9921875
+164 160 loss: 0.012198363430798054 acc: 0.99560547
+test acc: 0.8276
+165 0 loss: 0.00028603224200196564 acc: 1.0
+165 40 loss: 0.014184687286615372 acc: 0.9981445
+165 80 loss: 0.005886859260499477 acc: 0.9988281
+165 120 loss: 0.0010873130522668362 acc: 0.99853516
+165 160 loss: 0.01808447204530239 acc: 0.9976562
+test acc: 0.8253
+166 0 loss: 0.0016886788653209805 acc: 1.0
+166 40 loss: 0.0007498182239942253 acc: 0.9982422
+166 80 loss: 0.006370692979544401 acc: 0.9977539
+166 120 loss: 0.03801544010639191 acc: 0.9969727
+166 160 loss: 0.0025706428568810225 acc: 0.9964844
+test acc: 0.8198
+167 0 loss: 0.00623583747074008 acc: 0.99609375
+167 40 loss: 0.000797825341578573 acc: 0.99833983
+167 80 loss: 0.0035875621251761913 acc: 0.9984375
+167 120 loss: 0.031101740896701813 acc: 0.99746096
+167 160 loss: 0.015140295960009098 acc: 0.993457
+test acc: 0.8235
+168 0 loss: 0.0018205742817372084 acc: 1.0
+168 40 loss: 0.0032867854461073875 acc: 0.99736327
+168 80 loss: 0.00963838491588831 acc: 0.99785155
+168 120 loss: 0.027458123862743378 acc: 0.99785155
+168 160 loss: 0.0065343487076461315 acc: 0.9959961
+test acc: 0.8283
+169 0 loss: 0.00011605479085119441 acc: 1.0
+169 40 loss: 0.00023249961668625474 acc: 0.9988281
+169 80 loss: 0.008171834982931614 acc: 0.9981445
+169 120 loss: 0.004457504488527775 acc: 0.99716794
+169 160 loss: 0.0006786749581806362 acc: 0.9984375
+test acc: 0.828
+170 0 loss: 0.002675491152331233 acc: 1.0
+170 40 loss: 0.004002113826572895 acc: 0.99794924
+170 80 loss: 0.0054697319865226746 acc: 0.9987305
+170 120 loss: 0.006798957008868456 acc: 0.99667966
+170 160 loss: 0.013790689408779144 acc: 0.9958008
+test acc: 0.8279
+171 0 loss: 0.0013399866875261068 acc: 1.0
+171 40 loss: 0.0036815579514950514 acc: 0.9988281
+171 80 loss: 0.011863083578646183 acc: 0.99433595
+171 120 loss: 0.00940861739218235 acc: 0.99716794
+171 160 loss: 0.022515662014484406 acc: 0.99833983
+test acc: 0.8237
+172 0 loss: 0.003957700449973345 acc: 0.99609375
+172 40 loss: 0.00040186767000705004 acc: 0.99912107
+172 80 loss: 0.01154367532581091 acc: 0.9977539
+172 120 loss: 0.005635030101984739 acc: 0.99658203
+172 160 loss: 0.0036774976179003716 acc: 0.9969727
+test acc: 0.8144
+173 0 loss: 0.0022197600919753313 acc: 1.0
+173 40 loss: 0.0015747684519737959 acc: 0.996875
+173 80 loss: 0.0023173473309725523 acc: 0.9984375
+173 120 loss: 0.0024349309969693422 acc: 0.99677736
+173 160 loss: 0.010590587742626667 acc: 0.99746096
+test acc: 0.8183
+174 0 loss: 0.029645346105098724 acc: 0.98828125
+174 40 loss: 0.003097387496381998 acc: 0.99296874
+174 80 loss: 0.0009222738444805145 acc: 0.99677736
+174 120 loss: 0.0042635612189769745 acc: 0.9964844
+174 160 loss: 0.01747063174843788 acc: 0.9988281
+test acc: 0.8335
+175 0 loss: 0.007632505148649216 acc: 0.99609375
+175 40 loss: 0.00031769071938470006 acc: 0.99960935
+175 80 loss: 0.0023570540361106396 acc: 0.99912107
+175 120 loss: 0.0006329322932288051 acc: 0.9989258
+175 160 loss: 0.0005911311018280685 acc: 0.99785155
+test acc: 0.8292
+176 0 loss: 0.004134170711040497 acc: 1.0
+176 40 loss: 0.004089041613042355 acc: 0.99746096
+176 80 loss: 0.00010890146222664043 acc: 0.99960935
+176 120 loss: 0.016236092895269394 acc: 0.9982422
+176 160 loss: 0.0013244063593447208 acc: 0.9987305
+test acc: 0.8294
+177 0 loss: 0.001402984606102109 acc: 1.0
+177 40 loss: 0.004949183668941259 acc: 0.9981445
+177 80 loss: 0.024676727131009102 acc: 0.99609375
+177 120 loss: 0.010911248624324799 acc: 0.9981445
+177 160 loss: 0.002369999187067151 acc: 0.99667966
+test acc: 0.8273
+178 0 loss: 0.004387894179672003 acc: 0.99609375
+178 40 loss: 0.0017506970325484872 acc: 0.996875
+178 80 loss: 0.003951329737901688 acc: 0.9958008
+178 120 loss: 0.0028108989354223013 acc: 0.9981445
+178 160 loss: 0.035614196211099625 acc: 0.9970703
+test acc: 0.827
+179 0 loss: 0.03065810725092888 acc: 0.9921875
+179 40 loss: 0.016879037022590637 acc: 0.9976562
+179 80 loss: 0.002976277144625783 acc: 0.9989258
+179 120 loss: 0.00012850256462115794 acc: 0.99921876
+179 160 loss: 0.02199261449277401 acc: 0.99726564
+test acc: 0.8285
+180 0 loss: 0.001382061280310154 acc: 1.0
+180 40 loss: 0.0021895223762840033 acc: 0.9982422
+180 80 loss: 0.0002995694521814585 acc: 0.9989258
+180 120 loss: 0.0004555533523671329 acc: 0.9981445
+180 160 loss: 0.004320000298321247 acc: 0.9984375
+test acc: 0.822
+181 0 loss: 0.0060267820954322815 acc: 1.0
+181 40 loss: 0.008434583432972431 acc: 0.99658203
+181 80 loss: 0.0019456216832622886 acc: 0.9976562
+181 120 loss: 0.0003130332916043699 acc: 0.99785155
+181 160 loss: 2.715280970733147e-05 acc: 0.99902344
+test acc: 0.8206
+182 0 loss: 0.006801865063607693 acc: 1.0
+182 40 loss: 0.004961153957992792 acc: 0.9969727
+182 80 loss: 0.024505896493792534 acc: 0.9975586
+182 120 loss: 0.024127164855599403 acc: 0.99785155
+182 160 loss: 0.012036564759910107 acc: 0.9958008
+test acc: 0.8303
+183 0 loss: 0.0011779277119785547 acc: 1.0
+183 40 loss: 7.107762212399393e-05 acc: 0.9980469
+183 80 loss: 0.0014790950808674097 acc: 0.99912107
+183 120 loss: 0.005880164913833141 acc: 0.9988281
+183 160 loss: 0.00617901561781764 acc: 0.99794924
+test acc: 0.8274
+184 0 loss: 0.004394293297082186 acc: 0.99609375
+184 40 loss: 0.0036836108192801476 acc: 0.9995117
+184 80 loss: 0.005743016954511404 acc: 0.9981445
+184 120 loss: 0.163442462682724 acc: 0.994043
+184 160 loss: 0.024520546197891235 acc: 0.98095703
+test acc: 0.8194
+185 0 loss: 0.008763891644775867 acc: 0.99609375
+185 40 loss: 0.012807661667466164 acc: 0.99140626
+185 80 loss: 0.06462565064430237 acc: 0.99228513
+185 120 loss: 0.005568938795477152 acc: 0.9958984
+185 160 loss: 0.0051607051864266396 acc: 0.9945313
+test acc: 0.8299
+186 0 loss: 0.00251767341978848 acc: 1.0
+186 40 loss: 0.00020252575632184744 acc: 0.99912107
+186 80 loss: 0.0007017236202955246 acc: 0.9994141
+186 120 loss: 0.006353826727718115 acc: 0.9987305
+186 160 loss: 0.0004265455645509064 acc: 0.99921876
+test acc: 0.8297
+187 0 loss: 0.00018156145233660936 acc: 1.0
+187 40 loss: 0.00032789030228741467 acc: 0.9994141
+187 80 loss: 5.0549599109217525e-05 acc: 0.9998047
+187 120 loss: 9.187048999592662e-05 acc: 1.0
+187 160 loss: 4.7611269110348076e-05 acc: 0.9998047
+test acc: 0.8333
+188 0 loss: 0.0005234400159679353 acc: 1.0
+188 40 loss: 0.0016093712765723467 acc: 0.99970704
+188 80 loss: 0.004352669231593609 acc: 0.99833983
+188 120 loss: 0.0002749379782471806 acc: 0.99785155
+188 160 loss: 0.0011459407396614552 acc: 0.9989258
+test acc: 0.8245
+189 0 loss: 0.002539937850087881 acc: 1.0
+189 40 loss: 0.007618528325110674 acc: 0.99833983
+189 80 loss: 0.0003186526009812951 acc: 0.9980469
+189 120 loss: 0.00029539145180024207 acc: 0.99853516
+189 160 loss: 0.0013835200807079673 acc: 0.9986328
+test acc: 0.8336
+190 0 loss: 0.005054662935435772 acc: 0.99609375
+190 40 loss: 8.440649980911985e-05 acc: 0.9993164
+190 80 loss: 0.00028310363995842636 acc: 0.9993164
+190 120 loss: 2.7608746677287854e-05 acc: 0.99902344
+190 160 loss: 0.00030860467813909054 acc: 0.9982422
+test acc: 0.8303
+191 0 loss: 7.245440792758018e-05 acc: 1.0
+191 40 loss: 0.01580524817109108 acc: 0.99833983
+191 80 loss: 0.004028087016195059 acc: 0.99794924
+191 120 loss: 0.018452586606144905 acc: 0.99667966
+191 160 loss: 0.0028876459691673517 acc: 0.99785155
+test acc: 0.8269
+192 0 loss: 0.005885109305381775 acc: 0.99609375
+192 40 loss: 0.026317017152905464 acc: 0.9970703
+192 80 loss: 0.0011954526416957378 acc: 0.99492186
+192 120 loss: 0.03488929569721222 acc: 0.99550784
+192 160 loss: 0.004708359483629465 acc: 0.9958008
+test acc: 0.8236
+193 0 loss: 0.010885665193200111 acc: 0.99609375
+193 40 loss: 0.009707789868116379 acc: 0.9977539
+193 80 loss: 0.0014331006677821279 acc: 0.9976562
+193 120 loss: 0.00031222193501889706 acc: 0.9994141
+193 160 loss: 0.04240262880921364 acc: 0.9988281
+test acc: 0.8351
+194 0 loss: 0.000310851406538859 acc: 1.0
+194 40 loss: 0.0005955288652330637 acc: 0.9993164
+194 80 loss: 0.00302880653180182 acc: 0.9980469
+194 120 loss: 0.000401595258153975 acc: 0.9984375
+194 160 loss: 0.006141468416899443 acc: 0.9977539
+test acc: 0.825
+195 0 loss: 0.0023563308641314507 acc: 1.0
+195 40 loss: 0.0003428006893955171 acc: 0.99902344
+195 80 loss: 0.0006230355938896537 acc: 0.9993164
+195 120 loss: 0.07867984473705292 acc: 0.99912107
+195 160 loss: 0.03456125780940056 acc: 0.99833983
+test acc: 0.8189
+196 0 loss: 0.02499949187040329 acc: 0.9921875
+196 40 loss: 0.014358025044202805 acc: 0.9919922
+196 80 loss: 0.004231109283864498 acc: 0.99658203
+196 120 loss: 0.03245658427476883 acc: 0.9953125
+196 160 loss: 0.004547596909105778 acc: 0.99550784
+test acc: 0.8316
+197 0 loss: 0.0011428117286413908 acc: 1.0
+197 40 loss: 0.0005209686933085322 acc: 0.99746096
+197 80 loss: 5.1077604439342394e-05 acc: 0.9984375
+197 120 loss: 0.006334159057587385 acc: 0.9987305
+197 160 loss: 0.008633119985461235 acc: 0.9976562
+test acc: 0.8248
+198 0 loss: 0.0029819223564118147 acc: 1.0
+198 40 loss: 0.002323133870959282 acc: 0.99726564
+198 80 loss: 0.0024003777652978897 acc: 0.99716794
+198 120 loss: 0.00016744785534683615 acc: 0.9993164
+198 160 loss: 0.0017983471043407917 acc: 0.9994141
+test acc: 0.8237
+199 0 loss: 0.010902849026024342 acc: 0.99609375
+199 40 loss: 0.00033154658740386367 acc: 0.99853516
+199 80 loss: 0.0020723806228488684 acc: 0.99912107
+199 120 loss: 0.0039240773767232895 acc: 0.99833983
+199 160 loss: 0.07682181149721146 acc: 0.9982422
+test acc: 0.8219
+200 0 loss: 0.04666542261838913 acc: 0.9921875
+200 40 loss: 0.0010586787248030305 acc: 0.99794924
+200 80 loss: 2.906581175921019e-05 acc: 0.99853516
+200 120 loss: 0.0029303538613021374 acc: 0.9993164
+200 160 loss: 0.0030196523293852806 acc: 0.99833983
+test acc: 0.8366
+201 0 loss: 0.0007299272110685706 acc: 1.0
+201 40 loss: 0.00021276605548337102 acc: 0.99960935
+201 80 loss: 0.00012768209853675216 acc: 0.99960935
+201 120 loss: 1.853702633525245e-05 acc: 0.99990237
+201 160 loss: 0.00010661943815648556 acc: 0.9998047
+test acc: 0.8372
+202 0 loss: 0.0001106713607441634 acc: 1.0
+202 40 loss: 0.00010506141552468762 acc: 0.9995117
+202 80 loss: 0.00016560526273678988 acc: 0.99970704
+202 120 loss: 0.0018807938322424889 acc: 0.99960935
+202 160 loss: 0.00025598882348276675 acc: 0.9995117
+test acc: 0.8342
+203 0 loss: 2.5584888135199435e-05 acc: 1.0
+203 40 loss: 0.00048415124183520675 acc: 0.9995117
+203 80 loss: 0.0006055479170754552 acc: 0.9987305
+203 120 loss: 0.00010976787598337978 acc: 0.9975586
+203 160 loss: 0.001998225459828973 acc: 0.9964844
+test acc: 0.8271
+204 0 loss: 0.00020491727627813816 acc: 1.0
+204 40 loss: 0.000556150684133172 acc: 0.9988281
+204 80 loss: 0.0028363019227981567 acc: 0.9975586
+204 120 loss: 0.0023248044308274984 acc: 0.9946289
+204 160 loss: 0.007261659950017929 acc: 0.9982422
+test acc: 0.827
+205 0 loss: 0.003379429690539837 acc: 1.0
+205 40 loss: 0.0016423147171735764 acc: 0.99609375
+205 80 loss: 0.0008087887545116246 acc: 0.9975586
+205 120 loss: 0.00017132223001681268 acc: 0.9989258
+205 160 loss: 0.02366071753203869 acc: 0.99736327
+test acc: 0.8194
+206 0 loss: 0.013353205285966396 acc: 0.99609375
+206 40 loss: 0.00012157409219071269 acc: 0.9986328
+206 80 loss: 0.016100427135825157 acc: 0.99785155
+206 120 loss: 0.005473893601447344 acc: 0.9963867
+206 160 loss: 5.159114516573027e-05 acc: 0.9980469
+test acc: 0.8206
+207 0 loss: 0.012557584792375565 acc: 0.9921875
+207 40 loss: 0.006014161743223667 acc: 0.9963867
+207 80 loss: 0.0011982601135969162 acc: 0.9984375
+207 120 loss: 0.010653032921254635 acc: 0.9808594
+207 160 loss: 0.052871789783239365 acc: 0.9921875
+test acc: 0.8259
+208 0 loss: 0.008136441931128502 acc: 0.9921875
+208 40 loss: 0.00013361778110265732 acc: 0.9984375
+208 80 loss: 0.03670509159564972 acc: 0.9980469
+208 120 loss: 0.004960016347467899 acc: 0.9952148
+208 160 loss: 0.024466194212436676 acc: 0.996875
+test acc: 0.833
+209 0 loss: 0.009190713055431843 acc: 0.99609375
+209 40 loss: 0.0013452564598992467 acc: 0.99902344
+209 80 loss: 0.0003375349042471498 acc: 0.99912107
+209 120 loss: 0.02191578596830368 acc: 0.9986328
+209 160 loss: 0.0001410781405866146 acc: 0.9987305
+test acc: 0.8311
+210 0 loss: 8.389531285502017e-05 acc: 1.0
+210 40 loss: 0.00834321603178978 acc: 0.99960935
+210 80 loss: 0.002350548980757594 acc: 0.99970704
+210 120 loss: 7.528103014919907e-05 acc: 0.9995117
+210 160 loss: 7.968037971295416e-05 acc: 0.9998047
+test acc: 0.8301
+211 0 loss: 0.006626368034631014 acc: 0.99609375
+211 40 loss: 0.002460404299199581 acc: 0.99833983
+211 80 loss: 0.00032812380231916904 acc: 0.9988281
+211 120 loss: 0.0015051179798319936 acc: 0.9994141
+211 160 loss: 0.0007262574508786201 acc: 0.9995117
+test acc: 0.8329
+212 0 loss: 0.00014891479804646224 acc: 1.0
+212 40 loss: 0.009038357995450497 acc: 0.99716794
+212 80 loss: 0.0015848185867071152 acc: 0.9969727
+212 120 loss: 0.007453470025211573 acc: 0.99667966
+212 160 loss: 0.0017922978149726987 acc: 0.99716794
+test acc: 0.8318
+213 0 loss: 0.00010419099271530285 acc: 1.0
+213 40 loss: 0.0011350080603733659 acc: 0.9989258
+213 80 loss: 0.0020874834153801203 acc: 0.99716794
+213 120 loss: 0.001041065319441259 acc: 0.99658203
+213 160 loss: 0.002124886494129896 acc: 0.99677736
+test acc: 0.8357
+214 0 loss: 0.00015502939641010016 acc: 1.0
+214 40 loss: 0.0034400285221636295 acc: 0.9989258
+214 80 loss: 8.135732059599832e-05 acc: 0.99960935
+214 120 loss: 0.0006519370945170522 acc: 0.9984375
+214 160 loss: 0.0007129228906705976 acc: 0.9989258
+test acc: 0.8282
+215 0 loss: 0.013019424863159657 acc: 0.99609375
+215 40 loss: 0.0012258832575753331 acc: 0.99794924
+215 80 loss: 0.0022993823513388634 acc: 0.99912107
+215 120 loss: 8.235624409280717e-05 acc: 0.99960935
+215 160 loss: 0.00022603139223065227 acc: 0.9989258
+test acc: 0.8328
+216 0 loss: 0.00028861386817879975 acc: 1.0
+216 40 loss: 0.0014254804700613022 acc: 0.99902344
+216 80 loss: 9.960031457012519e-05 acc: 0.9993164
+216 120 loss: 0.001258770120330155 acc: 0.9986328
+216 160 loss: 0.0003539561585057527 acc: 0.9993164
+test acc: 0.8293
+217 0 loss: 0.026028543710708618 acc: 0.9921875
+217 40 loss: 0.0258624367415905 acc: 0.99667966
+217 80 loss: 0.011138452216982841 acc: 0.9923828
+217 120 loss: 0.005935806315392256 acc: 0.99677736
+217 160 loss: 0.04025110602378845 acc: 0.9964844
+test acc: 0.8224
+218 0 loss: 0.013399804010987282 acc: 0.99609375
+218 40 loss: 0.00694104190915823 acc: 0.99541014
+218 80 loss: 0.003259520512074232 acc: 0.99746096
+218 120 loss: 0.020175807178020477 acc: 0.9980469
+218 160 loss: 0.0021486333571374416 acc: 0.9986328
+test acc: 0.8319
+219 0 loss: 0.0001815566938603297 acc: 1.0
+219 40 loss: 0.006036937702447176 acc: 0.9995117
+219 80 loss: 0.0001170430114143528 acc: 0.9989258
+219 120 loss: 0.0015639899065718055 acc: 0.99785155
+219 160 loss: 0.011161992326378822 acc: 0.9977539
+test acc: 0.8311
+220 0 loss: 0.00015901238657534122 acc: 1.0
+220 40 loss: 0.0005293815629556775 acc: 0.9987305
+220 80 loss: 0.002082252409309149 acc: 0.9994141
+220 120 loss: 0.0003248303837608546 acc: 0.9993164
+220 160 loss: 0.0013041342608630657 acc: 0.99833983
+test acc: 0.8322
+221 0 loss: 0.000978074036538601 acc: 1.0
+221 40 loss: 6.835330714238808e-05 acc: 0.99912107
+221 80 loss: 0.00043567008106037974 acc: 0.99912107
+221 120 loss: 0.0021117343567311764 acc: 0.9994141
+221 160 loss: 0.00011213335528736934 acc: 0.9989258
+test acc: 0.8354
+222 0 loss: 0.0008690740796737373 acc: 1.0
+222 40 loss: 0.0023697002325206995 acc: 0.99960935
+222 80 loss: 2.756949106696993e-05 acc: 1.0
+222 120 loss: 0.0027496295515447855 acc: 0.9980469
+222 160 loss: 0.003007428254932165 acc: 0.99716794
+test acc: 0.8274
+223 0 loss: 0.004544513300061226 acc: 0.99609375
+223 40 loss: 0.005858415737748146 acc: 0.99736327
+223 80 loss: 0.0024084916803985834 acc: 0.9989258
+223 120 loss: 0.007726176176220179 acc: 0.9994141
+223 160 loss: 0.0033046910539269447 acc: 0.9970703
+test acc: 0.8376
+224 0 loss: 0.0005677503068000078 acc: 1.0
+224 40 loss: 0.0066869244910776615 acc: 0.99785155
+224 80 loss: 0.01814846694469452 acc: 0.99833983
+224 120 loss: 0.0668058767914772 acc: 0.996875
+224 160 loss: 0.022805234417319298 acc: 0.9944336
+test acc: 0.8257
+225 0 loss: 0.001836550422012806 acc: 1.0
+225 40 loss: 0.0011572513030841947 acc: 0.9969727
+225 80 loss: 0.0006047828355804086 acc: 0.9989258
+225 120 loss: 0.0931461900472641 acc: 0.99785155
+225 160 loss: 0.025971466675400734 acc: 0.99726564
+test acc: 0.8336
+226 0 loss: 0.03243120014667511 acc: 0.9921875
+226 40 loss: 0.002091445028781891 acc: 0.9989258
+226 80 loss: 0.008108516223728657 acc: 0.99677736
+226 120 loss: 0.013281609863042831 acc: 0.9980469
+226 160 loss: 0.038190778344869614 acc: 0.99716794
+test acc: 0.8277
+227 0 loss: 0.0013058052863925695 acc: 1.0
+227 40 loss: 0.00716523639857769 acc: 0.9986328
+227 80 loss: 3.2667496270732954e-05 acc: 0.9994141
+227 120 loss: 0.00021444451704155654 acc: 0.99960935
+227 160 loss: 0.0023419263307005167 acc: 0.9994141
+test acc: 0.8307
+228 0 loss: 0.019734829664230347 acc: 0.98828125
+228 40 loss: 0.008501988835632801 acc: 0.99667966
+228 80 loss: 0.0006824316224083304 acc: 0.99853516
+228 120 loss: 0.006174236536026001 acc: 0.99677736
+228 160 loss: 0.00010787829523906112 acc: 0.9962891
+test acc: 0.8353
+229 0 loss: 0.0031697002705186605 acc: 0.99609375
+229 40 loss: 0.00030322890961542726 acc: 0.99902344
+229 80 loss: 0.00010984839173033834 acc: 0.9994141
+229 120 loss: 0.023299595341086388 acc: 0.9952148
+229 160 loss: 0.01008809544146061 acc: 0.9944336
+test acc: 0.8251
+230 0 loss: 0.005707514937967062 acc: 1.0
+230 40 loss: 0.00379753764718771 acc: 0.99667966
+230 80 loss: 0.008519535884261131 acc: 0.9988281
+230 120 loss: 0.0011982338037341833 acc: 0.99746096
+230 160 loss: 0.004708660766482353 acc: 0.9981445
+test acc: 0.8366
+231 0 loss: 0.0006944428896531463 acc: 1.0
+231 40 loss: 5.797596531920135e-05 acc: 0.99970704
+231 80 loss: 0.017847057431936264 acc: 0.9995117
+231 120 loss: 0.009551187045872211 acc: 0.99921876
+231 160 loss: 0.0050710588693618774 acc: 0.99912107
+test acc: 0.8189
+232 0 loss: 0.015122901648283005 acc: 0.9921875
+232 40 loss: 0.05158664286136627 acc: 0.9927734
+232 80 loss: 0.0016242321580648422 acc: 0.9970703
+232 120 loss: 0.014661100693047047 acc: 0.9980469
+232 160 loss: 0.009681377559900284 acc: 0.99794924
+test acc: 0.8331
+233 0 loss: 0.00010730150097515434 acc: 1.0
+233 40 loss: 0.0004448451509233564 acc: 0.9988281
+233 80 loss: 0.0014362854417413473 acc: 0.9977539
+233 120 loss: 0.011992954649031162 acc: 0.9977539
+233 160 loss: 0.010940401814877987 acc: 0.9980469
+test acc: 0.8245
+234 0 loss: 0.007501307874917984 acc: 0.99609375
+234 40 loss: 0.0009167480166070163 acc: 0.9986328
+234 80 loss: 0.0004592949408106506 acc: 0.9986328
+234 120 loss: 0.000395288661820814 acc: 0.9980469
+234 160 loss: 0.0009042526944540441 acc: 0.9975586
+test acc: 0.8322
+235 0 loss: 0.0009530755924060941 acc: 1.0
+235 40 loss: 0.025554299354553223 acc: 0.9813477
+235 80 loss: 0.009019654244184494 acc: 0.9919922
+235 120 loss: 0.015127015300095081 acc: 0.994043
+235 160 loss: 0.0014337595785036683 acc: 0.9961914
+test acc: 0.8284
+236 0 loss: 0.0040549635887146 acc: 0.99609375
+236 40 loss: 0.01114660408347845 acc: 0.9989258
+236 80 loss: 0.00021199141338001937 acc: 0.9994141
+236 120 loss: 0.0063592297956347466 acc: 0.9989258
+236 160 loss: 0.0006169441039673984 acc: 0.9993164
+test acc: 0.8335
+237 0 loss: 0.0045051067136228085 acc: 0.99609375
+237 40 loss: 0.00016656694060657173 acc: 0.9994141
+237 80 loss: 0.00016518724441993982 acc: 0.9994141
+237 120 loss: 0.0002071315102512017 acc: 0.99921876
+237 160 loss: 0.0007194480858743191 acc: 0.9994141
+test acc: 0.8309
+238 0 loss: 0.0001380300527671352 acc: 1.0
+238 40 loss: 0.00011954281944781542 acc: 1.0
+238 80 loss: 0.023383116349577904 acc: 0.99990237
+238 120 loss: 7.192782504716888e-05 acc: 0.9987305
+238 160 loss: 0.04597263038158417 acc: 0.9962891
+test acc: 0.8277
+239 0 loss: 0.0004103193059563637 acc: 1.0
+239 40 loss: 0.00031095484155230224 acc: 0.99785155
+239 80 loss: 0.002082819351926446 acc: 0.99736327
+239 120 loss: 0.0009042678866535425 acc: 0.9989258
+239 160 loss: 0.017377443611621857 acc: 0.99853516
+test acc: 0.8341
+240 0 loss: 0.0019752513617277145 acc: 1.0
+240 40 loss: 0.008245207369327545 acc: 0.9995117
+240 80 loss: 9.547539775667246e-06 acc: 0.99960935
+240 120 loss: 8.453310147160664e-05 acc: 0.9989258
+240 160 loss: 0.013963707722723484 acc: 0.99560547
+test acc: 0.8317
+241 0 loss: 0.010294250212609768 acc: 0.9921875
+241 40 loss: 0.0014055940555408597 acc: 0.9987305
+241 80 loss: 0.008871378377079964 acc: 0.9963867
+241 120 loss: 0.004598291125148535 acc: 0.99785155
+241 160 loss: 0.0005611535161733627 acc: 0.9980469
+test acc: 0.8317
+242 0 loss: 0.0005580515717156231 acc: 1.0
+242 40 loss: 0.009991295635700226 acc: 0.9986328
+242 80 loss: 0.0002549575292505324 acc: 0.99785155
+242 120 loss: 0.0012548150261864066 acc: 0.99785155
+242 160 loss: 0.00071383808972314 acc: 0.9969727
+test acc: 0.8311
+243 0 loss: 0.002117637312039733 acc: 1.0
+243 40 loss: 0.016997791826725006 acc: 0.99794924
+243 80 loss: 0.00046093127457425 acc: 0.9981445
+243 120 loss: 0.047516338527202606 acc: 0.9890625
+243 160 loss: 0.013552109710872173 acc: 0.990625
+test acc: 0.831
+244 0 loss: 0.028017088770866394 acc: 0.99609375
+244 40 loss: 0.005042177625000477 acc: 0.99794924
+244 80 loss: 0.013708781450986862 acc: 0.9976562
+244 120 loss: 0.03091336227953434 acc: 0.99658203
+244 160 loss: 0.0019870763644576073 acc: 0.99716794
+test acc: 0.8414
+245 0 loss: 0.0002670055255293846 acc: 1.0
+245 40 loss: 5.4442707551061176e-06 acc: 1.0
+245 80 loss: 0.03799444064497948 acc: 0.9987305
+245 120 loss: 0.009845002554357052 acc: 0.9987305
+245 160 loss: 0.001078388188034296 acc: 0.9987305
+test acc: 0.8365
+246 0 loss: 0.0006174540612846613 acc: 1.0
+246 40 loss: 0.00043015897972509265 acc: 0.9993164
+246 80 loss: 0.007602943107485771 acc: 0.99921876
+246 120 loss: 0.01373707503080368 acc: 0.9984375
+246 160 loss: 0.00010037048195954412 acc: 0.9993164
+test acc: 0.8342
+247 0 loss: 0.00035310033126734197 acc: 1.0
+247 40 loss: 0.005184564273804426 acc: 0.9993164
+247 80 loss: 0.0002452558546792716 acc: 0.99902344
+247 120 loss: 2.4653611035319045e-05 acc: 0.9998047
+247 160 loss: 1.4062832633499056e-05 acc: 0.9993164
+test acc: 0.8361
+248 0 loss: 0.004023866727948189 acc: 1.0
+248 40 loss: 0.0006577993044629693 acc: 0.9988281
+248 80 loss: 0.0005332769942469895 acc: 0.99921876
+248 120 loss: 0.03439059108495712 acc: 0.99746096
+248 160 loss: 0.02562677673995495 acc: 0.9975586
+test acc: 0.8324
+249 0 loss: 0.035124193876981735 acc: 0.99609375
+249 40 loss: 0.00023321722983382642 acc: 0.99970704
+249 80 loss: 0.00016048472025431693 acc: 0.9995117
+249 120 loss: 0.012682436965405941 acc: 0.99736327
+249 160 loss: 0.007471681106835604 acc: 0.99736327
+test acc: 0.8371
