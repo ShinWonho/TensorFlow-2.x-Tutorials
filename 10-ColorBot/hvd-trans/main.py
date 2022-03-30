@@ -10,17 +10,12 @@ if gpus:
   tf.config.experimental.set_visible_devices(gpus[hvd.local_rank()], "GPU", )
 import numpy as np
 from tensorflow import keras
-# from matplotlib import pyplot as plt
 from utils import load_dataset, parse
 from model import RNNColorbot
-
-# tensorboard
 import datetime
-current_time = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
-train_log_dir = 'logs/hvd-board-manual-lrexp-00001/' + current_time + '/train'
-train_summary_writer = tf.summary.create_file_writer(train_log_dir)
-
-
+current_time = datetime.datetime.now().strftime("%Y%m%d-%H%M%S", )
+train_log_dir = "logs/org-board/" + current_time + "/train"
+train_summary_writer = tf.summary.create_file_writer(train_log_dir, )
 tf.random.set_seed(22, )
 np.random.seed(22, )
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
@@ -34,7 +29,6 @@ def test(model, eval_data, ):
     avg_loss.update_state(keras.losses.mean_squared_error(labels, predictions, ), )
   if hvd.rank() == 0:
     print("eval/loss: %.6f" % avg_loss.result().numpy(), )
-
 def train_one_epoch(model, optimizer, train_data, log_interval, epoch, ):
   """
     Trains model on train_data using optimizer.    """
@@ -46,19 +40,13 @@ def train_one_epoch(model, optimizer, train_data, log_interval, epoch, ):
     tape = hvd.DistributedGradientTape(tape, )
     grads = tape.gradient(loss, model.trainable_variables, )
     optimizer.apply_gradients(zip(grads, model.trainable_variables, ), )
-
-    # manual : add broadcast
     global hvd_broadcast_done
     if not hvd_broadcast_done:
-        hvd.broadcast_variables(model.variables, root_rank=0, )
-        hvd.broadcast_variables(optimizer.variables(), root_rank=0, )
-        hvd_broadcast_done = True
-
-    # tensorboard
+      hvd.broadcast_variables(model.variables, root_rank=0, )
+      hvd.broadcast_variables(optimizer.variables(), root_rank=0, )
+      hvd_broadcast_done = True
     with train_summary_writer.as_default():
-        if hvd.rank() == 0:
-            tf.summary.scalar('loss', loss, step=epoch*40+step)
-
+      tf.summary.scalar("loss", loss, step=epoch * 40 + step, )
     if step % 100 == 0:
       if hvd.rank() == 0:
         print(epoch, step, "loss:", float(loss, ), )
@@ -72,8 +60,7 @@ def main():
   train_data = load_dataset(data_dir=data_dir, url=SOURCE_TRAIN_URL, batch_size=batchsz, )
   eval_data = load_dataset(data_dir=data_dir, url=SOURCE_TEST_URL, batch_size=batchsz, )
   model = RNNColorbot(rnn_cell_sizes=rnn_cell_sizes, label_dimension=3, keep_prob=0.5, )
-  # manual : changed lr
-  optimizer = keras.optimizers.Adam(0.0001)
+  optimizer = keras.optimizers.Adam(0.01 * hvd.size(), )
   for epoch in range(epochs, ):
     start = time.time()
     train_one_epoch(model, optimizer, train_data, 50, epoch, )
@@ -99,8 +86,5 @@ def main():
     if hvd.rank() == 0:
       print("rgb:", rgb, )
     data = [[clipped_preds]]
-    # plt.imshow(data, )
-    # plt.title(color_name, )
-    # plt.savefig(color_name + ".png", )
 if __name__ == "__main__":
   main()

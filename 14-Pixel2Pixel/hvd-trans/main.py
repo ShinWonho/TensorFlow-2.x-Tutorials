@@ -11,7 +11,7 @@ if gpus:
 import numpy as np
 from tensorflow import keras
 import time
-# from matplotlib import pyplot as plt
+from matplotlib import pyplot as plt
 from gd import Discriminator, Generator
 tf.random.set_seed(22, )
 np.random.seed(22, )
@@ -100,14 +100,12 @@ def generate_images(model, test_input, tar, epoch, ):
   plt.figure(figsize=(15, 15), )
   display_list = [test_input[0], tar[0], prediction[0]]
   title = ["Input Image", "Ground Truth", "Predicted Image"]
-  '''
   for i in range(3, ):
     plt.subplot(1, 3, i + 1, )
     plt.title(title[i], )
     plt.imshow(display_list[i] * 0.5 + 0.5, )
     plt.axis("off", )
   plt.savefig("images/epoch%d.png" % epoch, )
-  '''
   if hvd.rank() == 0:
     print("saved images.", )
 def main():
@@ -125,12 +123,16 @@ def main():
       gen_tape = hvd.DistributedGradientTape(gen_tape, )
       generator_gradients = gen_tape.gradient(gen_loss, generator.trainable_variables, )
       g_optimizer.apply_gradients(zip(generator_gradients, generator.trainable_variables, ), )
-      discriminator_gradients = disc_tape.gradient(disc_loss, discriminator.trainable_variables, )
-      id_new = zip(discriminator_gradients, discriminator.trainable_variables, )
-      d_optimizer.apply_gradients(id_new, )
       global hvd_broadcast_done
       if not hvd_broadcast_done:
-        hvd.broadcast_variables([x[1] for x in id_new], root_rank=0, )
+        hvd.broadcast_variables(generator.variables, root_rank=0, )
+        hvd.broadcast_variables(g_optimizer.variables(), root_rank=0, )
+        hvd_broadcast_done = True
+      discriminator_gradients = disc_tape.gradient(disc_loss, discriminator.trainable_variables, )
+      d_optimizer.apply_gradients(zip(discriminator_gradients, discriminator.trainable_variables, ), )
+      global hvd_broadcast_done
+      if not hvd_broadcast_done:
+        hvd.broadcast_variables(discriminator.variables, root_rank=0, )
         hvd.broadcast_variables(d_optimizer.variables(), root_rank=0, )
         hvd_broadcast_done = True
       if step % 100 == 0:

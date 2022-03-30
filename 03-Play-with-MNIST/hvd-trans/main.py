@@ -8,30 +8,23 @@ for gpu in gpus:
 if gpus:
   tf.config.experimental.set_visible_devices(gpus[hvd.local_rank()], "GPU", )
 from tensorflow.keras import datasets, layers, optimizers, Sequential, metrics
-
-# tensorboard
 import datetime
-current_time = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
-train_log_dir = 'logs/hvd-trans-board-var/' + current_time + '/train'
-train_summary_writer = tf.summary.create_file_writer(train_log_dir)
-
-
+current_time = datetime.datetime.now().strftime("%Y%m%d-%H%M%S", )
+train_log_dir = "logs/org-board/" + current_time + "/train"
+train_summary_writer = tf.summary.create_file_writer(train_log_dir, )
 ((xs, ys), _) = datasets.mnist.load_data()
 if hvd.rank() == 0:
   print("datasets:", xs.shape, ys.shape, xs.min(), xs.max(), )
 xs = tf.convert_to_tensor(xs, dtype=tf.float32, ) / 255.0
 db = tf.data.Dataset.from_tensor_slices((xs, ys), )
-db = db.shuffle(len(db)).batch(32, ).repeat(10, )
-
+db = db.batch(32, ).repeat(10, )
 network = Sequential([layers.Dense(256, activation="relu", ), layers.Dense(256, activation="relu", ), layers.Dense(256, activation="relu", ), layers.Dense(10, )], )
 network.build(input_shape=(None, 28 * 28), )
 if hvd.rank() == 0:
   network.summary()
-# manual : lr -> learning_rate, manual scaling
 optimizer = optimizers.SGD(learning_rate=0.01 * hvd.size(), )
 acc_meter = metrics.Accuracy()
-print("asdfasdf : ", hvd.rank())
-for (step, (x, y)) in enumerate(db.take(len(db) // hvd.size()), ):
+for (step, (x, y)) in enumerate(db, ):
   with tf.GradientTape() as tape:
     x = tf.reshape(x, (-1, 28 * 28), )
     out = network(x, )
@@ -39,24 +32,15 @@ for (step, (x, y)) in enumerate(db.take(len(db) // hvd.size()), ):
     loss = tf.square(out - y_onehot, )
     loss = tf.reduce_sum(loss, ) / 32
   tape = hvd.DistributedGradientTape(tape, )
+  with train_summary_writer.as_default():
+    tf.summary.scalar("loss", loss, step=step, )
   acc_meter.update_state(tf.argmax(out, axis=1, ), y, )
   grads = tape.gradient(loss, network.trainable_variables, )
-  id_new = zip(grads, network.trainable_variables, )
-  optimizer.apply_gradients(id_new, )
-
-  # tensorboard
-  if hvd.rank() == 0:
-      with train_summary_writer.as_default():
-        tf.summary.scalar('loss', loss, step=step)
-
-  # global hvd_broadcast_done
+  optimizer.apply_gradients(zip(grads, network.trainable_variables, ), )
   if not hvd_broadcast_done:
     hvd.broadcast_variables(network.variables, root_rank=0, )
     hvd.broadcast_variables(optimizer.variables(), root_rank=0, )
     hvd_broadcast_done = True
-
-
-
   if step % 200 == 0:
     if hvd.rank() == 0:
       print(step, "loss:", float(loss, ), "acc:", acc_meter.result().numpy(), )

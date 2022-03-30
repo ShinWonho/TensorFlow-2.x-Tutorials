@@ -10,15 +10,10 @@ if gpus:
   tf.config.experimental.set_visible_devices(gpus[hvd.local_rank()], "GPU", )
 import numpy as np
 from tensorflow import keras
-
-# tensorboard
 import datetime
-current_time = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
-train_log_dir = 'logs/hvd-trans-board-manual/' + current_time + '/train'
-train_summary_writer = tf.summary.create_file_writer(train_log_dir)
-
-
-
+current_time = datetime.datetime.now().strftime("%Y%m%d-%H%M%S", )
+train_log_dir = "logs/org-board/" + current_time + "/train"
+train_summary_writer = tf.summary.create_file_writer(train_log_dir, )
 tf.random.set_seed(22, )
 np.random.seed(22, )
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
@@ -100,11 +95,8 @@ for epoch in range(100, ):
       loss = criteon(tf.one_hot(y, depth=10, ), logits, )
     tape = hvd.DistributedGradientTape(tape, )
     grads = tape.gradient(loss, model.trainable_variables, )
-    id_new = zip(grads, model.trainable_variables, )
-    optimizer.apply_gradients(id_new, )
-    #global hvd_broadcast_done
+    optimizer.apply_gradients(zip(grads, model.trainable_variables, ), )
     if not hvd_broadcast_done:
-      # manual : trainable_variables -> variables
       hvd.broadcast_variables(model.variables, root_rank=0, )
       hvd.broadcast_variables(optimizer.variables(), root_rank=0, )
       hvd_broadcast_done = True
@@ -116,11 +108,8 @@ for epoch in range(100, ):
     logits = model(x, training=False, )
     pred = tf.argmax(logits, axis=1, )
     acc_meter.update_state(y, pred, )
-
-  # tensorboard
   with train_summary_writer.as_default():
-    tf.summary.scalar('loss', loss, step=100*epoch+step)
-    tf.summary.scalar('acc', acc_meter.result(), step=100*epoch+step)
-
+    tf.summary.scalar("loss", loss, step=100 * epoch + step, )
+    tf.summary.scalar("acc", acc_meter.result(), step=100 * epoch + step, )
   if hvd.rank() == 0:
     print(epoch, "evaluation acc:", acc_meter.result().numpy(), )
